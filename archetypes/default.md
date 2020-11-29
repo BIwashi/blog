@@ -15,7 +15,7 @@ tags: ["motivation", "inspiration"] # tag
 caption: Product Mockup
 image: images/portfolio/item-2.jpg
 liveLink: link # ??
-# 右側の情報
+# 右側の情報説明
 client: Julia Robertson
 submitDate: November 20, 2017
 category: ["mockup","design"] # tag

@@ -28,24 +28,30 @@ weight  = 5
 name    = "Contact"
 url     = "contact"
 weight  = 6
+[[menu.main]]
+name    = "Sample"
+url     = "sample"
+weight  = 7
 
 # Site Params
 [params]
 home = "Home"
-logo = "images/logo.png"
-dateFormat = "6 January 2006"
+logo = "images/logo.png" # homeのLogoを設定
+dateFormat = "6 January 2006" #??
 # Meta data
 description = "Airspace Hugo theme"
-author = "Themefisher"
+author = "作者を書く"
 # Google Analitycs
-googleAnalitycsID = "Your ID"
+googleAnalitycsID = "Your ID" # Google Anlaycs用のIDを設定できる
 # contact form action
-contactFormAction = "#" # contact form works with https://formspree.io
+contactFormAction = "#" # contact form works with https://formspree.io formを設定する用
+# Disqusによるコメント機能実装用
+disqusShortname = "ShortName"
 
 # Banner Section
 [params.banner]
 enable  = true
-bgImage = "images/slider.jpg"
+bgImage = "images/slider.jpg" # バナーの画像
 heading = "一番のタイトル"
 description = "バナーに書く文字"
 # button
@@ -74,7 +80,7 @@ enable  = true
 title   = "SO WHAT YOU THINK ?"
 content = "コンタクトしてくれ<br>ここはhtmlで上書きできる<br><h3>やほーー"
 btnText = "Contact with me"
-btnURL  = "contact"
+btnURL  = "/contact"
 
 # Portfolio Section On Homepage
 [params.portfolio]
