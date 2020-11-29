@@ -1,7 +1,8 @@
-baseURL = "http://example.org/"
+baseURL = "https://biwashi.github.io/blog/"
 languageCode = "en-us"
-title = "Timer | Responsive Multipurpose Bootstrap Hugo Template"
+title = "Timer | Responsive Multipurpose Bootstrap Hugo Template" # Homeのタイトル
 theme = "timer-hugo"
+publishDir = "docs"
 
 # We Used Ionicons Icon font for Icon, for more details check this link - https://ionicons.com/
 
@@ -44,20 +45,20 @@ contactFormAction = "#" # contact form works with https://formspree.io
 [params.banner]
 enable  = true
 bgImage = "images/slider.jpg"
-heading = "HI, MY NAME IS JONATHON & I AM A"
-description = "WITH 10 YEARS EXPERIENCE, I'VE OCCUPIED MANY ROLES INCLUDING DIGITAL DESIGN DIRECTOR, WEB DESIGNER AND DEVELOPER. THIS SITE SHOWCASES SOME OF MY WORK."
+heading = "一番のタイトル"
+description = "バナーに書く文字"
 # button
 btn     = true
-btnText = "Download More"
+btnText = "何かをさせるボタン"
 btnURL  = "https://themefisher.com/"
 
 # flip text
 [[params.banner.flipText]]
-title   = "DESIGNER"
+title   = "フリップ１"
 [[params.banner.flipText]]
-title   = "DEVELOPER"
+title   = "フリップ２"
 [[params.banner.flipText]]
-title   = "FATHER"
+title   = "フリップ３"
 
 # Homepage About Section
 [params.about]
@@ -70,15 +71,15 @@ image   = "images/about/about.jpg"
 [params.cta]
 enable  = true
 title   = "SO WHAT YOU THINK ?"
-content = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,<br>possimus commodi, fugiat magnam temporibus vero magni recusandae? Dolore, maxime praesentium."
+content = "コンタクトしてくれ<br>ここはhtmlで上書きできる<br><h3>やほーー"
 btnText = "Contact with me"
-btnURL  = "/contact"
+btnURL  = "contact"
 
 # Portfolio Section On Homepage
 [params.portfolio]
 enable  = true
-title   = "Latest Works"
-subtitle= "Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus."
+title   = "ポートフォリオ"
+subtitle= "僕はこんな感じのポートフォリを作ってまいりました"
 
 # social icon
 [[params.socialIcon]]
