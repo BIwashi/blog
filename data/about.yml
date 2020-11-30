@@ -1,20 +1,105 @@
-enable  : true
-title   : タイトルを変えてみる
+enable: true
+title: Shota Iwami
 description: >
-  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequun. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  
+  開発：
+  <br>
+  フロントもバックエンドもちょこちょこいじっています。全然つよつよではありません。
+  最近Goの勉強をしてます。
+  <br>
+  普段はPythonとC++でドローンを改造することが多いです。
+  <br>
+  もっとWEBスキルも高めたい…
+  <br>
+  <a href="/service/index.html"> >> skill </a>
   <br>
   <br>
-  Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
-image   : images/about/about-company.jpg
+  趣味：
+  <br>
+  ・サックス
+  <br>
+  ・ドローン空撮
+  <br>
+  ・WEB開発
+  <br>
+  ・ガジェット収集
+  <br>
+  （ドローン、一眼レフ、アクションカム、360度カメラ、ジンバル、オーディオ、スマートホーム機器 etc...）
+
+image: images/about/about-me-2.jpg
 aboutItem:
-  - title : Why Choose Us
-    description: > 
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas.
+  - title: UTM
+    description: >
+      <h2>Research Theme: Four-Dimensional Navigation of Drones Suitable for Unmanned Traffic Management</h2>
+      <br>
+      Today, drones are rapidly becoming a part of our lives due to technological developments, and their use in urban areas is expected to expand further in the future, especially in logistics and infrastructure inspections.
+      <br>
+      What is needed in this context is a control system that can properly manage the large number of unmanned aircraft.
+      This is called an unmanned aircraft air traffic management system (UTM).
+      <br>
+      <br>
+      Although many simulation studies have been conducted on UTMs, few demonstrations have been conducted on actual aircraft. 
+      This has not been done and there is little knowledge of it. 
+      Therefore, we aim to verify various navigation methods with the actual aircraft to achieve more successful implementation.
+      <br>
+      <br>
+      We are using PX4, an OSS drone software, as a base for the aircraft modification. In addition, we are using a companion computer approach to control the airframe through the Internet, and a microcontroller such as Raspberry pi for processing other than the main attitude control.
+      <br>
+      <br>
+      <h2>研究テーマ：無⼈機交通管理に適したドローンの四次元航法</h2>
+      <br>
+      現在ドローンは技術の発展により我々の生活に急速に普及しおり、今後都市圏における更なる利用拡大が予測され、特に物流やインフラ点検での活用が期待されている。 ここで必要となってくるのが、多くの無人航空機を適切に管理する管制システムである。これを無人航空機航空交通管理システム（UTM）と呼ぶ。
+      <br>
+      <br>
+      すでに運用されている、旅客機などの有人航空機の運航管理（ATM）とは性質が異なり、より高密度での飛行、目視外範囲での完全自動航行時の衝突回避システムなどが求められる。
+      UTMに関するシミュレーションの研究は多く行われているが、実際の機体を用いた実証実験はほとんど行われておらず知見が少ない。そのため様々な航法を実際の機体で検証し、より実装に向けた成果を上げることを目指している。
+      <br>
+      <br>
+      機体の改造は、OSSドローンソフトウェアであるPX4をベースに使用している。また、インターネットを介しての機体制御やメイン姿勢制御以外の処理をさせるためにRaspberry piなどのマイコンを相乗りさせる（コンパニオンコンピュータ）アプローチも行っている。
 
-  - title : What You Get
-    description: > 
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas.
 
-  - title : Meet The Energy
-    description: > 
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas.
+  - title: Long-Term Internship
+    description: >
+      <h2><a href="http://www.selab.jp/">Space Entertainment Laboratory</a></h2>
+      2019/1 ~
+      <br>
+      I work at Space Entertainment Laboratory as an intern.
+      <br>
+      Space Entertainment Laboratory is an advanced aviation and aerospace solution provider.
+      <br>
+      We're developing a new drone product...<a href="http://www.selab.jp/img/hamadori2021.pdf">"HAMADORI"</a>
+      <br>
+      <br>
+      <h2>株式会社スペースエンターテインメントラボラトリー</h2>
+      <br>
+      ドローン開発を行っているベンチャー企業で長期インターンを行っています。主に<a href="http://www.selab.jp/img/hamadori2021.pdf">飛行艇型ドローン開発のプロジェクト</a>に参画しています。
+      <br>
+      【業務内容】
+      <li>CAD
+      <li>CFRP
+      <li>ソフトウェア開発（PX4）
+      <li>Arduino
+      <li>実証実験
+      <li>成層圏高高度気球
+      など
+
+  - title: Education
+    description: >
+      <h2>Tokyo Metropolitan University</h2>
+      <br>
+      <h5><a href="https://aeroastro.sd.tmu.ac.jp/english/index.html">Faculuty of Systems Engineering in Aeronautics and Astronautics</a></h5>
+      2016-2020
+      <br>
+      <br>
+      <h5><a href="https://aeroastro.sd.tmu.ac.jp/english/index.html">Graduate School of Systems Engineering in Aeronautics and Astronautics</a></h5>
+      2020-
+      <br>
+      <br>
+      <h2>東京都立大学大学院</h2>
+      <br>
+      <h5><a href="https://aeroastro.sd.tmu.ac.jp/english/index.html">システムデザイン学部航空宇宙システム工学科</a></h5>
+      2016-2020
+      <br>
+      <br>
+      <h5><a href="https://aeroastro.sd.tmu.ac.jp/english/index.html">システムデザイン研究科航空宇宙システム工学域</a></h5>
+      2020-

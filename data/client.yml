@@ -1,4 +1,4 @@
-enable  : true
+# enable  : true
 title   : クライアント一覧
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, error.
 clientsLogo:

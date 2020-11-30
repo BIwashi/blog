@@ -1,5 +1,5 @@
 baseURL = "https://biwashi.github.io/blog/"
-languageCode = "en-us"
+languageCode = "ja"
 title = "Timer | Responsive Multipurpose Bootstrap Hugo Template" # Homeのタイトル
 theme = "timer-hugo"
 publishDir = "docs"
@@ -52,27 +52,27 @@ disqusShortname = "ShortName"
 [params.banner]
 enable  = true
 bgImage = "images/slider.jpg" # バナーの画像
-heading = "一番のタイトル"
-description = "バナーに書く文字"
+heading = "MY NEW GEAR"
+description = "This is My Blog"
 # button
-btn     = true
+# btn     = true
 btnText = "何かをさせるボタン"
 btnURL  = "https://themefisher.com/"
 
 # flip text
 [[params.banner.flipText]]
-title   = "フリップ１"
+title   = "Shota Iwami"
 [[params.banner.flipText]]
-title   = "フリップ２"
+title   = "いわみ しょうた"
 [[params.banner.flipText]]
-title   = "フリップ３"
+title   = "イワミ ショウタ"
 
 # Homepage About Section
 [params.about]
 enable  = true
 title   = "ABOUT ME"
-content = "Hello, I’m a UI/UX Designer & Front End Developer from Victoria, Australia. I hold a master degree of Web Design from the World University.And scrambled it to make a type specimen book. It has survived not only five centuries. <br> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, adipisci voluptatum repudiandae, natus impedit repellat aut officia illum at assumenda iusto reiciendis placeat. Temporibus, vero."
-image   = "images/about/about.jpg"
+content = "<h3>Iwami Shota 岩見彰太</h3><br>Hello, My name is Shota Iwami.<br> I'm 23 years old, a graduate studentat Tokyo Metropolitan University and living in Yokohama.<br><br>大学でドローンの航空交通管理（UTM）の研究をしながら、長期インターンでドローン開発をしたり、ハッカソンに出たり、WEB開発をほげほげやったりしてます。<br>WEB開発のいろんな記録としてのあれこれや書いたり、カメラやジンバル、ドローンやオーディオ機器などの好きなガジェットのレビューなどつらつらと投稿していくつもりです。"
+image   = "images/about/about-me.jpg"
 
 # Call to Action
 [params.cta]
@@ -86,17 +86,17 @@ btnURL  = "/contact"
 [params.portfolio]
 enable  = true
 title   = "ポートフォリオ"
-subtitle= "僕はこんな感じのポートフォリを作ってまいりました"
+subtitle= "Portfolio"
 
 # social icon
 [[params.socialIcon]]
 icon = "ion-social-facebook"
-url = "#"
+url = "https://www.facebook.com/jazzy.yuzax/"
 
 [[params.socialIcon]]
-icon = "ion-social-instagram"
-url = "#"
+icon = "ion-social-github"
+url = "https://github.com/BIwashi"
 
 [[params.socialIcon]]
-icon = "ion-social-linkedin"
-url = "#"
+icon = "ion-social-twitter"
+url = "https://twitter.com/B_Sardine"
