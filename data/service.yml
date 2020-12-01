@@ -1,60 +1,76 @@
 enable: true
 title: SKILL
-subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis porro recusandae non quibusdam iure adipisci.
+subtitle: 今まで勉強してきた、経験してきた、開発してきたいろんなスキルたちです。
 image: images/shark.jpg
 serviceItem:
   - icon:
     iconsrc: /images/customIcons/cpp.svg # カスタムIconを設定する. PathかURLを書く(svg)
     title: C++
     description: >
-      Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum
+      主に長期インターンや研究でのドローン開発に使用してきました。
+      <br>
+      開発ではPX4と呼ばれるOSSのフライトコントローラーを用いて開発を行ってきました。
 
   - icon: logo-python
     title: Python
     description: >
-      Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum
+      flaskを用いたWEBアプリの開発経験があります（インターン、ハッカソン）。
+      <br>
+      また、研究においてdronekit-pythonというドローンをコントロールできるフレームワークをRaspberry pi上で動かし、シリアルコンソールで機体に指令を送るなどして使用しています。
 
   - icon: logo-javascript
     title: Javascript
     description: >
-      Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum
+      Vue.jsを一通り触れます。
+      <br>
+      最低限のコーディングは可能です。長期インターン先でvue-chartjsを用いた社内向けツールを作成した経験があります。
 
   - icon:
     iconsrc: /images/customIcons/java.svg # カスタムIconを設定する. PathかURLを書く(svg)
     title: Java
     description: >
-      Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum
+      Androidアプリ開発の短期インターンに参加した経験があります。
 
   - icon:
     iconsrc: /images/customIcons/matlab.svg # カスタムIconを設定する. PathかURLを書く(svg)
     title: MATLAB
     description: >
-      Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum
+      研究で使用しています。主にドローンの飛行データのログ解析に使用しています。
 
   - icon:
     iconsrc: /images/customIcons/golang.svg # カスタムIconを設定する. PathかURLを書く(svg)
     title: Go
     description: >
-      Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum
+      勉強中です。チュートリアルは一通り終えました。Gobotを使用してマイコンやドローンを操作しようとしています。
+      <br>
+      このBlogはHugoで作成しました。
 
   - icon: logo-html5
     title: HTML
     description: >
-      Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum
+      インターン・ハッカソン等で使用経験があります。
+      <br>
+      またこのBlog作成等、趣味などでもそこそこ触っています。
 
   - icon: logo-docker
     title: Docker
     description: >
-      Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum
+      好きで結構使っています。基本docker-composeで環境構築をすることが多いです。ハッカソンなどで使用し、クラウドにデプロイした経験もあります。
+      <br>
+      DockerでUbuntuのGUI環境を構築したことがあります。
 
   - icon:
     iconsrc: /images/customIcons/raspberry_pi_logo.svg # カスタムIconを設定する. PathかURLを書く(svg)
     title: Raspberry pi
     description: >
-      Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum
+      研究、趣味で使っています。主に研究では、シリアルコンソールでドローンに接続し、操作するのに使用しています。
+      <br>
+      趣味では自宅サーバーの構築や自作IoTの作成などをしてます。
 
   - icon:
     iconsrc: /images/customIcons/aws.svg # カスタムIconを設定する. PathかURLを書く(svg)
     title: AWS
     description: >
-      Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum
+      インターンやハッカソンでEC2, S3, DynamoDB, ALB, API Gatewayなどの使用経験があります。VPCの作成からインスタンスの起動、DBの構築やhttps化などしました。
+      <br>
+      興味はありますがなかなか機会と時間がなく、Lamdaは試せていません。

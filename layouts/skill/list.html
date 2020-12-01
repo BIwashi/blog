@@ -35,7 +35,7 @@
 								<!-- New IconのTest End -->
 
 								{{ with .title }}<h4>{{ . }}</h4>{{ end }}
-								{{ with .description }}<p>{{ . }}</p>{{ end }}
+								{{ with .description }}<p>{{ . | safeHTML }}</p>{{ end }}
 							</div>
 						</div>
 						{{ end }}
