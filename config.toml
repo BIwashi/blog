@@ -16,27 +16,23 @@ weight  = 2
 name    = "Skill"
 url     = "skill"
 weight  = 3
-[[menu.main]]
-name    = "Gallery"
-url     = "gallery"
-weight  = 4
+# [[menu.main]]
+# name    = "Gallery"
+# url     = "gallery"
+# weight  = 4
 [[menu.main]]
 name    = "Blog"
 url     = "blog"
 weight  = 5
-[[menu.main]]
-name    = "Contact"
-url     = "contact"
-weight  = 6
-[[menu.main]]
-name    = "Sample"
-url     = "sample"
-weight  = 7
+# [[menu.main]]
+# name    = "Contact"
+# url     = "contact"
+# weight  = 6
 
 # Site Params
 [params]
 home = "Home"
-logo = "images/logo.png" # homeのLogoを設定
+logo = "images/iwashimiddle.png" # homeのLogoを設定
 dateFormat = "6 January 2006" #??
 # Meta data
 description = "Airspace Hugo theme"
@@ -51,7 +47,7 @@ disqusShortname = "ShortName"
 # Banner Section
 [params.banner]
 enable  = true
-bgImage = "images/slider.jpg" # バナーの画像
+bgImage = "images/headphone.jpg" # バナーの画像
 heading = "MY NEW GEAR"
 description = "This is My Blog"
 # button
@@ -76,7 +72,7 @@ image   = "images/about/about-me.jpg"
 
 # Call to Action
 [params.cta]
-enable  = true
+# enable  = true
 title   = "SO WHAT YOU THINK ?"
 content = "コンタクトしてくれ<br>ここはhtmlで上書きできる<br><h3>やほーー"
 btnText = "Contact with me"
@@ -84,7 +80,7 @@ btnURL  = "/contact"
 
 # Portfolio Section On Homepage
 [params.portfolio]
-enable  = true
+# enable  = true
 title   = "ポートフォリオ"
 subtitle= "Portfolio"
 

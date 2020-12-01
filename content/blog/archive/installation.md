@@ -5,6 +5,7 @@ type: post
 image: images/blog/post-1.jpg
 author: Themefisher
 tags: ["install"]
+draft: true
 ---
 
 ## Install this template by following those simple steps:

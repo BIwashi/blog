@@ -3,6 +3,12 @@ title: SKILL
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis porro recusandae non quibusdam iure adipisci.
 image: images/shark.jpg
 serviceItem:
+  - icon:
+    iconsrc: /images/customIcons/cpp.svg # カスタムIconを設定する. PathかURLを書く(svg)
+    title: C++
+    description: >
+      Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum
+
   - icon: logo-python
     title: Python
     description: >
@@ -13,14 +19,31 @@ serviceItem:
     description: >
       Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum
 
-  - icon: logo-docker
-    title: Docker
+  - icon:
+    iconsrc: /images/customIcons/java.svg # カスタムIconを設定する. PathかURLを書く(svg)
+    title: Java
     description: >
       Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum
 
   - icon:
-    iconsrcgo: /images/customIcons/Go-Logo_Blue.svg # カスタムIconを設定する. PathかURLを書く(svg)
+    iconsrc: /images/customIcons/matlab.svg # カスタムIconを設定する. PathかURLを書く(svg)
+    title: MATLAB
+    description: >
+      Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum
+
+  - icon:
+    iconsrc: /images/customIcons/golang.svg # カスタムIconを設定する. PathかURLを書く(svg)
     title: Go
+    description: >
+      Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum
+
+  - icon: logo-html5
+    title: HTML
+    description: >
+      Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum
+
+  - icon: logo-docker
+    title: Docker
     description: >
       Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum
 
@@ -31,27 +54,7 @@ serviceItem:
       Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum
 
   - icon:
-    iconsrc: /images/customIcons/c_icon.svg # カスタムIconを設定する. PathかURLを書く(svg)
-    title: C++
-    description: >
-      Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum
-
-  - icon: ion-ios-pint-outline # 多分、https://ionicons.comをどこかで読み取っていて、icon名が一致するやつを設定しているっぽい（Bootstrap？）>> http://icon-search.jp/これっぽい
-    title: DESIGN
-    description: >
-      Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum
-
-  - icon: ion-ios-paper-outline
-    title: DEVELOPMENT
-    description: >
-      Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum
-
-  - icon: ion-ios-paper-outline
-    title: THEMEING
-    description: >
-      Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum
-
-  - icon: ion-ios-paper-outline
-    title: THEMEING
+    iconsrc: /images/customIcons/aws.svg # カスタムIconを設定する. PathかURLを書く(svg)
+    title: AWS
     description: >
       Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum
