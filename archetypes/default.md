@@ -5,13 +5,13 @@ date: {{ .Date }}
 description : "This is meta description"
 draft: true # 反映させる時はfalseに変えるかコメントアウト
 
-# Blog用
+# Blog用---------------------------------------------------
 type: post
 image: images/blog/yourImages.jpg # ブログバナーの画像
 # author: Jamica Jock # 表示されない？
 tags: ["motivation", "inspiration"] # tag
 
-# Portfolio用
+# Portfolio用----------------------------------------------
 caption: Product Mockup
 image: images/portfolio/item-2.jpg
 liveLink: link # ??

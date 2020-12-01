@@ -3,12 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://biwashi.github.io/blog/blog/</loc>
-    <lastmod>2018-07-15T12:32:37+06:00</lastmod>
+    <loc>https://biwashi.github.io/blog/tags/demo/</loc>
+    <lastmod>2020-12-02T03:32:30+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://biwashi.github.io/blog/</loc>
+    <lastmod>2020-12-02T03:32:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://biwashi.github.io/blog/tags/</loc>
+    <lastmod>2020-12-02T03:32:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://biwashi.github.io/blog/blog/demo/</loc>
+    <lastmod>2020-12-02T03:32:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://biwashi.github.io/blog/blog/</loc>
     <lastmod>2018-07-15T12:32:37+06:00</lastmod>
   </url>
   
@@ -69,10 +84,6 @@
   
   <url>
     <loc>https://biwashi.github.io/blog/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://biwashi.github.io/blog/tags/</loc>
   </url>
   
 </urlset>
