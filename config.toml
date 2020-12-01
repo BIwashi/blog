@@ -1,6 +1,6 @@
 baseURL = "https://biwashi.github.io/blog/"
 languageCode = "ja"
-title = "Timer | Responsive Multipurpose Bootstrap Hugo Template" # Homeのタイトル
+title = "IWASHI | MY NEW GEAR..." # Homeのタイトル
 theme = "timer-hugo"
 publishDir = "docs"
 canonifyurls = true # 相対URLを絶対URLに変換できるようにする
@@ -48,7 +48,7 @@ disqusShortname = "ShortName"
 [params.banner]
 enable  = true
 bgImage = "images/headphone.jpg" # バナーの画像
-heading = "MY NEW GEAR"
+heading = "MY NEW GEAR..."
 description = "This is My Blog"
 # button
 # btn     = true
