@@ -1,6 +1,6 @@
 baseURL = "https://biwashi.github.io/blog/"
 languageCode = "ja"
-title = "IWASHI | MY NEW GEAR..." # Homeのタイトル
+title = "MY NEW GEAR | IWASHI BLOG" # Homeのタイトル
 theme = "timer-hugo"
 publishDir = "docs"
 canonifyurls = true # 相対URLを絶対URLに変換できるようにする
