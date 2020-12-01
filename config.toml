@@ -13,8 +13,8 @@ name    = "About"
 url     = "about"
 weight  = 2
 [[menu.main]]
-name    = "Service"
-url     = "service"
+name    = "Skill"
+url     = "skill"
 weight  = 3
 [[menu.main]]
 name    = "Gallery"

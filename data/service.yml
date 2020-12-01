@@ -1,14 +1,42 @@
 enable: true
-title: サービスのタイトル
+title: SKILL
 subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis porro recusandae non quibusdam iure adipisci.
-image: images/team.jpg
+image: images/shark.jpg
 serviceItem:
-  - icon: ion-ios-paper-outline
-    title: BRANDING
+  - icon: logo-python
+    title: Python
     description: >
       Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum
 
-  - icon: ion-ios-pint-outline # 多分、https://ionicons.com/をどこかで読み取っていて、icon名が一致するやつを設定しているっぽい（Bootstrap？）>> http://icon-search.jp/これっぽい
+  - icon: logo-javascript
+    title: Javascript
+    description: >
+      Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum
+
+  - icon: logo-docker
+    title: Docker
+    description: >
+      Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum
+
+  - icon:
+    iconsrcgo: /images/customIcons/Go-Logo_Blue.svg # カスタムIconを設定する. PathかURLを書く(svg)
+    title: Go
+    description: >
+      Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum
+
+  - icon:
+    iconsrc: /images/customIcons/raspberry_pi_logo.svg # カスタムIconを設定する. PathかURLを書く(svg)
+    title: Raspberry pi
+    description: >
+      Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum
+
+  - icon:
+    iconsrc: /images/customIcons/c_icon.svg # カスタムIconを設定する. PathかURLを書く(svg)
+    title: C++
+    description: >
+      Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum
+
+  - icon: ion-ios-pint-outline # 多分、https://ionicons.comをどこかで読み取っていて、icon名が一致するやつを設定しているっぽい（Bootstrap？）>> http://icon-search.jp/これっぽい
     title: DESIGN
     description: >
       Veritatis eligendi, dignissimos. Porta fermentum mus aute pulvinar earum minus platea massa feugiat rutrum urna facilisi ipsameum

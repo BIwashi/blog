@@ -21,7 +21,16 @@
 						{{ range .Site.Data.service.serviceItem }}
 						<div class="col-md-6">
 							<div class="block wow fadeInUp animated" data-wow-duration="400ms" data-wow-delay="600ms">
-								{{ with .icon }}<i class="{{ . }}"></i>{{ end }}
+
+								<!-- New IconのTest Start -->
+
+								<!-- {{ with .icon }}<i class="{{ . }}"></i>{{ end }} -->
+								{{ with .icon }}<ion-icon name="{{ . }}"></ion-icon>{{ end }}
+								{{ with .iconsrc }}<ion-icon src="{{ . }}"></ion-icon>{{ end }}
+								{{ with .iconsrcgo }}<ion-icon class="go" src="{{ . }}"></ion-icon>{{ end }}
+
+								<!-- New IconのTest End -->
+
 								{{ with .title }}<h4>{{ . }}</h4>{{ end }}
 								{{ with .description }}<p>{{ . }}</p>{{ end }}
 							</div>
