@@ -6,7 +6,31 @@
     <description>Recent content on MY NEW GEAR | IWASHI BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 02 Dec 2020 03:32:30 +0900</lastBuildDate><atom:link href="https://biwashi.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Dec 2020 13:32:09 +0900</lastBuildDate><atom:link href="https://biwashi.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugoでブログをさくっと作ってみる※執筆途中</title>
+      <link>https://biwashi.github.io/blog/blog/hugo%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92%E3%81%95%E3%81%8F%E3%81%A3%E3%81%A8%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/</link>
+      <pubDate>Wed, 02 Dec 2020 13:32:09 +0900</pubDate>
+      
+      <guid>https://biwashi.github.io/blog/blog/hugo%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92%E3%81%95%E3%81%8F%E3%81%A3%E3%81%A8%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/</guid>
+      <description>参考にしたサイト等 Hugoでさくっと自作ブログを作った
+静的サイトジェネレータ「Hugo」と技術文書公開向けテーマ「Docsy」でOSSサイトを作る | さくらのナレッジ
+Netlifyで静的サイトのホスティングをする - Qiita
+OGPとは？OGPの基本からOGP画像のサイズや設定方法を分かりやすく解説
+Hello My New Blog
+さよならQiita、こんにちはhugo × github pages - Qiita
+HugoでWebサイトを立ち上げる+テーマを適用してみる - Qiita
+Hugo で作ったブログに Disqus を使ってコメント機能を追加する - michimani.net
+静的サイトジェネレータ「Hugo」と技術文書公開向けテーマ「Docsy」でOSSサイトを作る | さくらのナレッジ
+ キーワード  まずはテンプレディレクトリを作成
+$ hugo new site {BlogName} 以下のようなディレクティブと設定ファイルが作成される
+. ├── archetypes │ └── default.md ├── config.toml ├── content ├── data ├── layouts ├── static └── themes ここでテーマを選ぶ
+Complete List
+例として、 hugo-classicを選択する
+先ほど作成された themasにgit moduleの形としていれる
+$ git init &amp;amp;&amp;amp; git submodule add https://github.</description>
+    </item>
+    
     <item>
       <title>準備中</title>
       <link>https://biwashi.github.io/blog/blog/demo/</link>
