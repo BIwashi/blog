@@ -74,3 +74,15 @@ serviceItem:
       インターンやハッカソンでEC2, S3, DynamoDB, ALB, API Gatewayなどの使用経験があります。VPCの作成からインスタンスの起動、DBの構築やhttps化などしました。
       <br>
       興味はありますがなかなか機会と時間がなく、Lamdaは試せていません。
+
+  - icon:
+    iconsrc: /images/customIcons/kubernetes.svg # カスタムIconを設定する. PathかURLを書く(svg)
+    title: Kubernetes
+    description: >
+      ｵﾍﾞﾝｷｮｳﾁｭｳ
+
+  - icon:
+    iconsrc: /images/customIcons/unity.svg
+    title: Unity
+    description: >
+      ｵﾍﾞﾝｷｮｳﾁｭｳ
