@@ -100,9 +100,13 @@ url = "https://github.com/BIwashi"
 icon = "ion-social-twitter"
 url = "https://twitter.com/B_Sardine"
 
-# Indexの表示設定
+# # Indexの表示設定
 [markup]
     [markup.tableOfContents]
-        endLevel = 2
-        ordered = true
-        startLevel = 2
+        # endLevel = 2
+        # ordered = true
+        # startLevel = 2
+        
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true

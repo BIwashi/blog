@@ -123,24 +123,39 @@
     <details>
         <summary>目次</summary>
         <nav id="TableOfContents">
-  <ol>
-    <li></li>
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#キーワード">キーワード</a></li>
+      </ul>
+    </li>
     <li><a href="#github-pagesで公開する">github pagesで公開する</a></li>
     <li><a href="#githubにpushして反映させる">githubにpushして反映させる</a></li>
-  </ol>
+  </ul>
 
-  <ol>
-    <li><a href="#詰まったとこと">詰まったとこと</a></li>
-  </ol>
+  <ul>
+    <li><a href="#詰まったとこと">詰まったとこと</a>
+      <ul>
+        <li><a href="#contactのgoogle-mapsの位置情報を変えたい">CONTACTのGoogle Mapsの位置情報を変えたい</a></li>
+        <li><a href="#下のコピーライトを変えたい">下のコピーライトを変えたい</a></li>
+      </ul>
+    </li>
+  </ul>
 
-  <ol>
-    <li><a href="#featureの文字をhtmlで書きたいbrやhタグを適用させたい">Featureの文字をHTMLで書きたい（<!-- raw HTML omitted -->やh○タグを適用させたい）</a></li>
+  <ul>
+    <li><a href="#featureの文字をhtmlで書きたいbrやhタグを適用させたい">Featureの文字をHTMLで書きたい（<br>やh○タグを適用させたい）</a></li>
     <li><a href="#それぞれのページ名を変えたいserviceskill">それぞれのページ名を変えたい（SERVICE→SKILL）</a></li>
     <li><a href="#dataxxxyamlのファイル名を変えたい">data/xxx.yamlのファイル名を変えたい</a></li>
     <li><a href="#いろいろなところのアイコンを変えたい">いろいろなところのアイコンを変えたい</a></li>
-    <li><a href="#ioniconsのレベルを上げたい">Ioniconsのレベルを上げたい</a></li>
+    <li><a href="#ioniconsのレベルを上げたい">Ioniconsのレベルを上げたい</a>
+      <ul>
+        <li><a href="#serviceページのアイコンを変えていく">Serviceページのアイコンを変えていく</a></li>
+        <li><a href="#アイコンの色とサイズを合わせる">アイコンの色とサイズを合わせる</a></li>
+        <li><a href="#カスタムiconを設定したい">カスタムIconを設定したい</a></li>
+      </ul>
+    </li>
     <li><a href="#コメント機能をつける">コメント機能をつける</a></li>
-  </ol>
+  </ul>
 </nav>
     </details>
 </div>
@@ -198,7 +213,7 @@ theme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hugo
 <p>サーバを立ち上げてみる</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo server
 </code></pre></div><p><code>localhost:1313</code> アクセス</p>
-<!-- raw HTML omitted -->
+<!-- ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a41ae8a2-e260-4fa9-9a86-a64ebe737ae0/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a41ae8a2-e260-4fa9-9a86-a64ebe737ae0/Untitled.png) -->
 <p>記事を書く</p>
 <p>新しい記事のテンプレ作成コマンド</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">hugo</span> <span style="color:#a6e22e">new</span> <span style="color:#a6e22e">post</span> <span style="color:#a6e22e">post</span><span style="color:#f92672">/</span><span style="color:#a6e22e">starting</span><span style="color:#f92672">-</span><span style="color:#a6e22e">demo</span>.<span style="color:#a6e22e">md</span>
@@ -523,14 +538,14 @@ location: 1201 park street, Avenue, Dhaka
 <h3 id="下のコピーライトを変えたい">下のコピーライトを変えたい</h3>
 <p><code>layouts/partials/footer.html</code>に該当箇所ある</p>
 <p>けどこれライセンスがCC BY 3.0なので、変えたらあかん、表示しとかないとあかんやつ</p>
-<!-- raw HTML omitted -->
+<!-- ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/234be07e-aae4-4ce4-901b-a27ab03825a0/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/234be07e-aae4-4ce4-901b-a27ab03825a0/Untitled.png) -->
 <p><a href="https://ferret-plus.com/2161">クリエイティブ・コモンズとは〜著作権違反にならないための徹底解説！</a></p>
 <h1 id="感想">感想</h1>
 <p>yamlからどうやってHTML作成してるんや、って部分がいわゆるHugoがやってる部分なんんですかね、あまり深入りしてないですが…</p>
 <hr>
-<h2 id="featureの文字をhtmlで書きたいbrやhタグを適用させたい">Featureの文字をHTMLで書きたい（<!-- raw HTML omitted -->やh○タグを適用させたい）</h2>
+<h2 id="featureの文字をhtmlで書きたいbrやhタグを適用させたい">Featureの文字をHTMLで書きたい（<br>やh○タグを適用させたい）</h2>
 <p><code>about.xml</code></p>
-<p>現状、上のAboutの部分は<!-- raw HTML omitted -->等が適用されるが、下ののFeatureの部分では反映されずそのまあ表示されてしまう。これを変えたい。</p>
+<p>現状、上のAboutの部分は<br>等が適用されるが、下ののFeatureの部分では反映されずそのまあ表示されてしまう。これを変えたい。</p>
 <p>変更したのは <code>layouts/about/list.html</code></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{ &#34;<span style="color:#75715e">&lt;!--  Company Feature Section Start --&gt;</span>&#34; | safeHTML }}
 &lt;<span style="color:#f92672">section</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;about-feature clearfix&#34;</span>&gt;
@@ -554,7 +569,7 @@ location: 1201 park street, Avenue, Dhaka
 <p>これで無事変更できるようになった。（最初から全部これにしといた方がいいのでは？）</p>
 <h2 id="それぞれのページ名を変えたいserviceskill">それぞれのページ名を変えたい（SERVICE→SKILL）</h2>
 <p>ページのヘッドバナーを変えたい</p>
-<!-- raw HTML omitted -->
+<!-- ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3dd5198a-db5f-4acb-9e51-6e35b4c22e79/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3dd5198a-db5f-4acb-9e51-6e35b4c22e79/Untitled.png) -->
 <p>上のナビゲーション部分は、 <code>config.toml</code>を変更し、下の青バナー部分は <code>content/service/_index.md</code>の <code>title</code>を変更した</p>
 <p>ルーティングも変更するには、 <code>content/skill/_index.md</code>と変更すればできた</p>
 <h2 id="dataxxxyamlのファイル名を変えたい">data/xxx.yamlのファイル名を変えたい</h2>

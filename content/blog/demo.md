@@ -30,13 +30,7 @@ tags: ["demo", "demo"] # tag
 
 よろしくお願いします。
 
-<iframe 
-  class="hatenablogcard" 
-  style="width:100%;height:155px;max-width:680px;" 
-  title="【ブログタイトル】" 
-  src="https://hatenablog-parts.com/embed?url=https://dev.classmethod.jp/articles/embed-link/" 
-  width="300" height="150" frameborder="0" scrolling="no">
-</iframe>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://biwashi.github.io/blog/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fbiwashi.github.io%2Fblog%2F&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
 
 ---
 
@@ -48,5 +42,3 @@ tags: ["demo", "demo"] # tag
     print("Hello")
 
 ```
-
-
