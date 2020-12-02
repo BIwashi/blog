@@ -34,3 +34,9 @@ tags: ["demo", "demo"] # tag
 
 ちなみにこの簡易ロゴはIpadの有料アプリ`Affinity Designer`で作成しました。  
 秒で作りましたが、意外と味出てていかも。
+
+```python
+
+    print("Hello")
+
+```
