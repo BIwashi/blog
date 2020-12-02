@@ -5,6 +5,9 @@ theme = "timer-hugo"
 publishDir = "docs"
 canonifyurls = true # 相対URLを絶対URLに変換できるようにする
 
+# pygmentsUseClasses = true
+# pygmentsCodefences = true 
+
 # We Used Ionicons Icon font for Icon, for more details check this link - https://ionicons.com/
 
 # Navbar Menus
