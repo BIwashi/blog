@@ -41,7 +41,7 @@ dateFormat = "6 January 2006" #??
 description = "Airspace Hugo theme"
 author = "作者を書く"
 # Google Analitycs
-googleAnalitycsID = "Your ID" # Google Anlaycs用のIDを設定できる
+googleAnalitycsID = "G-PEBYWXRR3K" # Google Anlaycs用のIDを設定できる
 # contact form action
 contactFormAction = "#" # contact form works with https://formspree.io formを設定する用
 # Disqusによるコメント機能実装用
@@ -99,3 +99,10 @@ url = "https://github.com/BIwashi"
 [[params.socialIcon]]
 icon = "ion-social-twitter"
 url = "https://twitter.com/B_Sardine"
+
+# Indexの表示設定
+[markup]
+    [markup.tableOfContents]
+        endLevel = 2
+        ordered = true
+        startLevel = 2

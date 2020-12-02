@@ -1,6 +1,6 @@
 ---
 title: "準備中"
-description : "This is meta description"
+description: "This is meta description"
 date: 2020-12-02T03:32:30+09:00
 # draft: true # 反映させる時はfalseに変えるかコメントアウト
 
@@ -19,10 +19,10 @@ tags: ["demo", "demo"] # tag
 # submitDate: November 20, 2017
 # category: ["mockup","design"] # tag
 # location: 1201 park street, Avenue, Dhaka
-
 ---
 
 # 準備中
+
 すみません、まだ記事はできていません。準備中です。
 これは投稿用のデモです。
 
@@ -30,9 +30,17 @@ tags: ["demo", "demo"] # tag
 
 よろしくお願いします。
 
+<iframe 
+  class="hatenablogcard" 
+  style="width:100%;height:155px;max-width:680px;" 
+  title="【ブログタイトル】" 
+  src="https://hatenablog-parts.com/embed?url=https://dev.classmethod.jp/articles/embed-link/" 
+  width="300" height="150" frameborder="0" scrolling="no">
+</iframe>
+
 ---
 
-ちなみにこの簡易ロゴはIpadの有料アプリ`Affinity Designer`で作成しました。  
+ちなみにこの簡易ロゴは Ipad の有料アプリ`Affinity Designer`で作成しました。  
 秒で作りましたが、意外と味出てていかも。
 
 ```python
@@ -40,3 +48,5 @@ tags: ["demo", "demo"] # tag
     print("Hello")
 
 ```
+
+
