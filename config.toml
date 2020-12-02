@@ -39,7 +39,7 @@ logo = "images/iwashimiddle.png" # homeのLogoを設定
 dateFormat = "6 January 2006" #??
 # Meta data
 description = "Airspace Hugo theme"
-author = "作者を書く"
+author = "IWASHI"
 # Google Analitycs
 googleAnalitycsID = "G-PEBYWXRR3K" # Google Anlaycs用のIDを設定できる
 # contact form action
