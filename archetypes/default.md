@@ -2,7 +2,6 @@
 title: "{{ replace .Name "-" " " | title }}"
 description : "This is meta description"
 date: {{ .Date }}
-description : "This is meta description"
 draft: true # 反映させる時はfalseに変えるかコメントアウト
 
 # Blog用---------------------------------------------------

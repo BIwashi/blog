@@ -22,7 +22,8 @@ type: post
 # location: 1201 park street, Avenue, Dhaka
 
 ---
----
+
+
 
 # 参考にしたサイト等
 
@@ -44,11 +45,11 @@ type: post
 
 [静的サイトジェネレータ「Hugo」と技術文書公開向けテーマ「Docsy」でOSSサイトを作る | さくらのナレッジ](https://knowledge.sakura.ad.jp/22908/)
 
----
-
-### キーワード
+<br>
 
 ---
+
+# テンプレから雛形作成
 
 まずはテンプレディレクトリを作成
 
@@ -269,10 +270,13 @@ $ tree
 
 28 directories, 37 files
 ```
+<br>
 
 ---
 
-## github pagesで公開する
+<br>
+
+# github pagesで公開する
 
 github pagesで公開するには、公開するディレクトリ名を `public`ではなく `docs`にしないといけない(これはgithub pagesの仕様)
 
@@ -393,16 +397,23 @@ $ tree
 
 さっきの `public`と生成される内容が同じで、ディレクトリ名が変わっただけなので、 `public`ディレクトリは削除してもいい
 
-## githubにpushして反映させる
+<br>
+
+# githubにpushして反映させる
 
 - 以上の内容をpushする
 - githubの公開ディレクトリを `/root`から `/docs`に変える
 
 以上でアクセスできるようになるはず
 
- `https://katamotokosuke.github.io/site-demo/`
+ `https://katamotokosuke.github.io/site-demo/`  
+
+
+<br>
 
 ---
+
+<br>
 
 # 自分の実装
 
@@ -463,9 +474,17 @@ $ tree
 
 各ページの細い文章の設定は、 `data`配下の `yml`ファイルをいじって変えていく
 
-## 詰まったとこと
+<br>
 
-### CONTACTのGoogle Mapsの位置情報を変えたい
+---
+
+<br>
+
+# 詰まったとこと
+
+<br>
+
+## CONTACTのGoogle Mapsの位置情報を変えたい
 
 最初は、 `docs/contact/index.html`の該当部分を書き換えていたが、 `hugo`コマンドで上書きされていた
 
@@ -483,7 +502,9 @@ $ tree
 
 あとはやりながら慣れていく感じ
 
-### 下のコピーライトを変えたい
+<br>
+
+## 下のコピーライトを変えたい
 
  `layouts/partials/footer.html`に該当箇所ある
 
@@ -493,13 +514,19 @@ $ tree
 
 [クリエイティブ・コモンズとは〜著作権違反にならないための徹底解説！](https://ferret-plus.com/2161)
 
+<br>
+
 # 感想
 
 yamlからどうやってHTML作成してるんや、って部分がいわゆるHugoがやってる部分なんんですかね、あまり深入りしてないですが…
 
+<br>
+
 ---
 
-## Featureの文字をHTMLで書きたい（<br>やh○タグを適用させたい）
+<br>
+
+## Featureの文字をHTMLで書きたい（ `<br>`や `h○タグ`を適用させたい）
 
  `about.xml`
 
@@ -533,6 +560,9 @@ yamlからどうやってHTML作成してるんや、って部分がいわゆる
 
 これで無事変更できるようになった。（最初から全部これにしといた方がいいのでは？）
 
+<br>
+
+
 ## それぞれのページ名を変えたい（SERVICE→SKILL）
 
 ページのヘッドバナーを変えたい
@@ -543,6 +573,8 @@ yamlからどうやってHTML作成してるんや、って部分がいわゆる
 
 ルーティングも変更するには、 `content/skill/_index.md`と変更すればできた
 
+<br>
+
 ## data/xxx.yamlのファイル名を変えたい
 
 ※解決していない、今のところフロント側では影響はないので放置してる放置してる
@@ -551,7 +583,10 @@ service → skillに変えたら、YAMLファイルの名前もskillに変えた
 
 どっかこのYMALを読み込んでいる
 
+<br>
+
 ## いろいろなところのアイコンを変えたい
+
 
  `config.toml`には次のリンクを踏めと書いてある
 
@@ -568,6 +603,8 @@ icon系は、このテーマの部分からdocs配下に `docs/plugins/ionicons/
 このファイル内検索で、該当iconを探す
 
 どんなアイコンなのかは、踏めといわれているリンク内のものと同じ
+
+<br>
 
 ## Ioniconsのレベルを上げたい
 
@@ -626,6 +663,8 @@ Skillとして言語のIconを使いたいが、今このテンプレ使われ�
 
 [Ionicons: The premium icon pack for Ionic Framework](https://ionicons.com/)
 
+<br>
+
 ### Serviceページのアイコンを変えていく
 
 次にいよいよ、serviceページ（今はskillページに変えた）のIconを変えていく。
@@ -651,6 +690,8 @@ Skillとして言語のIconを使いたいが、今このテンプレ使われ�
 ```
 
 これでYAMLに新しいバージョンのアイコン名（検索したやつ）を書くと設定できるようになった。
+
+<br>
 
 ### アイコンの色とサイズを合わせる
 
@@ -687,7 +728,9 @@ ion-icon {
 
 他の箇所で使いたい場合、該当箇所の `html`ファイルを変更を同じように変更すればできるはず。
 
-### カスタムIconを設定したい
+<br>
+
+## カスタムIconを設定したい
 
 公式ドキュメントのように設定した。
 
@@ -769,20 +812,34 @@ iconは空欄のままにしておく。これでGoのアイコンが表示さ�
           <a href="https://icons8.com/icon/U5JRqX4RSgfj/home">Icons8</a>.
 ```
 
+<br>
+
 ---
+
+<br>
+
+# 今後やりたいこと
+
+
+<br>
 
 ## コメント機能をつける
 
 [Hugo で作ったブログに Disqus を使ってコメント機能を追加する - michimani.net](https://michimani.net/post/blog-install-disqus-to-hugo/)
 
+<br>
+
+## Googleサーチに登録する方法(済)
+
+[HUGO + GitHub Pages で作ったブログをGoogle Search Consoleに登録する方法](https://zetton86.github.io/blog/20200114/)
+
+
 ---
 
-# なんかテーマを1から作っている人
+<br>
+
+## なんかテーマを1から作っている人
 
 [Hugoで1からテーマを作ってGitHub Pagesにデプロイする | メンバーズエッジカンパニーブログ](https://www.membersedge.co.jp/blog/create-hugo-theme-and-deploy-to-github-pages/)
 
----
-
-Googleサーチに登録する方法
-
-[HUGO + GitHub Pages で作ったブログをGoogle Search Consoleに登録する方法](https://zetton86.github.io/blog/20200114/)
+<br>

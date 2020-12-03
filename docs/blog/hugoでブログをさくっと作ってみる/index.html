@@ -128,26 +128,12 @@
         <summary>目次</summary>
         <nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li><a href="#キーワード">キーワード</a></li>
-      </ul>
-    </li>
-    <li><a href="#github-pagesで公開する">github pagesで公開する</a></li>
-    <li><a href="#githubにpushして反映させる">githubにpushして反映させる</a></li>
+    <li><a href="#contactのgoogle-mapsの位置情報を変えたい">CONTACTのGoogle Mapsの位置情報を変えたい</a></li>
+    <li><a href="#下のコピーライトを変えたい">下のコピーライトを変えたい</a></li>
   </ul>
 
   <ul>
-    <li><a href="#詰まったとこと">詰まったとこと</a>
-      <ul>
-        <li><a href="#contactのgoogle-mapsの位置情報を変えたい">CONTACTのGoogle Mapsの位置情報を変えたい</a></li>
-        <li><a href="#下のコピーライトを変えたい">下のコピーライトを変えたい</a></li>
-      </ul>
-    </li>
-  </ul>
-
-  <ul>
-    <li><a href="#featureの文字をhtmlで書きたいbrやhタグを適用させたい">Featureの文字をHTMLで書きたい（<br>やh○タグを適用させたい）</a></li>
+    <li><a href="#featureの文字をhtmlで書きたい-brや-hタグを適用させたい">Featureの文字をHTMLで書きたい（ <code>&lt;br&gt;</code>や <code>h○タグ</code>を適用させたい）</a></li>
     <li><a href="#それぞれのページ名を変えたいserviceskill">それぞれのページ名を変えたい（SERVICE→SKILL）</a></li>
     <li><a href="#dataxxxyamlのファイル名を変えたい">data/xxx.yamlのファイル名を変えたい</a></li>
     <li><a href="#いろいろなところのアイコンを変えたい">いろいろなところのアイコンを変えたい</a></li>
@@ -155,10 +141,15 @@
       <ul>
         <li><a href="#serviceページのアイコンを変えていく">Serviceページのアイコンを変えていく</a></li>
         <li><a href="#アイコンの色とサイズを合わせる">アイコンの色とサイズを合わせる</a></li>
-        <li><a href="#カスタムiconを設定したい">カスタムIconを設定したい</a></li>
       </ul>
     </li>
+    <li><a href="#カスタムiconを設定したい">カスタムIconを設定したい</a></li>
+  </ul>
+
+  <ul>
     <li><a href="#コメント機能をつける">コメント機能をつける</a></li>
+    <li><a href="#googleサーチに登録する方法済">Googleサーチに登録する方法(済)</a></li>
+    <li><a href="#なんかテーマを1から作っている人">なんかテーマを1から作っている人</a></li>
   </ul>
 </nav>
     </details>
@@ -169,8 +160,7 @@
 			<div class="col-md-12">
 				
 				<div class="post-content">
-					<hr>
-<h1 id="参考にしたサイト等">参考にしたサイト等</h1>
+					<h1 id="参考にしたサイト等">参考にしたサイト等</h1>
 <p><a href="https://sanposhiho.com/posts/make-blog-by-hugo/">Hugoでさくっと自作ブログを作った</a></p>
 <p><a href="https://knowledge.sakura.ad.jp/22908/">静的サイトジェネレータ「Hugo」と技術文書公開向けテーマ「Docsy」でOSSサイトを作る | さくらのナレッジ</a></p>
 <p><a href="https://qiita.com/sugo/items/2ee64887d682b0dae635">Netlifyで静的サイトのホスティングをする - Qiita</a></p>
@@ -180,9 +170,9 @@
 <p><a href="https://qiita.com/bake0937/items/e0914efbd9434be474a4">HugoでWebサイトを立ち上げる+テーマを適用してみる - Qiita</a></p>
 <p><a href="https://michimani.net/post/blog-install-disqus-to-hugo/">Hugo で作ったブログに Disqus を使ってコメント機能を追加する - michimani.net</a></p>
 <p><a href="https://knowledge.sakura.ad.jp/22908/">静的サイトジェネレータ「Hugo」と技術文書公開向けテーマ「Docsy」でOSSサイトを作る | さくらのナレッジ</a></p>
+<br>
 <hr>
-<h3 id="キーワード">キーワード</h3>
-<hr>
+<h1 id="テンプレから雛形作成">テンプレから雛形作成</h1>
 <p>まずはテンプレディレクトリを作成</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#960050;background-color:#1e0010">$</span> <span style="color:#a6e22e">hugo</span> <span style="color:#a6e22e">new</span> <span style="color:#a6e22e">site</span> {<span style="color:#a6e22e">BlogName</span>}
 </code></pre></div><p>以下のようなディレクティブと設定ファイルが作成される</p>
@@ -356,8 +346,10 @@ draft: true
         └── theme.toml
 
 <span style="color:#ae81ff">28</span> directories, <span style="color:#ae81ff">37</span> files
-</code></pre></div><hr>
-<h2 id="github-pagesで公開する">github pagesで公開する</h2>
+</code></pre></div><br>
+<hr>
+<br>
+<h1 id="github-pagesで公開する">github pagesで公開する</h1>
 <p>github pagesで公開するには、公開するディレクトリ名を <code>public</code>ではなく <code>docs</code>にしないといけない(これはgithub pagesの仕様)</p>
 <p>この宣言をに <code>config.toml</code>に書く</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">baseURL <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://katamotokosuke.github.io/site-demo/&#34;</span> <span style="color:#75715e">####### 追加: {user_name}.github.io/{repository_name}/ を指定する</span>
@@ -465,14 +457,17 @@ canonifyurls <span style="color:#f92672">=</span> true  <span style="color:#7571
 <span style="color:#ae81ff">36</span> directories, <span style="color:#ae81ff">53</span> files
 </code></pre></div><p>これで <code>docs</code>ディレクトリが生成された</p>
 <p>さっきの <code>public</code>と生成される内容が同じで、ディレクトリ名が変わっただけなので、 <code>public</code>ディレクトリは削除してもいい</p>
-<h2 id="githubにpushして反映させる">githubにpushして反映させる</h2>
+<br>
+<h1 id="githubにpushして反映させる">githubにpushして反映させる</h1>
 <ul>
 <li>以上の内容をpushする</li>
 <li>githubの公開ディレクトリを <code>/root</code>から <code>/docs</code>に変える</li>
 </ul>
 <p>以上でアクセスできるようになるはず</p>
 <p><code>https://katamotokosuke.github.io/site-demo/</code></p>
+<br>
 <hr>
+<br>
 <h1 id="自分の実装">自分の実装</h1>
 <p>このテーマを使った <code>Timer Hugo</code></p>
 <p><a href="https://themes.gohugo.io/timer-hugo/#main-features">Timer Hugo</a></p>
@@ -526,8 +521,12 @@ location: 1201 park street, Avenue, Dhaka
 </ol>
 <p>ここまできたら基本的には完了</p>
 <p>各ページの細い文章の設定は、 <code>data</code>配下の <code>yml</code>ファイルをいじって変えていく</p>
-<h2 id="詰まったとこと">詰まったとこと</h2>
-<h3 id="contactのgoogle-mapsの位置情報を変えたい">CONTACTのGoogle Mapsの位置情報を変えたい</h3>
+<br>
+<hr>
+<br>
+<h1 id="詰まったとこと">詰まったとこと</h1>
+<br>
+<h2 id="contactのgoogle-mapsの位置情報を変えたい">CONTACTのGoogle Mapsの位置情報を変えたい</h2>
 <p>最初は、 <code>docs/contact/index.html</code>の該当部分を書き換えていたが、 <code>hugo</code>コマンドで上書きされていた</p>
 <p>なんでや！と思っていたが、どうやら <code>layouts/contact/list.html</code>の情報をもとに書き換えているっぽい（jQueryかな？）</p>
 <p>なのでこのファイルの該当箇所を書き換えたらうまくいった</p>
@@ -539,15 +538,19 @@ location: 1201 park street, Avenue, Dhaka
 <li><code>layouts/pagesName/xxx.index</code></li>
 </ol>
 <p>あとはやりながら慣れていく感じ</p>
-<h3 id="下のコピーライトを変えたい">下のコピーライトを変えたい</h3>
+<br>
+<h2 id="下のコピーライトを変えたい">下のコピーライトを変えたい</h2>
 <p><code>layouts/partials/footer.html</code>に該当箇所ある</p>
 <p>けどこれライセンスがCC BY 3.0なので、変えたらあかん、表示しとかないとあかんやつ</p>
 <!-- ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/234be07e-aae4-4ce4-901b-a27ab03825a0/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/234be07e-aae4-4ce4-901b-a27ab03825a0/Untitled.png) -->
 <p><a href="https://ferret-plus.com/2161">クリエイティブ・コモンズとは〜著作権違反にならないための徹底解説！</a></p>
+<br>
 <h1 id="感想">感想</h1>
 <p>yamlからどうやってHTML作成してるんや、って部分がいわゆるHugoがやってる部分なんんですかね、あまり深入りしてないですが…</p>
+<br>
 <hr>
-<h2 id="featureの文字をhtmlで書きたいbrやhタグを適用させたい">Featureの文字をHTMLで書きたい（<br>やh○タグを適用させたい）</h2>
+<br>
+<h2 id="featureの文字をhtmlで書きたい-brや-hタグを適用させたい">Featureの文字をHTMLで書きたい（ <code>&lt;br&gt;</code>や <code>h○タグ</code>を適用させたい）</h2>
 <p><code>about.xml</code></p>
 <p>現状、上のAboutの部分は<br>等が適用されるが、下ののFeatureの部分では反映されずそのまあ表示されてしまう。これを変えたい。</p>
 <p>変更したのは <code>layouts/about/list.html</code></p>
@@ -571,15 +574,18 @@ location: 1201 park street, Avenue, Dhaka
 </code></pre></div><p>該当箇所の部分が、xmlのdiscription部分をそのまま入れてpタグで囲む設定になっていた（ <code>&lt;p&gt;{{ . }}&lt;/p&gt;</code>）</p>
 <p>ここを、上の部分と同じように <code>&lt;p&gt;{{ . | safeHTML }}&lt;/p&gt;</code>に変更する</p>
 <p>これで無事変更できるようになった。（最初から全部これにしといた方がいいのでは？）</p>
+<br>
 <h2 id="それぞれのページ名を変えたいserviceskill">それぞれのページ名を変えたい（SERVICE→SKILL）</h2>
 <p>ページのヘッドバナーを変えたい</p>
 <!-- ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3dd5198a-db5f-4acb-9e51-6e35b4c22e79/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3dd5198a-db5f-4acb-9e51-6e35b4c22e79/Untitled.png) -->
 <p>上のナビゲーション部分は、 <code>config.toml</code>を変更し、下の青バナー部分は <code>content/service/_index.md</code>の <code>title</code>を変更した</p>
 <p>ルーティングも変更するには、 <code>content/skill/_index.md</code>と変更すればできた</p>
+<br>
 <h2 id="dataxxxyamlのファイル名を変えたい">data/xxx.yamlのファイル名を変えたい</h2>
 <p>※解決していない、今のところフロント側では影響はないので放置してる放置してる</p>
 <p>service → skillに変えたら、YAMLファイルの名前もskillに変えたくなるところだが、変えると壊れる（というか読み込まれなくなる）</p>
 <p>どっかこのYMALを読み込んでいる</p>
+<br>
 <h2 id="いろいろなところのアイコンを変えたい">いろいろなところのアイコンを変えたい</h2>
 <p><code>config.toml</code>には次のリンクを踏めと書いてある</p>
 <p><a href="https://ionicons.com/">Ionicons: The premium icon pack for Ionic Framework</a></p>
@@ -589,6 +595,7 @@ location: 1201 park street, Avenue, Dhaka
 <p>中を見ればわかるが、 <code>ion-ios-paper-outline</code>など、 <code>icon: xxxx</code>でYAMLに書かれているワードが並んでいる</p>
 <p>このファイル内検索で、該当iconを探す</p>
 <p>どんなアイコンなのかは、踏めといわれているリンク内のものと同じ</p>
+<br>
 <h2 id="ioniconsのレベルを上げたい">Ioniconsのレベルを上げたい</h2>
 <p>Skillとして言語のIconを使いたいが、今このテンプレ使われているIoniconsは <code>ver2.0.0</code>でかなり古い。これをUpdateしたい。</p>
 <p>かつこの頃は <code>ionicons.min.css</code>をダウンロードして読み込む形で使われている。</p>
@@ -624,6 +631,7 @@ location: 1201 park street, Avenue, Dhaka
 </code></pre></div><p>これでIconが表示される。</p>
 <p>使いたいIocnはここで検索</p>
 <p><a href="https://ionicons.com/">Ionicons: The premium icon pack for Ionic Framework</a></p>
+<br>
 <h3 id="serviceページのアイコンを変えていく">Serviceページのアイコンを変えていく</h3>
 <p>次にいよいよ、serviceページ（今はskillページに変えた）のIconを変えていく。</p>
 <p>ここの記述をしている <code>layouts/skill/list.html</code>を見ると、iタグのclass名をservice.ymlで設定したものに書き換えてるということがわかる。</p>
@@ -642,6 +650,7 @@ location: 1201 park street, Avenue, Dhaka
 	&lt;/<span style="color:#f92672">div</span>&gt;
 &lt;/<span style="color:#f92672">div</span>&gt;
 </code></pre></div><p>これでYAMLに新しいバージョンのアイコン名（検索したやつ）を書くと設定できるようになった。</p>
+<br>
 <h3 id="アイコンの色とサイズを合わせる">アイコンの色とサイズを合わせる</h3>
 <p>今のままだと、何もcssがかかっていないので、黒の小ちゃいアイコンしか表示されない。</p>
 <p>これを青でいい感じのサイズのcssをかけられるよにする。</p>
@@ -662,7 +671,8 @@ location: 1201 park street, Avenue, Dhaka
 }
 </code></pre></div><p>これで晴れて新しいiconが使えるようになった。</p>
 <p>他の箇所で使いたい場合、該当箇所の <code>html</code>ファイルを変更を同じように変更すればできるはず。</p>
-<h3 id="カスタムiconを設定したい">カスタムIconを設定したい</h3>
+<br>
+<h2 id="カスタムiconを設定したい">カスタムIconを設定したい</h2>
 <p>公式ドキュメントのように設定した。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">ion-icon</span>  <span style="color:#a6e22e">src </span><span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/path/to/external/file.svg&#34;</span> &gt; &lt;/<span style="color:#f92672">ion-icon</span>&gt;
 </code></pre></div><p>これをYAMLから変えられるようにしたい。（ちなみにhttpsとかで指定するのはなんかダメぽいので、ローカルに落としてきてPathを指定する）</p>
@@ -713,16 +723,21 @@ location: 1201 park street, Avenue, Dhaka
           &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://themefisher.com/free-bootstrap-templates/&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt;Store&lt;/<span style="color:#f92672">a</span>&gt;.
           &lt;<span style="color:#f92672">br</span>&gt;Home icon by
           &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://icons8.com/icon/U5JRqX4RSgfj/home&#34;</span>&gt;Icons8&lt;/<span style="color:#f92672">a</span>&gt;.
-</code></pre></div><hr>
+</code></pre></div><br>
+<hr>
+<br>
+<h1 id="今後やりたいこと">今後やりたいこと</h1>
+<br>
 <h2 id="コメント機能をつける">コメント機能をつける</h2>
 <p><a href="https://michimani.net/post/blog-install-disqus-to-hugo/">Hugo で作ったブログに Disqus を使ってコメント機能を追加する - michimani.net</a></p>
-<hr>
-<h1 id="なんかテーマを1から作っている人">なんかテーマを1から作っている人</h1>
-<p><a href="https://www.membersedge.co.jp/blog/create-hugo-theme-and-deploy-to-github-pages/">Hugoで1からテーマを作ってGitHub Pagesにデプロイする | メンバーズエッジカンパニーブログ</a></p>
-<hr>
-<p>Googleサーチに登録する方法</p>
+<br>
+<h2 id="googleサーチに登録する方法済">Googleサーチに登録する方法(済)</h2>
 <p><a href="https://zetton86.github.io/blog/20200114/">HUGO + GitHub Pages で作ったブログをGoogle Search Consoleに登録する方法</a></p>
-
+<hr>
+<br>
+<h2 id="なんかテーマを1から作っている人">なんかテーマを1から作っている人</h2>
+<p><a href="https://www.membersedge.co.jp/blog/create-hugo-theme-and-deploy-to-github-pages/">Hugoで1からテーマを作ってGitHub Pagesにデプロイする | メンバーズエッジカンパニーブログ</a></p>
+<br>
 				</div>
 			</div>
 		</div>
