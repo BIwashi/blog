@@ -13,22 +13,15 @@
       <pubDate>Wed, 02 Dec 2020 13:32:09 +0900</pubDate>
       
       <guid>https://biwashi.github.io/blog/blog/hugo%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92%E3%81%95%E3%81%8F%E3%81%A3%E3%81%A8%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/</guid>
-      <description>参考にしたサイト等 Hugoでさくっと自作ブログを作った
-静的サイトジェネレータ「Hugo」と技術文書公開向けテーマ「Docsy」でOSSサイトを作る | さくらのナレッジ
-Netlifyで静的サイトのホスティングをする - Qiita
-OGPとは？OGPの基本からOGP画像のサイズや設定方法を分かりやすく解説
-Hello My New Blog
-さよならQiita、こんにちはhugo × github pages - Qiita
-HugoでWebサイトを立ち上げる+テーマを適用してみる - Qiita
-Hugo で作ったブログに Disqus を使ってコメント機能を追加する - michimani.net
-静的サイトジェネレータ「Hugo」と技術文書公開向けテーマ「Docsy」でOSSサイトを作る | さくらのナレッジ
- テンプレから雛形作成 まずはテンプレディレクトリを作成
+      <description>テンプレから雛形作成 まずはテンプレディレクトリを作成
 $ hugo new site {BlogName} 以下のようなディレクティブと設定ファイルが作成される
 . ├── archetypes │ └── default.md ├── config.toml ├── content ├── data ├── layouts ├── static └── themes ここでテーマを選ぶ
 Complete List
 例として、 hugo-classicを選択する
-先ほど作成された themasにgit moduleの形としていれる
-$ git init &amp;amp;&amp;amp; git submodule add https://github.</description>
+先ほど作成された themasに git module の形としていれる
+$ git init &amp;amp;&amp;amp; git submodule add https://github.com/goodroot/hugo-classic.git themes/hugo-classic; themasにいくらでも Thema を入れられるが、明示的にどのテーマを使うかわかるように、config.toml に宣言しておく
+baseURL = &amp;#34;http://example.org/&amp;#34; languageCode = &amp;#34;en-us&amp;#34; title = &amp;#34;My New Hugo Site&amp;#34; theme = &amp;#34;hugo-classic&amp;#34; #######################ここが追加した行 ここの config.toml の記入の仕方は、各テーマにより異なる(のかもしれない) テーマ作成者が、これを全部コピペしろ、と書いてる場合もあるので注意（途中でテーマ変えようと思ったらいろいろコンフリクト起こした）
+Hugo + GitHub Pages（独自ドメイン適応）でサイトを作成・公開する - Qiita</description>
     </item>
     
     <item>
@@ -41,7 +34,7 @@ $ git init &amp;amp;&amp;amp; git submodule add https://github.</description>
  よろしくお願いします。
   ちなみにこの簡易ロゴは Ipad の有料アプリAffinity Designerで作成しました。
 秒で作りましたが、意外と味出てていかも。
-print(&amp;#34;Hello&amp;#34;) </description>
+1 2 3  print(&amp;#34;Hello&amp;#34;)   </description>
     </item>
     
   </channel>

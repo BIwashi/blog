@@ -62,6 +62,14 @@
   
   <meta name="google-site-verification" content="ibduUf160caf1tigM4zT1VidE_yj4hpyyixYOdX0qp0" />
 
+  
+  <!-- codeblock -->
+  <link rel="stylesheet" href="https://biwashi.github.io/blog/css/syntax.css" />
+  
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+  
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
 </head><body><section class="top-bar animated-header">
 	<meta name="google-site-verification" content="ibduUf160caf1tigM4zT1VidE_yj4hpyyixYOdX0qp0" />
 	<div class="container">
@@ -128,40 +136,40 @@
         <summary>Index</summary>
         <nav id="TableOfContents">
   <ol>
-    <li><a href="#参考にしたサイト等">参考にしたサイト等</a></li>
     <li><a href="#テンプレから雛形作成">テンプレから雛形作成</a></li>
-    <li><a href="#github-pagesで公開する">github pagesで公開する</a></li>
-    <li><a href="#githubにpushして反映させる">githubにpushして反映させる</a></li>
+    <li><a href="#github-pages-で公開する">github pages で公開する</a></li>
+    <li><a href="#github-に-push-して反映させる">github に push して反映させる</a></li>
     <li><a href="#自分の実装">自分の実装</a></li>
     <li><a href="#詰まったとこと">詰まったとこと</a>
       <ol>
-        <li><a href="#contactのgoogle-mapsの位置情報を変えたい">CONTACTのGoogle Mapsの位置情報を変えたい</a></li>
+        <li><a href="#contact-の-google-maps-の位置情報を変えたい">CONTACT の Google Maps の位置情報を変えたい</a></li>
         <li><a href="#下のコピーライトを変えたい">下のコピーライトを変えたい</a></li>
       </ol>
     </li>
     <li><a href="#感想">感想</a></li>
     <li><a href="#カスタム実装">カスタム実装</a>
       <ol>
-        <li><a href="#featureの文字をhtmlで書きたい-brや-hタグを適用させたい">Featureの文字をHTMLで書きたい（ <code>&lt;br&gt;</code>や <code>h○タグ</code>を適用させたい）</a></li>
+        <li><a href="#feature-の文字を-html-で書きたい-brや-hタグを適用させたい">Feature の文字を HTML で書きたい（ <code>&lt;br&gt;</code>や <code>h○タグ</code>を適用させたい）</a></li>
         <li><a href="#それぞれのページ名を変えたいserviceskill">それぞれのページ名を変えたい（SERVICE→SKILL）</a></li>
-        <li><a href="#dataxxxyamlのファイル名を変えたい">data/xxx.yamlのファイル名を変えたい</a></li>
+        <li><a href="#dataxxxyaml-のファイル名を変えたい">data/xxx.yaml のファイル名を変えたい</a></li>
         <li><a href="#いろいろなところのアイコンを変えたい">いろいろなところのアイコンを変えたい</a></li>
-        <li><a href="#ioniconsのレベルを上げたい">Ioniconsのレベルを上げたい</a>
+        <li><a href="#ionicons-のレベルを上げたい">Ionicons のレベルを上げたい</a>
           <ol>
-            <li><a href="#serviceページのアイコンを変えていく">Serviceページのアイコンを変えていく</a></li>
+            <li><a href="#service-ページのアイコンを変えていく">Service ページのアイコンを変えていく</a></li>
             <li><a href="#アイコンの色とサイズを合わせる">アイコンの色とサイズを合わせる</a></li>
           </ol>
         </li>
-        <li><a href="#カスタムiconを設定したい">カスタムIconを設定したい</a></li>
+        <li><a href="#カスタム-icon-を設定したい">カスタム Icon を設定したい</a></li>
       </ol>
     </li>
     <li><a href="#今後やりたいこと">今後やりたいこと</a>
       <ol>
         <li><a href="#コメント機能をつける">コメント機能をつける</a></li>
-        <li><a href="#googleサーチに登録する方法済">Googleサーチに登録する方法(済)</a></li>
-        <li><a href="#なんかテーマを1から作っている人">なんかテーマを1から作っている人</a></li>
+        <li><a href="#google-サーチに登録する方法済">Google サーチに登録する方法(済)</a></li>
+        <li><a href="#なんかテーマを-1-から作っている人">なんかテーマを 1 から作っている人</a></li>
       </ol>
     </li>
+    <li><a href="#参考にしたサイト等">参考にしたサイト等</a></li>
   </ol>
 </nav>
     </details>
@@ -171,67 +179,59 @@
 		<div class="row">
 			<div class="col-md-12">
 				
+				<div class="post-img">
+					<img class="img-fluid" alt="" src="https://biwashi.github.io/blog/images/blog/hugo.jpeg">
+				</div>
+				
 				<div class="post-content">
-					<h1 id="参考にしたサイト等">参考にしたサイト等</h1>
-<p><a href="https://sanposhiho.com/posts/make-blog-by-hugo/">Hugoでさくっと自作ブログを作った</a></p>
-<p><a href="https://knowledge.sakura.ad.jp/22908/">静的サイトジェネレータ「Hugo」と技術文書公開向けテーマ「Docsy」でOSSサイトを作る | さくらのナレッジ</a></p>
-<p><a href="https://qiita.com/sugo/items/2ee64887d682b0dae635">Netlifyで静的サイトのホスティングをする - Qiita</a></p>
-<p><a href="https://www.itra.co.jp/webmedia/what-is-ogp.html">OGPとは？OGPの基本からOGP画像のサイズや設定方法を分かりやすく解説</a></p>
-<p><a href="https://komi.dev/post/2020-09-05-make-blog/">Hello My New Blog</a></p>
-<p><a href="https://qiita.com/katamotokosuke/items/1a650678dc4f0ad43468">さよならQiita、こんにちはhugo × github pages - Qiita</a></p>
-<p><a href="https://qiita.com/bake0937/items/e0914efbd9434be474a4">HugoでWebサイトを立ち上げる+テーマを適用してみる - Qiita</a></p>
-<p><a href="https://michimani.net/post/blog-install-disqus-to-hugo/">Hugo で作ったブログに Disqus を使ってコメント機能を追加する - michimani.net</a></p>
-<p><a href="https://knowledge.sakura.ad.jp/22908/">静的サイトジェネレータ「Hugo」と技術文書公開向けテーマ「Docsy」でOSSサイトを作る | さくらのナレッジ</a></p>
-<br>
-<hr>
-<h1 id="テンプレから雛形作成">テンプレから雛形作成</h1>
+					<h1 id="テンプレから雛形作成">テンプレから雛形作成</h1>
 <p>まずはテンプレディレクトリを作成</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#960050;background-color:#1e0010">$</span> <span style="color:#a6e22e">hugo</span> <span style="color:#a6e22e">new</span> <span style="color:#a6e22e">site</span> {<span style="color:#a6e22e">BlogName</span>}
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="err">$</span> <span class="nx">hugo</span> <span class="nx">new</span> <span class="nx">site</span> <span class="p">{</span><span class="nx">BlogName</span><span class="p">}</span>
 </code></pre></div><p>以下のようなディレクティブと設定ファイルが作成される</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go">.
-<span style="color:#960050;background-color:#1e0010">├──</span> <span style="color:#a6e22e">archetypes</span>
-<span style="color:#960050;background-color:#1e0010">│</span>   <span style="color:#960050;background-color:#1e0010">└──</span> <span style="color:#66d9ef">default</span>.<span style="color:#a6e22e">md</span>
-<span style="color:#960050;background-color:#1e0010">├──</span> <span style="color:#a6e22e">config</span>.<span style="color:#a6e22e">toml</span>
-<span style="color:#960050;background-color:#1e0010">├──</span> <span style="color:#a6e22e">content</span>
-<span style="color:#960050;background-color:#1e0010">├──</span> <span style="color:#a6e22e">data</span>
-<span style="color:#960050;background-color:#1e0010">├──</span> <span style="color:#a6e22e">layouts</span>
-<span style="color:#960050;background-color:#1e0010">├──</span> <span style="color:#a6e22e">static</span>
-<span style="color:#960050;background-color:#1e0010">└──</span> <span style="color:#a6e22e">themes</span>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="p">.</span>
+<span class="err">├──</span> <span class="nx">archetypes</span>
+<span class="err">│</span>   <span class="err">└──</span> <span class="k">default</span><span class="p">.</span><span class="nx">md</span>
+<span class="err">├──</span> <span class="nx">config</span><span class="p">.</span><span class="nx">toml</span>
+<span class="err">├──</span> <span class="nx">content</span>
+<span class="err">├──</span> <span class="nx">data</span>
+<span class="err">├──</span> <span class="nx">layouts</span>
+<span class="err">├──</span> <span class="nx">static</span>
+<span class="err">└──</span> <span class="nx">themes</span>
 </code></pre></div><p>ここでテーマを選ぶ</p>
 <p><a href="https://themes.gohugo.io/">Complete List</a></p>
 <p>例として、 <code>hugo-classic</code>を選択する</p>
-<p>先ほど作成された <code>themas</code>にgit moduleの形としていれる</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git init <span style="color:#f92672">&amp;&amp;</span> git submodule add https://github.com/goodroot/hugo-classic.git themes/hugo-classic;
-</code></pre></div><p><code>themas</code>にいくらでもThemaを入れられるが、明示的にどのテーマを使うかわかるように、config.tomlに宣言しておく</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">baseURL <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;http://example.org/&#34;</span>
-languageCode <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;en-us&#34;</span>
-title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;My New Hugo Site&#34;</span>
-theme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hugo-classic&#34;</span> <span style="color:#75715e">#######################ここが追加した行</span>
-</code></pre></div><p>ここのconfig.tomlの記入の仕方は、各テーマにより異なる(のかもしれない)
+<p>先ほど作成された <code>themas</code>に git module の形としていれる</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ git init <span class="o">&amp;&amp;</span> git submodule add https://github.com/goodroot/hugo-classic.git themes/hugo-classic<span class="p">;</span>
+</code></pre></div><p><code>themas</code>にいくらでも Thema を入れられるが、明示的にどのテーマを使うかわかるように、config.toml に宣言しておく</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">baseURL</span> <span class="o">=</span> <span class="s2">&#34;http://example.org/&#34;</span>
+<span class="nv">languageCode</span> <span class="o">=</span> <span class="s2">&#34;en-us&#34;</span>
+<span class="nv">title</span> <span class="o">=</span> <span class="s2">&#34;My New Hugo Site&#34;</span>
+<span class="nv">theme</span> <span class="o">=</span> <span class="s2">&#34;hugo-classic&#34;</span> <span class="c1">#######################ここが追加した行</span>
+</code></pre></div><p>ここの config.toml の記入の仕方は、各テーマにより異なる(のかもしれない)
 テーマ作成者が、これを全部コピペしろ、と書いてる場合もあるので注意（途中でテーマ変えようと思ったらいろいろコンフリクト起こした）</p>
 <p><a href="https://qiita.com/ysdyt/items/a581277dd1312a0e83c3">Hugo + GitHub Pages（独自ドメイン適応）でサイトを作成・公開する - Qiita</a></p>
-<p>↑ submodules配下の<code>theme.toml</code>をコピーする必要？</p>
+<p>↑ submodules 配下の<code>theme.toml</code>をコピーする必要？</p>
 <blockquote>
 <blockquote>
 <p><code>themes/hugo-classic/exampleSite/config.toml</code> っぽい</p>
 </blockquote>
 </blockquote>
 <p>サーバを立ち上げてみる</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo server
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo server
 </code></pre></div><p><code>localhost:1313</code> アクセス</p>
 <!-- ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a41ae8a2-e260-4fa9-9a86-a64ebe737ae0/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a41ae8a2-e260-4fa9-9a86-a64ebe737ae0/Untitled.png) -->
 <p>記事を書く</p>
 <p>新しい記事のテンプレ作成コマンド</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">hugo</span> <span style="color:#a6e22e">new</span> <span style="color:#a6e22e">post</span> <span style="color:#a6e22e">post</span><span style="color:#f92672">/</span><span style="color:#a6e22e">starting</span><span style="color:#f92672">-</span><span style="color:#a6e22e">demo</span>.<span style="color:#a6e22e">md</span>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="nx">hugo</span> <span class="nx">new</span> <span class="nx">post</span> <span class="nx">post</span><span class="o">/</span><span class="nx">starting</span><span class="o">-</span><span class="nx">demo</span><span class="p">.</span><span class="nx">md</span>
 </code></pre></div><p><code>content/post</code> 配下の指定ファイルが作成（ <code>post</code>の場合もあれば <code>posts</code> の場合もあるぽい、テーマ依存なのか作る人依存）</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ tree
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ tree
 .
 ├── archetypes
 │   └── default.md
 ├── config.toml
 ├── content
 │   └── post
-│       └── starting-demo.md <span style="color:#75715e">######################################ここ</span>
+│       └── starting-demo.md <span class="c1">######################################ここ</span>
 ├── data
 ├── layouts
 ├── resources
@@ -278,18 +278,18 @@ theme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hugo
         │       └── style.css
         └── theme.toml
 
-<span style="color:#ae81ff">24</span> directories, <span style="color:#ae81ff">27</span> files
+<span class="m">24</span> directories, <span class="m">27</span> files
 </code></pre></div><p>これで次のような下書きができる</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">---
-title: <span style="color:#e6db74">&#34;Starting Demo&#34;</span>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">---
+title: <span class="s2">&#34;Starting Demo&#34;</span>
 date: 生成した日時
-draft: true
+draft: <span class="nb">true</span>
 ---
 </code></pre></div><p>これで <code>draft: false</code>に変えると適用される</p>
 <p>次のコマンドで記事を反映させる</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo
 </code></pre></div><p>これで新たに <code>public</code> ディレクトリ が作成される</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ tree
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ tree
 .
 ├── archetypes
 │   └── default.md
@@ -357,24 +357,21 @@ draft: true
         │       └── style.css
         └── theme.toml
 
-<span style="color:#ae81ff">28</span> directories, <span style="color:#ae81ff">37</span> files
-</code></pre></div><br>
-<hr>
-<br>
-<h1 id="github-pagesで公開する">github pagesで公開する</h1>
-<p>github pagesで公開するには、公開するディレクトリ名を <code>public</code>ではなく <code>docs</code>にしないといけない(これはgithub pagesの仕様)</p>
+<span class="m">28</span> directories, <span class="m">37</span> files
+</code></pre></div><h1 id="github-pages-で公開する">github pages で公開する</h1>
+<p>github pages で公開するには、公開するディレクトリ名を <code>public</code>ではなく <code>docs</code>にしないといけない(これは github pages の仕様)</p>
 <p>この宣言をに <code>config.toml</code>に書く</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">baseURL <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://katamotokosuke.github.io/site-demo/&#34;</span> <span style="color:#75715e">####### 追加: {user_name}.github.io/{repository_name}/ を指定する</span>
-languageCode <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;en-us&#34;</span>
-title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;My New Hugo Site&#34;</span>
-theme <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hugo-classic&#34;</span>
-publishDir <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;docs&#34;</span>  <span style="color:#75715e">######################### 追加</span>
-canonifyurls <span style="color:#f92672">=</span> true  <span style="color:#75715e">######################## 追加(相対URLを絶対URLに変換できるようにします。)</span>
-</code></pre></div><p>baseURLは、よくあるクローンするときのhttpリンクじゃないので注意
-実際にgithub pagesで公開するときのリンク（これのせいで詰まった）
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">baseURL</span> <span class="o">=</span> <span class="s2">&#34;https://katamotokosuke.github.io/site-demo/&#34;</span> <span class="c1">####### 追加: {user_name}.github.io/{repository_name}/ を指定する</span>
+<span class="nv">languageCode</span> <span class="o">=</span> <span class="s2">&#34;en-us&#34;</span>
+<span class="nv">title</span> <span class="o">=</span> <span class="s2">&#34;My New Hugo Site&#34;</span>
+<span class="nv">theme</span> <span class="o">=</span> <span class="s2">&#34;hugo-classic&#34;</span>
+<span class="nv">publishDir</span> <span class="o">=</span> <span class="s2">&#34;docs&#34;</span>  <span class="c1">######################### 追加</span>
+<span class="nv">canonifyurls</span> <span class="o">=</span> <span class="nb">true</span>  <span class="c1">######################## 追加(相対URLを絶対URLに変換できるようにします。)</span>
+</code></pre></div><p>baseURL は、よくあるクローンするときの http リンクじゃないので注意
+実際に github pages で公開するときのリンク（これのせいで詰まった）
 よく考えたら当たり前</p>
 <p>ここでもう一度 <code>hugo</code>コマンドを実行</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ tree
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ tree
 .
 ├── archetypes
 │   └── default.md
@@ -466,20 +463,16 @@ canonifyurls <span style="color:#f92672">=</span> true  <span style="color:#7571
         │       └── style.css
         └── theme.toml
 
-<span style="color:#ae81ff">36</span> directories, <span style="color:#ae81ff">53</span> files
+<span class="m">36</span> directories, <span class="m">53</span> files
 </code></pre></div><p>これで <code>docs</code>ディレクトリが生成された</p>
 <p>さっきの <code>public</code>と生成される内容が同じで、ディレクトリ名が変わっただけなので、 <code>public</code>ディレクトリは削除してもいい</p>
-<br>
-<h1 id="githubにpushして反映させる">githubにpushして反映させる</h1>
+<h1 id="github-に-push-して反映させる">github に push して反映させる</h1>
 <ul>
-<li>以上の内容をpushする</li>
-<li>githubの公開ディレクトリを <code>/root</code>から <code>/docs</code>に変える</li>
+<li>以上の内容を push する</li>
+<li>github の公開ディレクトリを <code>/root</code>から <code>/docs</code>に変える</li>
 </ul>
 <p>以上でアクセスできるようになるはず</p>
 <p><code>https://katamotokosuke.github.io/site-demo/</code></p>
-<br>
-<hr>
-<br>
 <h1 id="自分の実装">自分の実装</h1>
 <p>このテーマを使った <code>Timer Hugo</code></p>
 <p><a href="https://themes.gohugo.io/timer-hugo/#main-features">Timer Hugo</a></p>
@@ -493,37 +486,37 @@ canonifyurls <span style="color:#f92672">=</span> true  <span style="color:#7571
 <p><code>config.toml</code>も持ってきて上書きする</p>
 </li>
 <li>
-<p><code>config.toml</code>に以下の項目を追加する また、baseURLも変える</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">baseURL <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;https://biwashi.github.io/blog/&#34;</span>
+<p><code>config.toml</code>に以下の項目を追加する また、baseURL も変える</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">baseURL</span> <span class="o">=</span> <span class="s2">&#34;https://biwashi.github.io/blog/&#34;</span>
 
-<span style="color:#75715e">##################################################</span>
+<span class="c1">##################################################</span>
 
-publishDir <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;docs&#34;</span>
-canonifyurls <span style="color:#f92672">=</span> true <span style="color:#75715e"># 相対URLを絶対URLに変換できるようにする</span>
+<span class="nv">publishDir</span> <span class="o">=</span> <span class="s2">&#34;docs&#34;</span>
+<span class="nv">canonifyurls</span> <span class="o">=</span> <span class="nb">true</span> <span class="c1"># 相対URLを絶対URLに変換できるようにする</span>
 </code></pre></div></li>
 <li>
 <p><code>archetypes/default.md</code>を書き換える
-これは、Blog, Portfolioのサンプルに書かれていたものをそれぞれもってきた</p>
-<p>新しくコンテンツを追加する時はこのmdが生成されるため、ブログでもポートフォリオでもコメントアウトで対応できるように作っておいた</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">---
+これは、Blog, Portfolio のサンプルに書かれていたものをそれぞれもってきた。<br>
+新しくコンテンツを追加する時はこのmdが生成されるため、ブログでもポートフォリオでもコメントアウトで対応できるように作っておいた</p>
+<div class="highlight"><pre class="chroma"><code class="language-markdown" data-lang="markdown">---
 title: &#34;{{ replace .Name &#34;-&#34; &#34; &#34; | title }}&#34;
 description : &#34;This is meta description&#34;
 date: {{ .Date }}
 description : &#34;This is meta description&#34;
 draft: true # 反映させる時はfalseに変えるかコメントアウト
 
-# Blog用
-type: post
+<span class="gh"># Blog用
+</span><span class="gh"></span>type: post
 image: images/blog/yourImages.jpg # ブログバナーの画像
-# author: Jamica Jock # 表示されない？
-tags: [&#34;motivation&#34;, &#34;inspiration&#34;] # tag
+<span class="gh"># author: Jamica Jock # 表示されない？
+</span><span class="gh"></span>tags: [&#34;motivation&#34;, &#34;inspiration&#34;] # tag
 
-# Portfolio用
-caption: Product Mockup
+<span class="gh"># Portfolio用
+</span><span class="gh"></span>caption: Product Mockup
 image: images/portfolio/item-2.jpg
 liveLink: link # ??
-# 右側の情報説明
-client: Julia Robertson
+<span class="gh"># 右側の情報説明
+</span><span class="gh"></span>client: Julia Robertson
 submitDate: November 20, 2017
 category: [&#34;mockup&#34;,&#34;design&#34;] # tag
 location: 1201 park street, Avenue, Dhaka
@@ -533,14 +526,10 @@ location: 1201 park street, Avenue, Dhaka
 </ol>
 <p>ここまできたら基本的には完了</p>
 <p>各ページの細い文章の設定は、 <code>data</code>配下の <code>yml</code>ファイルをいじって変えていく</p>
-<br>
-<hr>
-<br>
 <h1 id="詰まったとこと">詰まったとこと</h1>
-<br>
-<h2 id="contactのgoogle-mapsの位置情報を変えたい">CONTACTのGoogle Mapsの位置情報を変えたい</h2>
+<h2 id="contact-の-google-maps-の位置情報を変えたい">CONTACT の Google Maps の位置情報を変えたい</h2>
 <p>最初は、 <code>docs/contact/index.html</code>の該当部分を書き換えていたが、 <code>hugo</code>コマンドで上書きされていた</p>
-<p>なんでや！と思っていたが、どうやら <code>layouts/contact/list.html</code>の情報をもとに書き換えているっぽい（jQueryかな？）</p>
+<p>なんでや！と思っていたが、どうやら <code>layouts/contact/list.html</code>の情報をもとに書き換えているっぽい（jQuery かな？）</p>
 <p>なのでこのファイルの該当箇所を書き換えたらうまくいった</p>
 <p>なんか任意の場所が上手くいかない時は、 <code>layouts</code>を疑うべし（ <code>docs</code>配下は <code>hugo</code>コマンドで生成されるものだから、<strong>何か</strong>をもとに生成してるのでそこを変えても意味ない）</p>
 <p>カスタムするときに見る優先順位としては</p>
@@ -550,208 +539,233 @@ location: 1201 park street, Avenue, Dhaka
 <li><code>layouts/pagesName/xxx.index</code></li>
 </ol>
 <p>あとはやりながら慣れていく感じ</p>
-<br>
 <h2 id="下のコピーライトを変えたい">下のコピーライトを変えたい</h2>
 <p><code>layouts/partials/footer.html</code>に該当箇所ある</p>
-<p>けどこれライセンスがCC BY 3.0なので、変えたらあかん、表示しとかないとあかんやつ</p>
+<p>けどこれライセンスが CC BY 3.0 なので、変えたらあかん、表示しとかないとあかんやつ</p>
 <!-- ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/234be07e-aae4-4ce4-901b-a27ab03825a0/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/234be07e-aae4-4ce4-901b-a27ab03825a0/Untitled.png) -->
 <p><a href="https://ferret-plus.com/2161">クリエイティブ・コモンズとは〜著作権違反にならないための徹底解説！</a></p>
-<br>
 <h1 id="感想">感想</h1>
-<p>yamlからどうやってHTML作成してるんや、って部分がいわゆるHugoがやってる部分なんんですかね、あまり深入りしてないですが…</p>
-<br>
-<hr>
-<br>
+<p>yaml からどうやって HTML 作成してるんや、って部分がいわゆる Hugo がやってる部分なんんですかね、あまり深入りしてないですが…</p>
 <h1 id="カスタム実装">カスタム実装</h1>
-<h2 id="featureの文字をhtmlで書きたい-brや-hタグを適用させたい">Featureの文字をHTMLで書きたい（ <code>&lt;br&gt;</code>や <code>h○タグ</code>を適用させたい）</h2>
+<h2 id="feature-の文字を-html-で書きたい-brや-hタグを適用させたい">Feature の文字を HTML で書きたい（ <code>&lt;br&gt;</code>や <code>h○タグ</code>を適用させたい）</h2>
 <p><code>about.xml</code></p>
-<p>現状、上のAboutの部分は<br>等が適用されるが、下ののFeatureの部分では反映されずそのまあ表示されてしまう。これを変えたい。</p>
+<p>現状、上の About の部分は<br>等が適用されるが、下のの Feature の部分では反映されずそのまあ表示されてしまう。これを変えたい。</p>
 <p>変更したのは <code>layouts/about/list.html</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{ &#34;<span style="color:#75715e">&lt;!--  Company Feature Section Start --&gt;</span>&#34; | safeHTML }}
-&lt;<span style="color:#f92672">section</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;about-feature clearfix&#34;</span>&gt;
-	&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container-fluid&#34;</span>&gt;
-		&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;row&#34;</span>&gt;
-			{{ range $index, $element := .Site.Data.about.aboutItem }}
-			&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-lg-4 px-0&#34;</span>&gt;
-				{{ $class := add $index 1 }}
-				&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;block about-feature-{{ $class }} wow fadeInDown&#34;</span> <span style="color:#a6e22e">data-wow-duration</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;500ms&#34;</span> <span style="color:#a6e22e">data-wow-delay</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;.3s&#34;</span>&gt;
-					{{ with .title }}&lt;<span style="color:#f92672">h2</span>&gt;{{ . }}&lt;/<span style="color:#f92672">h2</span>&gt;{{ end }}
-					<span style="color:#75715e">&lt;!-- {{ with .description }}&lt;p&gt;{{ . }}&lt;/p&gt;{{ end }} --&gt;</span> <span style="color:#75715e">&lt;!-- ↓これを変更します↓ --&gt;</span>
-					{{ with .description }}&lt;<span style="color:#f92672">p</span>&gt;{{ . | safeHTML }}&lt;/<span style="color:#f92672">p</span>&gt;{{ end }} <span style="color:#75715e">&lt;!-- FeatureもHTMLで書けるようにする --&gt;</span>
-				&lt;/<span style="color:#f92672">div</span>&gt;
-			&lt;/<span style="color:#f92672">div</span>&gt;
-			{{ end }}
-		&lt;/<span style="color:#f92672">div</span>&gt;
-	&lt;/<span style="color:#f92672">div</span>&gt;
-&lt;/<span style="color:#f92672">section</span>&gt;
-</code></pre></div><p>該当箇所の部分が、xmlのdiscription部分をそのまま入れてpタグで囲む設定になっていた（ <code>&lt;p&gt;{{ . }}&lt;/p&gt;</code>）</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">{{ &#34;<span class="c">&lt;!--  Company Feature Section Start --&gt;</span>&#34; | safeHTML }}
+<span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;about-feature clearfix&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container-fluid&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;row&#34;</span><span class="p">&gt;</span>
+      {{ range $index, $element := .Site.Data.about.aboutItem }}
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-lg-4 px-0&#34;</span><span class="p">&gt;</span>
+        {{ $class := add $index 1 }}
+        <span class="p">&lt;</span><span class="nt">div</span>
+          <span class="na">class</span><span class="o">=</span><span class="s">&#34;block about-feature-{{ $class }} wow fadeInDown&#34;</span>
+          <span class="na">data-wow-duration</span><span class="o">=</span><span class="s">&#34;500ms&#34;</span>
+          <span class="na">data-wow-delay</span><span class="o">=</span><span class="s">&#34;.3s&#34;</span>
+        <span class="p">&gt;</span>
+          {{ with .title }}
+          <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>{{ . }}<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+          {{ end }}
+          <span class="c">&lt;!-- {{ with .description }}&lt;p&gt;{{ . }}&lt;/p&gt;{{ end }} --&gt;</span>
+          <span class="c">&lt;!-- ↓これを変更します↓ --&gt;</span>
+          {{ with .description }}
+          <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{{ . | safeHTML }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+          {{ end }}
+          <span class="c">&lt;!-- FeatureもHTMLで書けるようにする --&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      {{ end }}
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+</code></pre></div><p>該当箇所の部分が、xml の discription 部分をそのまま入れて p タグで囲む設定になっていた（ <code>&lt;p&gt;{{ . }}&lt;/p&gt;</code>）</p>
 <p>ここを、上の部分と同じように <code>&lt;p&gt;{{ . | safeHTML }}&lt;/p&gt;</code>に変更する</p>
 <p>これで無事変更できるようになった。（最初から全部これにしといた方がいいのでは？）</p>
-<br>
 <h2 id="それぞれのページ名を変えたいserviceskill">それぞれのページ名を変えたい（SERVICE→SKILL）</h2>
 <p>ページのヘッドバナーを変えたい</p>
 <!-- ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3dd5198a-db5f-4acb-9e51-6e35b4c22e79/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3dd5198a-db5f-4acb-9e51-6e35b4c22e79/Untitled.png) -->
 <p>上のナビゲーション部分は、 <code>config.toml</code>を変更し、下の青バナー部分は <code>content/service/_index.md</code>の <code>title</code>を変更した</p>
 <p>ルーティングも変更するには、 <code>content/skill/_index.md</code>と変更すればできた</p>
-<br>
-<h2 id="dataxxxyamlのファイル名を変えたい">data/xxx.yamlのファイル名を変えたい</h2>
+<h2 id="dataxxxyaml-のファイル名を変えたい">data/xxx.yaml のファイル名を変えたい</h2>
 <p>※解決していない、今のところフロント側では影響はないので放置してる放置してる</p>
-<p>service → skillに変えたら、YAMLファイルの名前もskillに変えたくなるところだが、変えると壊れる（というか読み込まれなくなる）</p>
-<p>どっかこのYMALを読み込んでいる</p>
-<br>
+<p>service → skill に変えたら、YAML ファイルの名前も skill に変えたくなるところだが、変えると壊れる（というか読み込まれなくなる）</p>
+<p>どっかこの YMAL を読み込んでいる</p>
 <h2 id="いろいろなところのアイコンを変えたい">いろいろなところのアイコンを変えたい</h2>
 <p><code>config.toml</code>には次のリンクを踏めと書いてある</p>
 <p><a href="https://ionicons.com/">Ionicons: The premium icon pack for Ionic Framework</a></p>
 <p>しかし、アイコンを押したら出てくる下の部分をどう入れればいかわからない。（ <code>name = &quot;xxxxx&quot;</code>を入れても反映されない）</p>
 <p>そこで、 <code>themes/timer-hugo/static/plugins/ionicons/ionicons.min.css</code>を見る</p>
-<p>icon系は、このテーマの部分からdocs配下に <code>docs/plugins/ionicons/ionicons.min.css</code>という形で生成される</p>
-<p>中を見ればわかるが、 <code>ion-ios-paper-outline</code>など、 <code>icon: xxxx</code>でYAMLに書かれているワードが並んでいる</p>
-<p>このファイル内検索で、該当iconを探す</p>
+<p>icon 系は、このテーマの部分から docs 配下に <code>docs/plugins/ionicons/ionicons.min.css</code>という形で生成される</p>
+<p>中を見ればわかるが、 <code>ion-ios-paper-outline</code>など、 <code>icon: xxxx</code>で YAML に書かれているワードが並んでいる</p>
+<p>このファイル内検索で、該当 icon を探す</p>
 <p>どんなアイコンなのかは、踏めといわれているリンク内のものと同じ</p>
-<br>
-<h2 id="ioniconsのレベルを上げたい">Ioniconsのレベルを上げたい</h2>
-<p>Skillとして言語のIconを使いたいが、今このテンプレ使われているIoniconsは <code>ver2.0.0</code>でかなり古い。これをUpdateしたい。</p>
+<h2 id="ionicons-のレベルを上げたい">Ionicons のレベルを上げたい</h2>
+<p>Skill として言語の Icon を使いたいが、今このテンプレ使われている Ionicons は <code>ver2.0.0</code>でかなり古い。これを Update したい。</p>
 <p>かつこの頃は <code>ionicons.min.css</code>をダウンロードして読み込む形で使われている。</p>
 <p>全部を変更したいところだが、 <code>list.html</code>を全部書き換えるのはちとめんどくさいので、両方使えるようにする。</p>
-<p>まずは、本家のドキュメント通り、スクリプトタグをbodyに書けとあるので従う。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://unpkg.com/ionicons@5.2.3/dist/ionicons.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+<p>まずは、本家のドキュメント通り、スクリプトタグを body に書けとあるので従う。</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://unpkg.com/ionicons@5.2.3/dist/ionicons.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </code></pre></div><p>※バージョンは任意に変更する。</p>
 <p>これを <code>layouts/partials/head.html</code>に記入する</p>
-<p>これはそれぞれのページで読み込まれるもの。ドキュメントではbodyにかけとあるが、今回はこのheadで読み込む</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">	~
-	~
-	~
-	{{ &#34;<span style="color:#75715e">&lt;!-- Twitter Bootstrs CSS --&gt;</span>&#34; | safeHTML }}
-  &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ `plugins/bootstrap/bootstrap.min.css` | absURL }}&#34;</span>&gt;
-  {{ &#34;<span style="color:#75715e">&lt;!-- Ionicons Fonts Css --&gt;</span>&#34; | safeHTML }}
-  &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ `plugins/ionicons/ionicons.min.css` | absURL }}&#34;</span>&gt;
+<p>これはそれぞれのページで読み込まれるもの。ドキュメントでは body にかけとあるが、今回はこの head で読み込む</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">~ ~ ~ {{ &#34;<span class="c">&lt;!-- Twitter Bootstrs CSS --&gt;</span>&#34; | safeHTML }}
+<span class="p">&lt;</span><span class="nt">link</span>
+  <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span>
+  <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ `plugins/bootstrap/bootstrap.min.css` | absURL }}&#34;</span>
+<span class="p">/&gt;</span>
+{{ &#34;<span class="c">&lt;!-- Ionicons Fonts Css --&gt;</span>&#34; | safeHTML }}
+<span class="p">&lt;</span><span class="nt">link</span>
+  <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span>
+  <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ `plugins/ionicons/ionicons.min.css` | absURL }}&#34;</span>
+<span class="p">/&gt;</span>
 
-  <span style="color:#75715e">&lt;!-- ------------------------------------------------------------------------------ --&gt;</span>
-  {{ &#34;<span style="color:#75715e">&lt;!-- Ionicons Fonts Css Version Up --&gt;</span>&#34; | safeHTML }}
-  &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://unpkg.com/ionicons@5.2.3/dist/ionicons.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
-  <span style="color:#75715e">&lt;!-- ------------------------------------------------------------------------------ --&gt;</span>
+<span class="c">&lt;!-- ------------------------------------------------------------------------------ --&gt;</span>
+{{ &#34;<span class="c">&lt;!-- Ionicons Fonts Css Version Up --&gt;</span>&#34; | safeHTML }}
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://unpkg.com/ionicons@5.2.3/dist/ionicons.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="c">&lt;!-- ------------------------------------------------------------------------------ --&gt;</span>
 
-  {{ &#34;<span style="color:#75715e">&lt;!-- animate css --&gt;</span>&#34; | safeHTML }}
-  &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ `plugins/animate-css/animate.css` | absURL }}&#34;</span>&gt;
-  {{ &#34;<span style="color:#75715e">&lt;!-- Hero area slider css--&gt;</span>&#34; | safeHTML }}
-  &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ `plugins/slider/slider.css` | absURL }}&#34;</span>&gt;
-	~
-	~
-	~
+{{ &#34;<span class="c">&lt;!-- animate css --&gt;</span>&#34; | safeHTML }}
+<span class="p">&lt;</span><span class="nt">link</span>
+  <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span>
+  <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ `plugins/animate-css/animate.css` | absURL }}&#34;</span>
+<span class="p">/&gt;</span>
+{{ &#34;<span class="c">&lt;!-- Hero area slider css--&gt;</span>&#34; | safeHTML }}
+<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ `plugins/slider/slider.css` | absURL }}&#34;</span> <span class="p">/&gt;</span>
+~ ~ ~
 </code></pre></div><p>これで全ページで使えるようになった。</p>
 <p>使う場合は、次のように <code>ion-icon</code>タグで囲む</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">ion-icon</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;heart&#34;</span>&gt;&lt;/<span style="color:#f92672">ion-icon</span>&gt;
-</code></pre></div><p>これでIconが表示される。</p>
-<p>使いたいIocnはここで検索</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">ion-icon</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;heart&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">ion-icon</span><span class="p">&gt;</span>
+</code></pre></div><p>これで Icon が表示される。</p>
+<p>使いたい Iocn はここで検索</p>
 <p><a href="https://ionicons.com/">Ionicons: The premium icon pack for Ionic Framework</a></p>
-<br>
-<h3 id="serviceページのアイコンを変えていく">Serviceページのアイコンを変えていく</h3>
-<p>次にいよいよ、serviceページ（今はskillページに変えた）のIconを変えていく。</p>
-<p>ここの記述をしている <code>layouts/skill/list.html</code>を見ると、iタグのclass名をservice.ymlで設定したものに書き換えてるということがわかる。</p>
+<h3 id="service-ページのアイコンを変えていく">Service ページのアイコンを変えていく</h3>
+<p>次にいよいよ、service ページ（今は skill ページに変えた）の Icon を変えていく。</p>
+<p>ここの記述をしている <code>layouts/skill/list.html</code>を見ると、i タグの class 名を service.yml で設定したものに書き換えてるということがわかる。</p>
 <p>ここを、ドキュメントにあるように <code>&lt;ion-icon name = &quot;xxx&quot;&gt;&lt;/ion-con&gt;</code>という形で設定できるようにする</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;col-md-6&#34;</span>&gt;
-	&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;block wow fadeInUp animated&#34;</span> <span style="color:#a6e22e">data-wow-duration</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;400ms&#34;</span> <span style="color:#a6e22e">data-wow-delay</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;600ms&#34;</span>&gt;
-								<span style="color:#75715e">&lt;!-- New IconのTest Start --&gt;</span>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;col-md-6&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span>
+    <span class="na">class</span><span class="o">=</span><span class="s">&#34;block wow fadeInUp animated&#34;</span>
+    <span class="na">data-wow-duration</span><span class="o">=</span><span class="s">&#34;400ms&#34;</span>
+    <span class="na">data-wow-delay</span><span class="o">=</span><span class="s">&#34;600ms&#34;</span>
+  <span class="p">&gt;</span>
+    <span class="c">&lt;!-- New IconのTest Start --&gt;</span>
 
-								<span style="color:#75715e">&lt;!-- {{ with .icon }}&lt;i class=&#34;{{ . }}&#34;&gt;&lt;/i&gt;{{ end }} --&gt;</span>
-								{{ with .icon }}&lt;<span style="color:#f92672">ion-icon</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ . }}&#34;</span>&gt;&lt;/<span style="color:#f92672">ion-icon</span>&gt;{{ end }}　　<span style="color:#75715e">&lt;!-- ここ --&gt;</span>
+    <span class="c">&lt;!-- {{ with .icon }}&lt;i class=&#34;{{ . }}&#34;&gt;&lt;/i&gt;{{ end }} --&gt;</span>
+    {{ with .icon }}<span class="p">&lt;</span><span class="nt">ion-icon</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;{{ . }}&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">ion-icon</span><span class="p">&gt;</span>{{ end }}　　<span class="c">&lt;!-- ここ --&gt;</span>
 
-								<span style="color:#75715e">&lt;!-- New IconのTest End --&gt;</span>
+    <span class="c">&lt;!-- New IconのTest End --&gt;</span>
 
-								{{ with .title }}&lt;<span style="color:#f92672">h4</span>&gt;{{ . }}&lt;/<span style="color:#f92672">h4</span>&gt;{{ end }}
-								{{ with .description }}&lt;<span style="color:#f92672">p</span>&gt;{{ . }}&lt;/<span style="color:#f92672">p</span>&gt;{{ end }}
-	&lt;/<span style="color:#f92672">div</span>&gt;
-&lt;/<span style="color:#f92672">div</span>&gt;
-</code></pre></div><p>これでYAMLに新しいバージョンのアイコン名（検索したやつ）を書くと設定できるようになった。</p>
-<br>
+    {{ with .title }}
+    <span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span>{{ . }}<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+    {{ end }} {{ with .description }}
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{{ . }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    {{ end }}
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div><p>これで YAML に新しいバージョンのアイコン名（検索したやつ）を書くと設定できるようになった。</p>
 <h3 id="アイコンの色とサイズを合わせる">アイコンの色とサイズを合わせる</h3>
-<p>今のままだと、何もcssがかかっていないので、黒の小ちゃいアイコンしか表示されない。</p>
-<p>これを青でいい感じのサイズのcssをかけられるよにする。</p>
-<p>旧バージョンのcssは<code>themes/timer-hugo/assets/css/style.css</code>のところに書かれている。</p>
-<p><code>.service-page .service-parts .block i</code> がこのiタグ（ <code>&lt;i class=&quot;{{ . }}&quot;&gt;&lt;/i&gt;</code>のところ）のcss情報のようだ</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">service-page</span> .<span style="color:#a6e22e">service-parts</span> .<span style="color:#a6e22e">block</span> <span style="color:#f92672">i</span> {
-  <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">35</span><span style="color:#66d9ef">px</span>;
-  <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#02bdd5</span>;
-}
+<p>今のままだと、何も css がかかっていないので、黒の小ちゃいアイコンしか表示されない。</p>
+<p>これを青でいい感じのサイズの css をかけられるよにする。</p>
+<p>旧バージョンの css は<code>themes/timer-hugo/assets/css/style.css</code>のところに書かれている。</p>
+<p><code>.service-page .service-parts .block i</code> がこの i タグ（ <code>&lt;i class=&quot;{{ . }}&quot;&gt;&lt;/i&gt;</code>のところ）の css 情報のようだ</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">service-page</span> <span class="p">.</span><span class="nc">service-parts</span> <span class="p">.</span><span class="nc">block</span> <span class="nt">i</span> <span class="p">{</span>
+  <span class="k">font-size</span><span class="p">:</span> <span class="mi">35</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">color</span><span class="p">:</span> <span class="mh">#02bdd5</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div><p>ここに <code>ion-icon {...}</code>という形で追記する。</p>
 <p>僕は <code>themes/timer-hugo/static/plugins/ionicons/ionicons.min.css</code>の方に追記した。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/*  */</span>
-<span style="color:#f92672">ion-icon</span> {
-  <span style="color:#66d9ef">font-weight</span>: <span style="color:#66d9ef">normal</span>;
-  <span style="color:#66d9ef">font-style</span>: <span style="color:#66d9ef">normal</span>;
-  <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">35</span><span style="color:#66d9ef">px</span>;
-  <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#02bdd5</span>;
-}
-</code></pre></div><p>これで晴れて新しいiconが使えるようになった。</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="c">/*  */</span>
+<span class="nt">ion-icon</span> <span class="p">{</span>
+  <span class="k">font-weight</span><span class="p">:</span> <span class="kc">normal</span><span class="p">;</span>
+  <span class="k">font-style</span><span class="p">:</span> <span class="kc">normal</span><span class="p">;</span>
+  <span class="k">font-size</span><span class="p">:</span> <span class="mi">35</span><span class="kt">px</span><span class="p">;</span>
+  <span class="k">color</span><span class="p">:</span> <span class="mh">#02bdd5</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div><p>これで晴れて新しい icon が使えるようになった。</p>
 <p>他の箇所で使いたい場合、該当箇所の <code>html</code>ファイルを変更を同じように変更すればできるはず。</p>
-<br>
-<h2 id="カスタムiconを設定したい">カスタムIconを設定したい</h2>
+<h2 id="カスタム-icon-を設定したい">カスタム Icon を設定したい</h2>
 <p>公式ドキュメントのように設定した。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">ion-icon</span>  <span style="color:#a6e22e">src </span><span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/path/to/external/file.svg&#34;</span> &gt; &lt;/<span style="color:#f92672">ion-icon</span>&gt;
-</code></pre></div><p>これをYAMLから変えられるようにしたい。（ちなみにhttpsとかで指定するのはなんかダメぽいので、ローカルに落としてきてPathを指定する）</p>
-<p>さらに、外部から取り込んだsvgはサイズが揃っていないことがあるので調整もしたい。ということで以下のようにした。</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">ion-icon</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;/path/to/external/file.svg&#34;</span><span class="p">&gt;</span> <span class="p">&lt;/</span><span class="nt">ion-icon</span><span class="p">&gt;</span>
+</code></pre></div><p>これを YAML から変えられるようにしたい。（ちなみに https とかで指定するのはなんかダメぽいので、ローカルに落としてきて Path を指定する）</p>
+<p>さらに、外部から取り込んだ svg はサイズが揃っていないことがあるので調整もしたい。ということで以下のようにした。</p>
 <p><code>layouts/skill/list.html</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!-- New IconのTest Start --&gt;</span>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!-- New IconのTest Start --&gt;</span>
 
-<span style="color:#75715e">&lt;!-- {{ with .icon }}&lt;i class=&#34;{{ . }}&#34;&gt;&lt;/i&gt;{{ end }} --&gt;</span>
+<span class="c">&lt;!-- {{ with .icon }}&lt;i class=&#34;{{ . }}&#34;&gt;&lt;/i&gt;{{ end }} --&gt;</span>
 
-{{ with .icon }}&lt;<span style="color:#f92672">ion-icon</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ . }}&#34;</span>&gt;&lt;/<span style="color:#f92672">ion-icon</span>&gt;{{ end }}
-{{ with .iconsrc }}&lt;<span style="color:#f92672">ion-icon</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ . }}&#34;</span>&gt;&lt;/<span style="color:#f92672">ion-icon</span>&gt;{{ end }}
-{{ with .iconsrc45 }}&lt;<span style="color:#f92672">ion-icon</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;size45&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ . }}&#34;</span>&gt;&lt;/<span style="color:#f92672">ion-icon</span>&gt;{{ end }}
-{{ with .iconsrc50 }}&lt;<span style="color:#f92672">ion-icon</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;size50&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ . }}&#34;</span>&gt;&lt;/<span style="color:#f92672">ion-icon</span>&gt;{{ end }}
-{{ with .iconsrc55 }}&lt;<span style="color:#f92672">ion-icon</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;size55&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ . }}&#34;</span>&gt;&lt;/<span style="color:#f92672">ion-icon</span>&gt;{{ end }}
-{{ with .iconsrc60 }}&lt;<span style="color:#f92672">ion-icon</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;size60&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ . }}&#34;</span>&gt;&lt;/<span style="color:#f92672">ion-icon</span>&gt;{{ end }}
+{{ with .icon }}<span class="p">&lt;</span><span class="nt">ion-icon</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;{{ . }}&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">ion-icon</span><span class="p">&gt;</span>{{ end }} {{ with .iconsrc
+}}<span class="p">&lt;</span><span class="nt">ion-icon</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;{{ . }}&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">ion-icon</span><span class="p">&gt;</span>{{ end }} {{ with .iconsrc45 }}<span class="p">&lt;</span><span class="nt">ion-icon</span>
+  <span class="na">class</span><span class="o">=</span><span class="s">&#34;size45&#34;</span>
+  <span class="na">src</span><span class="o">=</span><span class="s">&#34;{{ . }}&#34;</span>
+<span class="p">&gt;&lt;/</span><span class="nt">ion-icon</span>
+<span class="p">&gt;</span>{{ end }} {{ with .iconsrc50 }}<span class="p">&lt;</span><span class="nt">ion-icon</span>
+  <span class="na">class</span><span class="o">=</span><span class="s">&#34;size50&#34;</span>
+  <span class="na">src</span><span class="o">=</span><span class="s">&#34;{{ . }}&#34;</span>
+<span class="p">&gt;&lt;/</span><span class="nt">ion-icon</span>
+<span class="p">&gt;</span>{{ end }} {{ with .iconsrc55 }}<span class="p">&lt;</span><span class="nt">ion-icon</span>
+  <span class="na">class</span><span class="o">=</span><span class="s">&#34;size55&#34;</span>
+  <span class="na">src</span><span class="o">=</span><span class="s">&#34;{{ . }}&#34;</span>
+<span class="p">&gt;&lt;/</span><span class="nt">ion-icon</span>
+<span class="p">&gt;</span>{{ end }} {{ with .iconsrc60 }}<span class="p">&lt;</span><span class="nt">ion-icon</span>
+  <span class="na">class</span><span class="o">=</span><span class="s">&#34;size60&#34;</span>
+  <span class="na">src</span><span class="o">=</span><span class="s">&#34;{{ . }}&#34;</span>
+<span class="p">&gt;&lt;/</span><span class="nt">ion-icon</span>
+<span class="p">&gt;</span>{{ end }}
 
-<span style="color:#75715e">&lt;!-- New IconのTest End --&gt;</span>
-</code></pre></div><p>ここでは新しく <code>iconsrc</code>を追加した。これをYAMLにも追加。</p>
+<span class="c">&lt;!-- New IconのTest End --&gt;</span>
+</code></pre></div><p>ここでは新しく <code>iconsrc</code>を追加した。これを YAML にも追加。</p>
 <p>サイズを調整できるように、 <code>iconsrcXX</code>という形にした。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">- <span style="color:#f92672">icon</span>: 
-  <span style="color:#f92672">iconsrc60</span>: <span style="color:#ae81ff">/images/customIcons/Go-Logo_Blue.svg</span> <span style="color:#75715e"># カスタムIconを設定する. PathかURLを書く(svg)</span>
-  <span style="color:#f92672">title</span>: <span style="color:#ae81ff">Go</span>
-</code></pre></div><p>iconは空欄のままにしておく。これでGoのアイコンが表示される。</p>
-<p>先ほどhtmlで指定した書くclassにかかるcssを設定する</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">- <span class="nt">icon</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">iconsrc60</span><span class="p">:</span><span class="w"> </span><span class="l">/images/customIcons/Go-Logo_Blue.svg</span><span class="w"> </span><span class="c"># カスタムIconを設定する. PathかURLを書く(svg)</span><span class="w">
+</span><span class="w">  </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l">Go</span><span class="w">
+</span></code></pre></div><p>icon は空欄のままにしておく。これで Go のアイコンが表示される。</p>
+<p>先ほど html で指定した書く class にかかる css を設定する</p>
 <p><code>themes/timer-hugo/static/plugins/ionicons/ionicons.min.css</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">size45</span>{
-  <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">45</span><span style="color:#66d9ef">px</span>;
-}
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">size45</span> <span class="p">{</span>
+  <span class="k">font-size</span><span class="p">:</span> <span class="mi">45</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
 
-.<span style="color:#a6e22e">size50</span>{
-  <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">px</span>;
-}
+<span class="p">.</span><span class="nc">size50</span> <span class="p">{</span>
+  <span class="k">font-size</span><span class="p">:</span> <span class="mi">50</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
 
-.<span style="color:#a6e22e">size55</span>{
-  <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">55</span><span style="color:#66d9ef">px</span>;
-}
+<span class="p">.</span><span class="nc">size55</span> <span class="p">{</span>
+  <span class="k">font-size</span><span class="p">:</span> <span class="mi">55</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
 
-.<span style="color:#a6e22e">size60</span>{
-  <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">60</span><span style="color:#66d9ef">px</span>;
-}
+<span class="p">.</span><span class="nc">size60</span> <span class="p">{</span>
+  <span class="k">font-size</span><span class="p">:</span> <span class="mi">60</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div><p>デフォルトが <code>40px</code>で、それで合わない時は確認しながらサイズを調整していく。</p>
-<p>仕様したIcon8というサイトのものを無料で使用するにはクレジット表示しないといけないので、 <code>layouts/partials/footer.html</code>に以下を追加する。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">&lt;</span><span style="color:#f92672">a</span> <span style="color:#f92672">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://icons8.com/icon/U5JRqX4RSgfj/home&#34;</span><span style="color:#f92672">&gt;</span><span style="color:#f92672">Home</span> <span style="color:#f92672">icon</span> <span style="color:#f92672">by</span> <span style="color:#f92672">Icons8</span><span style="color:#f92672">&lt;/</span><span style="color:#f92672">a</span><span style="color:#f92672">&gt;</span>
+<p>仕様した Icon8 というサイトのものを無料で使用するにはクレジット表示しないといけないので、 <code>layouts/partials/footer.html</code>に以下を追加する。</p>
+<div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="o">&lt;</span><span class="nt">a</span> <span class="nt">href</span><span class="o">=</span><span class="s2">&#34;https://icons8.com/icon/U5JRqX4RSgfj/home&#34;</span><span class="o">&gt;</span><span class="nt">Home</span> <span class="nt">icon</span> <span class="nt">by</span> <span class="nt">Icons8</span><span class="o">&lt;/</span><span class="nt">a</span><span class="o">&gt;</span>
 </code></pre></div><p>それでこんな感じ</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;/<span style="color:#f92672">span</span>&gt; Design and Developed by
-          &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://www.Themefisher.com&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt;Themefisher&lt;/<span style="color:#f92672">a</span>&gt;.
-          &lt;<span style="color:#f92672">br</span>&gt; Get More Bootstrap Template From Our
-          &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://themefisher.com/free-bootstrap-templates/&#34;</span> <span style="color:#a6e22e">target</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;_blank&#34;</span>&gt;Store&lt;/<span style="color:#f92672">a</span>&gt;.
-          &lt;<span style="color:#f92672">br</span>&gt;Home icon by
-          &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://icons8.com/icon/U5JRqX4RSgfj/home&#34;</span>&gt;Icons8&lt;/<span style="color:#f92672">a</span>&gt;.
-</code></pre></div><br>
-<hr>
-<br>
-<h1 id="今後やりたいこと">今後やりたいこと</h1>
-<br>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span> Design and Developed by
+          <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;http://www.Themefisher.com&#34;</span> <span class="na">target</span><span class="o">=</span><span class="s">&#34;_blank&#34;</span><span class="p">&gt;</span>Themefisher<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>.
+          <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span> Get More Bootstrap Template From Our
+          <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://themefisher.com/free-bootstrap-templates/&#34;</span> <span class="na">target</span><span class="o">=</span><span class="s">&#34;_blank&#34;</span><span class="p">&gt;</span>Store<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>.
+          <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>Home icon by
+          <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://icons8.com/icon/U5JRqX4RSgfj/home&#34;</span><span class="p">&gt;</span>Icons8<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>.
+</code></pre></div><h1 id="今後やりたいこと">今後やりたいこと</h1>
 <h2 id="コメント機能をつける">コメント機能をつける</h2>
 <p><a href="https://michimani.net/post/blog-install-disqus-to-hugo/">Hugo で作ったブログに Disqus を使ってコメント機能を追加する - michimani.net</a></p>
-<br>
-<h2 id="googleサーチに登録する方法済">Googleサーチに登録する方法(済)</h2>
-<p><a href="https://zetton86.github.io/blog/20200114/">HUGO + GitHub Pages で作ったブログをGoogle Search Consoleに登録する方法</a></p>
-<hr>
-<br>
-<h2 id="なんかテーマを1から作っている人">なんかテーマを1から作っている人</h2>
-<p><a href="https://www.membersedge.co.jp/blog/create-hugo-theme-and-deploy-to-github-pages/">Hugoで1からテーマを作ってGitHub Pagesにデプロイする | メンバーズエッジカンパニーブログ</a></p>
-<br>
+<h2 id="google-サーチに登録する方法済">Google サーチに登録する方法(済)</h2>
+<p><a href="https://zetton86.github.io/blog/20200114/">HUGO + GitHub Pages で作ったブログを Google Search Console に登録する方法</a></p>
+<h2 id="なんかテーマを-1-から作っている人">なんかテーマを 1 から作っている人</h2>
+<p><a href="https://www.membersedge.co.jp/blog/create-hugo-theme-and-deploy-to-github-pages/">Hugo で 1 からテーマを作って GitHub Pages にデプロイする | メンバーズエッジカンパニーブログ</a></p>
+<h1 id="参考にしたサイト等">参考にしたサイト等</h1>
+<p><a href="https://sanposhiho.com/posts/make-blog-by-hugo/">Hugo でさくっと自作ブログを作った</a></p>
+<p><a href="https://knowledge.sakura.ad.jp/22908/">静的サイトジェネレータ「Hugo」と技術文書公開向けテーマ「Docsy」で OSS サイトを作る | さくらのナレッジ</a></p>
+<p><a href="https://qiita.com/sugo/items/2ee64887d682b0dae635">Netlify で静的サイトのホスティングをする - Qiita</a></p>
+<p><a href="https://www.itra.co.jp/webmedia/what-is-ogp.html">OGP とは？OGP の基本から OGP 画像のサイズや設定方法を分かりやすく解説</a></p>
+<p><a href="https://komi.dev/post/2020-09-05-make-blog/">Hello My New Blog</a></p>
+<p><a href="https://qiita.com/katamotokosuke/items/1a650678dc4f0ad43468">さよなら Qiita、こんにちは hugo × github pages - Qiita</a></p>
+<p><a href="https://qiita.com/bake0937/items/e0914efbd9434be474a4">Hugo で Web サイトを立ち上げる+テーマを適用してみる - Qiita</a></p>
+<p><a href="https://michimani.net/post/blog-install-disqus-to-hugo/">Hugo で作ったブログに Disqus を使ってコメント機能を追加する - michimani.net</a></p>
+<p><a href="https://knowledge.sakura.ad.jp/22908/">静的サイトジェネレータ「Hugo」と技術文書公開向けテーマ「Docsy」で OSS サイトを作る | さくらのナレッジ</a></p>
+
 				</div>
+				
 			</div>
 		</div>
 	</div>

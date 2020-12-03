@@ -5,8 +5,8 @@ theme = "timer-hugo"
 publishDir = "docs"
 canonifyurls = true # 相対URLを絶対URLに変換できるようにする
 
-# pygmentsUseClasses = true
-# pygmentsCodefences = true 
+pygmentsUseClasses = true
+pygmentsCodefences = true 
 
 # We Used Ionicons Icon font for Icon, for more details check this link - https://ionicons.com/
 
@@ -45,7 +45,7 @@ googleAnalitycsID = "G-PEBYWXRR3K" # Google Anlaycs用のIDを設定できる
 # contact form action
 contactFormAction = "#" # contact form works with https://formspree.io formを設定する用
 # Disqusによるコメント機能実装用
-disqusShortname = "ShortName"
+disqusShortname = "https-biwashi-github-io-blog"
 
 # Banner Section
 [params.banner]

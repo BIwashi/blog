@@ -7,7 +7,7 @@ description : "This is meta description"
 
 # Blog用---------------------------------------------------
 type: post
-# image: images/blog/yourImages.jpg # ブログバナーの画像
+image: images/blog/hugo.jpeg # ブログバナーの画像
 # author: Jamica Jock # 表示されない？
 # tags: ["motivation", "inspiration"] # tag
 
@@ -20,32 +20,6 @@ type: post
 # submitDate: November 20, 2017
 # category: ["mockup","design"] # tag
 # location: 1201 park street, Avenue, Dhaka
-
----
-
-
-
-# 参考にしたサイト等
-
-[Hugoでさくっと自作ブログを作った](https://sanposhiho.com/posts/make-blog-by-hugo/)
-
-[静的サイトジェネレータ「Hugo」と技術文書公開向けテーマ「Docsy」でOSSサイトを作る | さくらのナレッジ](https://knowledge.sakura.ad.jp/22908/)
-
-[Netlifyで静的サイトのホスティングをする - Qiita](https://qiita.com/sugo/items/2ee64887d682b0dae635)
-
-[OGPとは？OGPの基本からOGP画像のサイズや設定方法を分かりやすく解説](https://www.itra.co.jp/webmedia/what-is-ogp.html)
-
-[Hello My New Blog](https://komi.dev/post/2020-09-05-make-blog/)
-
-[さよならQiita、こんにちはhugo × github pages - Qiita](https://qiita.com/katamotokosuke/items/1a650678dc4f0ad43468)
-
-[HugoでWebサイトを立ち上げる+テーマを適用してみる - Qiita](https://qiita.com/bake0937/items/e0914efbd9434be474a4)
-
-[Hugo で作ったブログに Disqus を使ってコメント機能を追加する - michimani.net](https://michimani.net/post/blog-install-disqus-to-hugo/)
-
-[静的サイトジェネレータ「Hugo」と技術文書公開向けテーマ「Docsy」でOSSサイトを作る | さくらのナレッジ](https://knowledge.sakura.ad.jp/22908/)
-
-<br>
 
 ---
 
@@ -77,13 +51,13 @@ $ hugo new site {BlogName}
 
 例として、 `hugo-classic`を選択する
 
-先ほど作成された `themas`にgit moduleの形としていれる
+先ほど作成された `themas`に git module の形としていれる
 
 ```bash
 $ git init && git submodule add https://github.com/goodroot/hugo-classic.git themes/hugo-classic;
 ```
 
-`themas`にいくらでもThemaを入れられるが、明示的にどのテーマを使うかわかるように、config.tomlに宣言しておく
+`themas`にいくらでも Thema を入れられるが、明示的にどのテーマを使うかわかるように、config.toml に宣言しておく
 
 ```bash
 baseURL = "http://example.org/"
@@ -92,14 +66,14 @@ title = "My New Hugo Site"
 theme = "hugo-classic" #######################ここが追加した行
 ```
 
-ここのconfig.tomlの記入の仕方は、各テーマにより異なる(のかもしれない)
+ここの config.toml の記入の仕方は、各テーマにより異なる(のかもしれない)
 テーマ作成者が、これを全部コピペしろ、と書いてる場合もあるので注意（途中でテーマ変えようと思ったらいろいろコンフリクト起こした）
 
 [Hugo + GitHub Pages（独自ドメイン適応）でサイトを作成・公開する - Qiita](https://qiita.com/ysdyt/items/a581277dd1312a0e83c3)
 
-↑ submodules配下の`theme.toml`をコピーする必要？
+↑ submodules 配下の`theme.toml`をコピーする必要？
 
->> `themes/hugo-classic/exampleSite/config.toml` っぽい
+> > `themes/hugo-classic/exampleSite/config.toml` っぽい
 
 サーバを立ち上げてみる
 
@@ -270,15 +244,10 @@ $ tree
 
 28 directories, 37 files
 ```
-<br>
 
----
+# github pages で公開する
 
-<br>
-
-# github pagesで公開する
-
-github pagesで公開するには、公開するディレクトリ名を `public`ではなく `docs`にしないといけない(これはgithub pagesの仕様)
+github pages で公開するには、公開するディレクトリ名を `public`ではなく `docs`にしないといけない(これは github pages の仕様)
 
 この宣言をに `config.toml`に書く
 
@@ -291,8 +260,8 @@ publishDir = "docs"  ######################### 追加
 canonifyurls = true  ######################## 追加(相対URLを絶対URLに変換できるようにします。)
 ```
 
-baseURLは、よくあるクローンするときのhttpリンクじゃないので注意
-実際にgithub pagesで公開するときのリンク（これのせいで詰まった）
+baseURL は、よくあるクローンするときの http リンクじゃないので注意
+実際に github pages で公開するときのリンク（これのせいで詰まった）
 よく考えたら当たり前
 
 ここでもう一度 `hugo`コマンドを実行
@@ -397,23 +366,14 @@ $ tree
 
 さっきの `public`と生成される内容が同じで、ディレクトリ名が変わっただけなので、 `public`ディレクトリは削除してもいい
 
-<br>
+# github に push して反映させる
 
-# githubにpushして反映させる
-
-- 以上の内容をpushする
-- githubの公開ディレクトリを `/root`から `/docs`に変える
+- 以上の内容を push する
+- github の公開ディレクトリを `/root`から `/docs`に変える
 
 以上でアクセスできるようになるはず
 
- `https://katamotokosuke.github.io/site-demo/`  
-
-
-<br>
-
----
-
-<br>
+`https://katamotokosuke.github.io/site-demo/`
 
 # 自分の実装
 
@@ -427,7 +387,7 @@ $ tree
 
 1.  `themes/timer-hugo`配下の `data`, `contact`, `static`をコピーしてホームディレクトリにあるやつに上書きする
 2.  `config.toml`も持ってきて上書きする
-3.  `config.toml`に以下の項目を追加する また、baseURLも変える
+3.  `config.toml`に以下の項目を追加する また、baseURL も変える
 
     ```bash
     baseURL = "https://biwashi.github.io/blog/"
@@ -439,8 +399,7 @@ $ tree
     ```
 
 4.  `archetypes/default.md`を書き換える
-これは、Blog, Portfolioのサンプルに書かれていたものをそれぞれもってきた
-
+    これは、Blog, Portfolio のサンプルに書かれていたものをそれぞれもってきた。<br>
     新しくコンテンツを追加する時はこのmdが生成されるため、ブログでもポートフォリオでもコメントアウトで対応できるように作っておいた
 
     ```markdown
@@ -474,21 +433,13 @@ $ tree
 
 各ページの細い文章の設定は、 `data`配下の `yml`ファイルをいじって変えていく
 
-<br>
-
----
-
-<br>
-
 # 詰まったとこと
 
-<br>
-
-## CONTACTのGoogle Mapsの位置情報を変えたい
+## CONTACT の Google Maps の位置情報を変えたい
 
 最初は、 `docs/contact/index.html`の該当部分を書き換えていたが、 `hugo`コマンドで上書きされていた
 
-なんでや！と思っていたが、どうやら `layouts/contact/list.html`の情報をもとに書き換えているっぽい（jQueryかな？）
+なんでや！と思っていたが、どうやら `layouts/contact/list.html`の情報をもとに書き換えているっぽい（jQuery かな？）
 
 なのでこのファイルの該当箇所を書き換えたらうまくいった
 
@@ -502,68 +453,65 @@ $ tree
 
 あとはやりながら慣れていく感じ
 
-<br>
-
 ## 下のコピーライトを変えたい
 
- `layouts/partials/footer.html`に該当箇所ある
+`layouts/partials/footer.html`に該当箇所ある
 
-けどこれライセンスがCC BY 3.0なので、変えたらあかん、表示しとかないとあかんやつ
+けどこれライセンスが CC BY 3.0 なので、変えたらあかん、表示しとかないとあかんやつ
 
 <!-- ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/234be07e-aae4-4ce4-901b-a27ab03825a0/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/234be07e-aae4-4ce4-901b-a27ab03825a0/Untitled.png) -->
 
 [クリエイティブ・コモンズとは〜著作権違反にならないための徹底解説！](https://ferret-plus.com/2161)
 
-<br>
-
 # 感想
 
-yamlからどうやってHTML作成してるんや、って部分がいわゆるHugoがやってる部分なんんですかね、あまり深入りしてないですが…
-
-<br>
-
----
-
-<br>
+yaml からどうやって HTML 作成してるんや、って部分がいわゆる Hugo がやってる部分なんんですかね、あまり深入りしてないですが…
 
 # カスタム実装
 
-## Featureの文字をHTMLで書きたい（ `<br>`や `h○タグ`を適用させたい）
+## Feature の文字を HTML で書きたい（ `<br>`や `h○タグ`を適用させたい）
 
- `about.xml`
+`about.xml`
 
-現状、上のAboutの部分は<br>等が適用されるが、下ののFeatureの部分では反映されずそのまあ表示されてしまう。これを変えたい。
+現状、上の About の部分は<br>等が適用されるが、下のの Feature の部分では反映されずそのまあ表示されてしまう。これを変えたい。
 
 変更したのは `layouts/about/list.html`
 
 ```html
 {{ "<!--  Company Feature Section Start -->" | safeHTML }}
 <section class="about-feature clearfix">
-	<div class="container-fluid">
-		<div class="row">
-			{{ range $index, $element := .Site.Data.about.aboutItem }}
-			<div class="col-lg-4 px-0">
-				{{ $class := add $index 1 }}
-				<div class="block about-feature-{{ $class }} wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">
-					{{ with .title }}<h2>{{ . }}</h2>{{ end }}
-					<!-- {{ with .description }}<p>{{ . }}</p>{{ end }} --> <!-- ↓これを変更します↓ -->
-					{{ with .description }}<p>{{ . | safeHTML }}</p>{{ end }} <!-- FeatureもHTMLで書けるようにする -->
-				</div>
-			</div>
-			{{ end }}
-		</div>
-	</div>
+  <div class="container-fluid">
+    <div class="row">
+      {{ range $index, $element := .Site.Data.about.aboutItem }}
+      <div class="col-lg-4 px-0">
+        {{ $class := add $index 1 }}
+        <div
+          class="block about-feature-{{ $class }} wow fadeInDown"
+          data-wow-duration="500ms"
+          data-wow-delay=".3s"
+        >
+          {{ with .title }}
+          <h2>{{ . }}</h2>
+          {{ end }}
+          <!-- {{ with .description }}<p>{{ . }}</p>{{ end }} -->
+          <!-- ↓これを変更します↓ -->
+          {{ with .description }}
+          <p>{{ . | safeHTML }}</p>
+          {{ end }}
+          <!-- FeatureもHTMLで書けるようにする -->
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
 </section>
 ```
 
-該当箇所の部分が、xmlのdiscription部分をそのまま入れてpタグで囲む設定になっていた（ `<p>{{ . }}</p>`）
+該当箇所の部分が、xml の discription 部分をそのまま入れて p タグで囲む設定になっていた（ `<p>{{ . }}</p>`）
 
 ここを、上の部分と同じように `<p>{{ . | safeHTML }}</p>`に変更する
 
 これで無事変更できるようになった。（最初から全部これにしといた方がいいのでは？）
-
-<br>
-
 
 ## それぞれのページ名を変えたい（SERVICE→SKILL）
 
@@ -575,22 +523,17 @@ yamlからどうやってHTML作成してるんや、って部分がいわゆる
 
 ルーティングも変更するには、 `content/skill/_index.md`と変更すればできた
 
-<br>
-
-## data/xxx.yamlのファイル名を変えたい
+## data/xxx.yaml のファイル名を変えたい
 
 ※解決していない、今のところフロント側では影響はないので放置してる放置してる
 
-service → skillに変えたら、YAMLファイルの名前もskillに変えたくなるところだが、変えると壊れる（というか読み込まれなくなる）
+service → skill に変えたら、YAML ファイルの名前も skill に変えたくなるところだが、変えると壊れる（というか読み込まれなくなる）
 
-どっかこのYMALを読み込んでいる
-
-<br>
+どっかこの YMAL を読み込んでいる
 
 ## いろいろなところのアイコンを変えたい
 
-
- `config.toml`には次のリンクを踏めと書いてある
+`config.toml`には次のリンクを踏めと書いてある
 
 [Ionicons: The premium icon pack for Ionic Framework](https://ionicons.com/)
 
@@ -598,25 +541,23 @@ service → skillに変えたら、YAMLファイルの名前もskillに変えた
 
 そこで、 `themes/timer-hugo/static/plugins/ionicons/ionicons.min.css`を見る
 
-icon系は、このテーマの部分からdocs配下に `docs/plugins/ionicons/ionicons.min.css`という形で生成される
+icon 系は、このテーマの部分から docs 配下に `docs/plugins/ionicons/ionicons.min.css`という形で生成される
 
-中を見ればわかるが、 `ion-ios-paper-outline`など、 `icon: xxxx`でYAMLに書かれているワードが並んでいる
+中を見ればわかるが、 `ion-ios-paper-outline`など、 `icon: xxxx`で YAML に書かれているワードが並んでいる
 
-このファイル内検索で、該当iconを探す
+このファイル内検索で、該当 icon を探す
 
 どんなアイコンなのかは、踏めといわれているリンク内のものと同じ
 
-<br>
+## Ionicons のレベルを上げたい
 
-## Ioniconsのレベルを上げたい
-
-Skillとして言語のIconを使いたいが、今このテンプレ使われているIoniconsは `ver2.0.0`でかなり古い。これをUpdateしたい。
+Skill として言語の Icon を使いたいが、今このテンプレ使われている Ionicons は `ver2.0.0`でかなり古い。これを Update したい。
 
 かつこの頃は `ionicons.min.css`をダウンロードして読み込む形で使われている。
 
 全部を変更したいところだが、 `list.html`を全部書き換えるのはちとめんどくさいので、両方使えるようにする。
 
-まずは、本家のドキュメント通り、スクリプトタグをbodyに書けとあるので従う。
+まずは、本家のドキュメント通り、スクリプトタグを body に書けとあるので従う。
 
 ```html
 <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
@@ -626,29 +567,33 @@ Skillとして言語のIconを使いたいが、今このテンプレ使われ�
 
 これを `layouts/partials/head.html`に記入する
 
-これはそれぞれのページで読み込まれるもの。ドキュメントではbodyにかけとあるが、今回はこのheadで読み込む
+これはそれぞれのページで読み込まれるもの。ドキュメントでは body にかけとあるが、今回はこの head で読み込む
 
 ```html
-	~
-	~
-	~
-	{{ "<!-- Twitter Bootstrs CSS -->" | safeHTML }}
-  <link rel="stylesheet" href="{{ `plugins/bootstrap/bootstrap.min.css` | absURL }}">
-  {{ "<!-- Ionicons Fonts Css -->" | safeHTML }}
-  <link rel="stylesheet" href="{{ `plugins/ionicons/ionicons.min.css` | absURL }}">
+~ ~ ~ {{ "<!-- Twitter Bootstrs CSS -->" | safeHTML }}
+<link
+  rel="stylesheet"
+  href="{{ `plugins/bootstrap/bootstrap.min.css` | absURL }}"
+/>
+{{ "<!-- Ionicons Fonts Css -->" | safeHTML }}
+<link
+  rel="stylesheet"
+  href="{{ `plugins/ionicons/ionicons.min.css` | absURL }}"
+/>
 
-  <!-- ------------------------------------------------------------------------------ -->
-  {{ "<!-- Ionicons Fonts Css Version Up -->" | safeHTML }}
-  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
-  <!-- ------------------------------------------------------------------------------ -->
+<!-- ------------------------------------------------------------------------------ -->
+{{ "<!-- Ionicons Fonts Css Version Up -->" | safeHTML }}
+<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+<!-- ------------------------------------------------------------------------------ -->
 
-  {{ "<!-- animate css -->" | safeHTML }}
-  <link rel="stylesheet" href="{{ `plugins/animate-css/animate.css` | absURL }}">
-  {{ "<!-- Hero area slider css-->" | safeHTML }}
-  <link rel="stylesheet" href="{{ `plugins/slider/slider.css` | absURL }}">
-	~
-	~
-	~
+{{ "<!-- animate css -->" | safeHTML }}
+<link
+  rel="stylesheet"
+  href="{{ `plugins/animate-css/animate.css` | absURL }}"
+/>
+{{ "<!-- Hero area slider css-->" | safeHTML }}
+<link rel="stylesheet" href="{{ `plugins/slider/slider.css` | absURL }}" />
+~ ~ ~
 ```
 
 これで全ページで使えるようになった。
@@ -659,51 +604,54 @@ Skillとして言語のIconを使いたいが、今このテンプレ使われ�
 <ion-icon name="heart"></ion-icon>
 ```
 
-これでIconが表示される。
+これで Icon が表示される。
 
-使いたいIocnはここで検索
+使いたい Iocn はここで検索
 
 [Ionicons: The premium icon pack for Ionic Framework](https://ionicons.com/)
 
-<br>
+### Service ページのアイコンを変えていく
 
-### Serviceページのアイコンを変えていく
+次にいよいよ、service ページ（今は skill ページに変えた）の Icon を変えていく。
 
-次にいよいよ、serviceページ（今はskillページに変えた）のIconを変えていく。
-
-ここの記述をしている `layouts/skill/list.html`を見ると、iタグのclass名をservice.ymlで設定したものに書き換えてるということがわかる。
+ここの記述をしている `layouts/skill/list.html`を見ると、i タグの class 名を service.yml で設定したものに書き換えてるということがわかる。
 
 ここを、ドキュメントにあるように `<ion-icon name = "xxx"></ion-con>`という形で設定できるようにする
 
 ```html
 <div class="col-md-6">
-	<div class="block wow fadeInUp animated" data-wow-duration="400ms" data-wow-delay="600ms">
-								<!-- New IconのTest Start -->
+  <div
+    class="block wow fadeInUp animated"
+    data-wow-duration="400ms"
+    data-wow-delay="600ms"
+  >
+    <!-- New IconのTest Start -->
 
-								<!-- {{ with .icon }}<i class="{{ . }}"></i>{{ end }} -->
-								{{ with .icon }}<ion-icon name="{{ . }}"></ion-icon>{{ end }}　　<!-- ここ -->
+    <!-- {{ with .icon }}<i class="{{ . }}"></i>{{ end }} -->
+    {{ with .icon }}<ion-icon name="{{ . }}"></ion-icon>{{ end }}　　<!-- ここ -->
 
-								<!-- New IconのTest End -->
+    <!-- New IconのTest End -->
 
-								{{ with .title }}<h4>{{ . }}</h4>{{ end }}
-								{{ with .description }}<p>{{ . }}</p>{{ end }}
-	</div>
+    {{ with .title }}
+    <h4>{{ . }}</h4>
+    {{ end }} {{ with .description }}
+    <p>{{ . }}</p>
+    {{ end }}
+  </div>
 </div>
 ```
 
-これでYAMLに新しいバージョンのアイコン名（検索したやつ）を書くと設定できるようになった。
-
-<br>
+これで YAML に新しいバージョンのアイコン名（検索したやつ）を書くと設定できるようになった。
 
 ### アイコンの色とサイズを合わせる
 
-今のままだと、何もcssがかかっていないので、黒の小ちゃいアイコンしか表示されない。
+今のままだと、何も css がかかっていないので、黒の小ちゃいアイコンしか表示されない。
 
-これを青でいい感じのサイズのcssをかけられるよにする。
+これを青でいい感じのサイズの css をかけられるよにする。
 
-旧バージョンのcssは`themes/timer-hugo/assets/css/style.css`のところに書かれている。
+旧バージョンの css は`themes/timer-hugo/assets/css/style.css`のところに書かれている。
 
- `.service-page .service-parts .block i` がこのiタグ（ `<i class="{{ . }}"></i>`のところ）のcss情報のようだ
+`.service-page .service-parts .block i` がこの i タグ（ `<i class="{{ . }}"></i>`のところ）の css 情報のようだ
 
 ```css
 .service-page .service-parts .block i {
@@ -726,78 +674,88 @@ ion-icon {
 }
 ```
 
-これで晴れて新しいiconが使えるようになった。
+これで晴れて新しい icon が使えるようになった。
 
 他の箇所で使いたい場合、該当箇所の `html`ファイルを変更を同じように変更すればできるはず。
 
-<br>
-
-## カスタムIconを設定したい
+## カスタム Icon を設定したい
 
 公式ドキュメントのように設定した。
 
 ```html
-<ion-icon  src = "/path/to/external/file.svg" > </ion-icon>
+<ion-icon src="/path/to/external/file.svg"> </ion-icon>
 ```
 
-これをYAMLから変えられるようにしたい。（ちなみにhttpsとかで指定するのはなんかダメぽいので、ローカルに落としてきてPathを指定する）
+これを YAML から変えられるようにしたい。（ちなみに https とかで指定するのはなんかダメぽいので、ローカルに落としてきて Path を指定する）
 
-さらに、外部から取り込んだsvgはサイズが揃っていないことがあるので調整もしたい。ということで以下のようにした。
+さらに、外部から取り込んだ svg はサイズが揃っていないことがあるので調整もしたい。ということで以下のようにした。
 
- `layouts/skill/list.html`
+`layouts/skill/list.html`
 
 ```html
 <!-- New IconのTest Start -->
 
 <!-- {{ with .icon }}<i class="{{ . }}"></i>{{ end }} -->
 
-{{ with .icon }}<ion-icon name="{{ . }}"></ion-icon>{{ end }}
-{{ with .iconsrc }}<ion-icon src="{{ . }}"></ion-icon>{{ end }}
-{{ with .iconsrc45 }}<ion-icon class="size45" src="{{ . }}"></ion-icon>{{ end }}
-{{ with .iconsrc50 }}<ion-icon class="size50" src="{{ . }}"></ion-icon>{{ end }}
-{{ with .iconsrc55 }}<ion-icon class="size55" src="{{ . }}"></ion-icon>{{ end }}
-{{ with .iconsrc60 }}<ion-icon class="size60" src="{{ . }}"></ion-icon>{{ end }}
+{{ with .icon }}<ion-icon name="{{ . }}"></ion-icon>{{ end }} {{ with .iconsrc
+}}<ion-icon src="{{ . }}"></ion-icon>{{ end }} {{ with .iconsrc45 }}<ion-icon
+  class="size45"
+  src="{{ . }}"
+></ion-icon
+>{{ end }} {{ with .iconsrc50 }}<ion-icon
+  class="size50"
+  src="{{ . }}"
+></ion-icon
+>{{ end }} {{ with .iconsrc55 }}<ion-icon
+  class="size55"
+  src="{{ . }}"
+></ion-icon
+>{{ end }} {{ with .iconsrc60 }}<ion-icon
+  class="size60"
+  src="{{ . }}"
+></ion-icon
+>{{ end }}
 
 <!-- New IconのTest End -->
 ```
 
-ここでは新しく `iconsrc`を追加した。これをYAMLにも追加。
+ここでは新しく `iconsrc`を追加した。これを YAML にも追加。
 
 サイズを調整できるように、 `iconsrcXX`という形にした。
 
 ```yaml
-- icon: 
+- icon:
   iconsrc60: /images/customIcons/Go-Logo_Blue.svg # カスタムIconを設定する. PathかURLを書く(svg)
   title: Go
 ```
 
-iconは空欄のままにしておく。これでGoのアイコンが表示される。
+icon は空欄のままにしておく。これで Go のアイコンが表示される。
 
-先ほどhtmlで指定した書くclassにかかるcssを設定する
+先ほど html で指定した書く class にかかる css を設定する
 
- `themes/timer-hugo/static/plugins/ionicons/ionicons.min.css`
+`themes/timer-hugo/static/plugins/ionicons/ionicons.min.css`
 
 ```css
-.size45{
+.size45 {
   font-size: 45px;
 }
 
-.size50{
+.size50 {
   font-size: 50px;
 }
 
-.size55{
+.size55 {
   font-size: 55px;
 }
 
-.size60{
+.size60 {
   font-size: 60px;
 }
 ```
 
 デフォルトが `40px`で、それで合わない時は確認しながらサイズを調整していく。
 
-仕様したIcon8というサイトのものを無料で使用するにはクレジット表示しないといけないので、 `layouts/partials/footer.html`に以下を追加する。
+仕様した Icon8 というサイトのものを無料で使用するにはクレジット表示しないといけないので、 `layouts/partials/footer.html`に以下を追加する。
 
 ```css
 <a href="https://icons8.com/icon/U5JRqX4RSgfj/home">Home icon by Icons8</a>
@@ -814,34 +772,36 @@ iconは空欄のままにしておく。これでGoのアイコンが表示さ�
           <a href="https://icons8.com/icon/U5JRqX4RSgfj/home">Icons8</a>.
 ```
 
-<br>
-
----
-
-<br>
-
 # 今後やりたいこと
-
-
-<br>
 
 ## コメント機能をつける
 
 [Hugo で作ったブログに Disqus を使ってコメント機能を追加する - michimani.net](https://michimani.net/post/blog-install-disqus-to-hugo/)
 
-<br>
+## Google サーチに登録する方法(済)
 
-## Googleサーチに登録する方法(済)
+[HUGO + GitHub Pages で作ったブログを Google Search Console に登録する方法](https://zetton86.github.io/blog/20200114/)
 
-[HUGO + GitHub Pages で作ったブログをGoogle Search Consoleに登録する方法](https://zetton86.github.io/blog/20200114/)
+## なんかテーマを 1 から作っている人
 
+[Hugo で 1 からテーマを作って GitHub Pages にデプロイする | メンバーズエッジカンパニーブログ](https://www.membersedge.co.jp/blog/create-hugo-theme-and-deploy-to-github-pages/)
 
----
+# 参考にしたサイト等
 
-<br>
+[Hugo でさくっと自作ブログを作った](https://sanposhiho.com/posts/make-blog-by-hugo/)
 
-## なんかテーマを1から作っている人
+[静的サイトジェネレータ「Hugo」と技術文書公開向けテーマ「Docsy」で OSS サイトを作る | さくらのナレッジ](https://knowledge.sakura.ad.jp/22908/)
 
-[Hugoで1からテーマを作ってGitHub Pagesにデプロイする | メンバーズエッジカンパニーブログ](https://www.membersedge.co.jp/blog/create-hugo-theme-and-deploy-to-github-pages/)
+[Netlify で静的サイトのホスティングをする - Qiita](https://qiita.com/sugo/items/2ee64887d682b0dae635)
 
-<br>
+[OGP とは？OGP の基本から OGP 画像のサイズや設定方法を分かりやすく解説](https://www.itra.co.jp/webmedia/what-is-ogp.html)
+
+[Hello My New Blog](https://komi.dev/post/2020-09-05-make-blog/)
+
+[さよなら Qiita、こんにちは hugo × github pages - Qiita](https://qiita.com/katamotokosuke/items/1a650678dc4f0ad43468)
+
+[Hugo で Web サイトを立ち上げる+テーマを適用してみる - Qiita](https://qiita.com/bake0937/items/e0914efbd9434be474a4)
+
+[Hugo で作ったブログに Disqus を使ってコメント機能を追加する - michimani.net](https://michimani.net/post/blog-install-disqus-to-hugo/)
+
+[静的サイトジェネレータ「Hugo」と技術文書公開向けテーマ「Docsy」で OSS サイトを作る | さくらのナレッジ](https://knowledge.sakura.ad.jp/22908/)
