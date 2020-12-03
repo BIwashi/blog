@@ -103,10 +103,10 @@ url = "https://twitter.com/B_Sardine"
 # # Indexの表示設定
 [markup]
     [markup.tableOfContents]
-        # endLevel = 2
-        # ordered = true
-        # startLevel = 2
+        endLevel = 3 # 見出しレベル何まで表示するか
+        ordered = true # 1.2.3...を振るかどうか
+        startLevel = 1 # 見出しレベル何から表示するか
         
-    [markup.goldmark]
+    [markup.goldmark] # MarkdownでもHTMLを有効にするオプション
         [markup.goldmark.renderer]
             unsafe = true
