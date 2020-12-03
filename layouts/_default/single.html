@@ -35,11 +35,16 @@
 				<div class="post-content">
 					{{ .Content }}
 				</div>
-				{{ template "_internal/disqus.html" . }}
 			</div>
 		</div>
 	</div>
 </section>
+
+<!-- どっちかがうまくいくはず -->
+{{ template "_internal/disqus.html" . }}
+
+{{ partial "disqus.html" . }}
+<!-- どっちかがうまくいくはず -->
 
 {{ partial "cta.html" . }}
 
