@@ -5,11 +5,15 @@ date: 2020-12-02T13:32:09+09:00
 description : "This is meta description"
 # draft: true # 反映させる時はfalseに変えるかコメントアウト
 
+# Twitter card gen用設定
+author: ["いわし"]
+categories: ["Test"]
+
 # Blog用---------------------------------------------------
 type: post
 image: images/blog/hugo.jpeg # ブログバナーの画像
 # author: Jamica Jock # 表示されない？
-# tags: ["motivation", "inspiration"] # tag
+tags: ["motivation", "inspiration"] # tag
 
 # Portfolio用----------------------------------------------
 # caption: Product Mockup

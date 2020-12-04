@@ -2,6 +2,11 @@
 title: "準備中"
 description: "This is meta description"
 date: 2020-12-02T03:32:30+09:00
+
+# Twitter card gen用設定
+author: ["いわし"]
+categories: ["Test"]
+
 # draft: true # 反映させる時はfalseに変えるかコメントアウト
 
 # Blog用

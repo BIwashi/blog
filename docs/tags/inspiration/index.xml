@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>inspiration on MY NEW GEAR | IWASHI BLOG</title>
+    <link>https://biwashi.github.io/blog/tags/inspiration/</link>
+    <description>Recent content in inspiration on MY NEW GEAR | IWASHI BLOG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 02 Dec 2020 13:32:09 +0900</lastBuildDate><atom:link href="https://biwashi.github.io/blog/tags/inspiration/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugoでブログをさくっと作ってみる※執筆途中</title>
+      <link>https://biwashi.github.io/blog/blog/hugo%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92%E3%81%95%E3%81%8F%E3%81%A3%E3%81%A8%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/</link>
+      <pubDate>Wed, 02 Dec 2020 13:32:09 +0900</pubDate>
+      
+      <guid>https://biwashi.github.io/blog/blog/hugo%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92%E3%81%95%E3%81%8F%E3%81%A3%E3%81%A8%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/</guid>
+      <description>テンプレから雛形作成 まずはテンプレディレクトリを作成
+$ hugo new site {BlogName} 以下のようなディレクティブと設定ファイルが作成される
+. ├── archetypes │ └── default.md ├── config.toml ├── content ├── data ├── layouts ├── static └── themes ここでテーマを選ぶ
+Complete List
+例として、 hugo-classicを選択する
+先ほど作成された themasに git module の形としていれる
+$ git init &amp;amp;&amp;amp; git submodule add https://github.com/goodroot/hugo-classic.git themes/hugo-classic; themasにいくらでも Thema を入れられるが、明示的にどのテーマを使うかわかるように、config.toml に宣言しておく
+baseURL = &amp;#34;http://example.org/&amp;#34; languageCode = &amp;#34;en-us&amp;#34; title = &amp;#34;My New Hugo Site&amp;#34; theme = &amp;#34;hugo-classic&amp;#34; #######################ここが追加した行 ここの config.toml の記入の仕方は、各テーマにより異なる(のかもしれない) テーマ作成者が、これを全部コピペしろ、と書いてる場合もあるので注意（途中でテーマ変えようと思ったらいろいろコンフリクト起こした）
+Hugo + GitHub Pages（独自ドメイン適応）でサイトを作成・公開する - Qiita</description>
+    </item>
+    
+  </channel>
+</rss>

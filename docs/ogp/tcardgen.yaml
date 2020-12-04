@@ -1,0 +1,14 @@
+title:
+  start:
+    px: 126
+    pY: 180
+  fgHexColor: "#333333"
+  fontSize: 65
+  fontStyle: Regular
+info:
+  fgHexColor: "#FF6600"
+tags:
+  fgHexColor: "#000000"
+  bgHexColor: "#FFFF33"
+  fontSize: 50
+  boxSpacing: 10

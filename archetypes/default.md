@@ -4,11 +4,16 @@ description : "This is meta description"
 date: {{ .Date }}
 draft: true # 反映させる時はfalseに変えるかコメントアウト
 
+# Twitter card gen用設定
+author: ["いわし"]
+categories: ["Test"]
+tags: ["motivation", "inspiration"] # tag
+
 # Blog用---------------------------------------------------
 type: post
 image: images/blog/yourImages.jpg # ブログバナーの画像
 # author: Jamica Jock # 表示されない？
-tags: ["motivation", "inspiration"] # tag
+
 
 # Portfolio用----------------------------------------------
 caption: Product Mockup
