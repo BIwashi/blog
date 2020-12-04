@@ -549,7 +549,7 @@ location: 1201 park street, Avenue, Dhaka
 <h1 id="カスタム実装">カスタム実装</h1>
 <h2 id="feature-の文字を-html-で書きたい-brや-hタグを適用させたい">Feature の文字を HTML で書きたい（ <code>&lt;br&gt;</code>や <code>h○タグ</code>を適用させたい）</h2>
 <p><code>about.xml</code></p>
-<p>現状、上の About の部分は<br>等が適用されるが、下のの Feature の部分では反映されずそのまあ表示されてしまう。これを変えたい。</p>
+<p>現状、上の About の部分は <code>&lt;br&gt;</code>等が適用されるが、下のの Feature の部分では反映されずそのまあ表示されてしまう。これを変えたい。</p>
 <p>変更したのは <code>layouts/about/list.html</code></p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">{{ &#34;<span class="c">&lt;!--  Company Feature Section Start --&gt;</span>&#34; | safeHTML }}
 <span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;about-feature clearfix&#34;</span><span class="p">&gt;</span>
