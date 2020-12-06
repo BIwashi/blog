@@ -6,7 +6,25 @@
     <description>Recent content in Categories on MY NEW GEAR | IWASHI BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 02 Dec 2020 13:32:09 +0900</lastBuildDate><atom:link href="https://biwashi.github.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Dec 2020 17:57:10 +0900</lastBuildDate><atom:link href="https://biwashi.github.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>go</title>
+      <link>https://biwashi.github.io/blog/categories/go/</link>
+      <pubDate>Sun, 06 Dec 2020 17:57:10 +0900</pubDate>
+      
+      <guid>https://biwashi.github.io/blog/categories/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tcardgen</title>
+      <link>https://biwashi.github.io/blog/categories/tcardgen/</link>
+      <pubDate>Sun, 06 Dec 2020 17:57:10 +0900</pubDate>
+      
+      <guid>https://biwashi.github.io/blog/categories/tcardgen/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Test</title>
       <link>https://biwashi.github.io/blog/categories/test/</link>
