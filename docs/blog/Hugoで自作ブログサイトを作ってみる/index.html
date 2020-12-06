@@ -178,13 +178,16 @@
 <p><code>コミさん</code></p>
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://komi.dev/post/2020-09-05-make-blog/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fkomi.dev%2Fpost%2F2020-09-05-make-blog%2F&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
 <h1 id="hugo-とは">Hugo とは？</h1>
-<p>Hugo は Golang 製の静的サイトジェネレーター。HTML とか CSS みたいな動的にかわらないうやつらを自動生成してくれるやつ。</p>
+<p>Hugo は Golang 製の静的サイトジェネレーター。HTML とか CSS みたいなものを自動生成してくれるやつ。</p>
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://gohugo.io/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fgohugo.io%2F&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
 <br>
 <p>そういえば昔、reveal.js っていう HTML/CSS で Web スライドが書けるやつを拡張した reveal-ck っていう Ruby 製のツールを使ったことがあった。
 これも<code>Markdown</code>でスライドを作れるっていうお手軽でいい感じだった。（途中からデザインを凝り始めて朝日が昇ってしまったが…）</p>
 <p>↓ こんな感じ 今まではこれを自己紹介的な感じで Twitter とかに貼っていた。</p>
 <iframe src="https://biwashi.github.io/Portfolio/" width="100%" height="600" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe>
+<p>ちなみにスライドの貼り付け方はこちらの記事を参考にさせてもらいました。</p>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://taipapamotohus.com/post/how-to-create-presentation-slides-by-reveal-dot-js-and-org-mode-org-reveal-part3/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Ftaipapamotohus.com%2Fpost%2Fhow-to-create-presentation-slides-by-reveal-dot-js-and-org-mode-org-reveal-part3%2F&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<br>
 <p>話は戻って Hugo だが、めちゃくちゃ早いらしい。（他と比べたことがないからわからん）</p>
 <p>何はともあれ構築していく。</p>
 <h1 id="雛形作成まで">雛形作成まで</h1>
@@ -209,7 +212,7 @@
 ├── layouts
 ├── static
 └── themes
-</code></pre></div><p>現時点だと、全部空のディレクトリがあるだけです。</p>
+</code></pre></div><p>現時点だと、全部空のディレクトリがあるだけ。</p>
 <h2 id="テンプレートテーマを適用していく">テンプレートテーマを適用していく</h2>
 <p>先ほどのサイトからテーマを選ぶ。
 今回は、<code>Timer Hugo</code>というものを選んだ。レスポンシブに対応してるし、結構いろいろカスタムできそうだったから。</p>
@@ -217,13 +220,13 @@
 <br>
 <p>さっき生成した themas に submodule としてテーマを入れる</p>
 <div class="highlight"><pre class="chroma"><code class="language-zsh" data-lang="zsh">$ git init <span class="o">&amp;&amp;</span> git submodule add https://github.com/themefisher/timer-hugo.git themes/timer-hugo
-</code></pre></div><p>この<code>themas</code>には複数テンプレを入れてもいいが、そうなてくるとどれを適用するのかわからなくなるので、<code>config.toml</code>に明示的に宣言しておく。</p>
+</code></pre></div><p>この<code>themas</code>には複数テンプレを入れてもいいが、そうなてくるとどれを適用するのかわからなくなるので、<code>config.toml</code>で明示的に宣言しておく。</p>
 <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s2">&#34;http://example.org/&#34;</span>
 <span class="nx">languageCode</span> <span class="p">=</span> <span class="s2">&#34;en-us&#34;</span>
 <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;My New Hugo Site&#34;</span>
 <span class="nx">theme</span> <span class="p">=</span> <span class="s2">&#34;timer-hugo&#34;</span>
-</code></pre></div><p>と、書いたが、実はこの config.toml もかくテーマごとに固有の書き方がある。（カスタムされている）
-ゆえに<code>themes/timer-hugo/exampleSite/config.toml</code>の内容をコピーした方がいい。</p>
+</code></pre></div><p>と、書いたが、実はこの config.toml も各テーマごとに固有の書き方がある。（カスタムされている）</p>
+<p>ゆえに<code>themes/timer-hugo/exampleSite/config.toml</code>の内容をコピーした方がいい。</p>
 <div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s2">&#34;http://example.org/&#34;</span>
 <span class="nx">languageCode</span> <span class="p">=</span> <span class="s2">&#34;en-us&#34;</span>
 <span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;Timer | Responsive Multipurpose Bootstrap Hugo Template&#34;</span>
@@ -368,7 +371,7 @@ blog のところも見ると、テンプレで用意されている記事が見
 </span><span class="w"></span><span class="nt">location</span><span class="p">:</span><span class="w"> </span><span class="m">1201</span><span class="w"> </span><span class="l">park street, Avenue, Dhaka</span><span class="w">
 </span><span class="w">
 </span><span class="w"></span><span class="nn">---</span><span class="w">
-</span></code></pre></div><p>細かい設定等は次の記事とかで書いていきたいので今回は省きます。
+</span></code></pre></div><p>細かい設定等は次の記事とかで書いていきたいので今回は省く。
 demo で入れられている markdown ファイルを参考にカスタマイズしていく。</p>
 <p>基本はこんな感じ</p>
 <div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nn">---</span><span class="w">
@@ -408,12 +411,14 @@ demo で入れられている markdown ファイルを参考にカスタマイ�
 <p>しばらくすると公開される。やったね！</p>
 <h1 id="まとめ">まとめ</h1>
 <p>これでサクッと雛形が作れました。テーマもお洒落なのがたくさんあるので見てるだけで楽しい！</p>
-<p>次回はブログをカスタマイズしていくところを書きたい。（地獄の始まり…めちゃしんどい…）</p>
+<p>次回はブログをカスタマイズしていくところを書きたい。（これが地獄の始まりだった…）</p>
 <h1 id="参考">参考</h1>
 <p>参考させていただいた素晴らしい記事たちです</p>
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://knowledge.sakura.ad.jp/22908/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fknowledge.sakura.ad.jp%2F22908%2F&amp;key=f35ef3e07c3f9ce01b389a206da306f5"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
 <iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fanyblog.hatenablog.jp%2Fentry%2F2020%2F06%2F21%2F153128" title="さよならQiita、こんにちはhugo × github pages - motty&#39;s blog" class="embed-card embed-blogcard" scrolling="no" frameborder="0" style="display: block; width: 100%; height: 190px; max-width: 500px; margin: 10px 0px;"></iframe>
-
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://ferret-plus.com//2161" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fferret-plus.com%2F2161&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://qiita.com/bake0937/items/e0914efbd9434be474a4" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fqiita.com%2Fbake0937%2Fitems%2Fe0914efbd9434be474a4&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://qiita.com/bake0937/items/e0914efbd9434be474a4" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fqiita.com%2Fbake0937%2Fitems%2Fe0914efbd9434be474a4&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
 				</div>
 			</div>
 		</div>

@@ -46,7 +46,7 @@ image: "images/og/Hugoで自作ブログサイトを作ってみる.png" # ブ�
 
 # Hugo とは？
 
-Hugo は Golang 製の静的サイトジェネレーター。HTML とか CSS みたいな動的にかわらないうやつらを自動生成してくれるやつ。
+Hugo は Golang 製の静的サイトジェネレーター。HTML とか CSS みたいなものを自動生成してくれるやつ。
 
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://gohugo.io/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fgohugo.io%2F&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
 
@@ -109,7 +109,7 @@ $ hugo new site blog && cd blog
 └── themes
 ```
 
-現時点だと、全部空のディレクトリがあるだけです。
+現時点だと、全部空のディレクトリがあるだけ。
 
 ## テンプレートテーマを適用していく
 
@@ -126,7 +126,7 @@ $ hugo new site blog && cd blog
 $ git init && git submodule add https://github.com/themefisher/timer-hugo.git themes/timer-hugo
 ```
 
-この`themas`には複数テンプレを入れてもいいが、そうなてくるとどれを適用するのかわからなくなるので、`config.toml`に明示的に宣言しておく。
+この`themas`には複数テンプレを入れてもいいが、そうなてくるとどれを適用するのかわからなくなるので、`config.toml`で明示的に宣言しておく。
 
 ```toml
 baseURL = "http://example.org/"
@@ -135,7 +135,8 @@ title = "My New Hugo Site"
 theme = "timer-hugo"
 ```
 
-と、書いたが、実はこの config.toml もかくテーマごとに固有の書き方がある。（カスタムされている）
+と、書いたが、実はこの config.toml も各テーマごとに固有の書き方がある。（カスタムされている）
+
 ゆえに`themes/timer-hugo/exampleSite/config.toml`の内容をコピーした方がいい。
 
 ```toml
@@ -303,7 +304,7 @@ location: 1201 park street, Avenue, Dhaka
 ---
 ```
 
-細かい設定等は次の記事とかで書いていきたいので今回は省きます。
+細かい設定等は次の記事とかで書いていきたいので今回は省く。
 demo で入れられている markdown ファイルを参考にカスタマイズしていく。
 
 基本はこんな感じ
@@ -369,7 +370,7 @@ canonifyurls = true  ######################## 追加(相対URLを絶対URLに変
 
 これでサクッと雛形が作れました。テーマもお洒落なのがたくさんあるので見てるだけで楽しい！
 
-次回はブログをカスタマイズしていくところを書きたい。（地獄の始まり…めちゃしんどい…）
+次回はブログをカスタマイズしていくところを書きたい。（これが地獄の始まりだった…）
 
 # 参考
 
