@@ -59,6 +59,11 @@ Hugo は Golang 製の静的サイトジェネレーター。HTML とか CSS み
 
 <iframe src="https://biwashi.github.io/Portfolio/" width="100%" height="600" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe>
 
+ちなみにスライドの貼り付け方はこちらの記事を参考にさせてもらいました。
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://taipapamotohus.com/post/how-to-create-presentation-slides-by-reveal-dot-js-and-org-mode-org-reveal-part3/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Ftaipapamotohus.com%2Fpost%2Fhow-to-create-presentation-slides-by-reveal-dot-js-and-org-mode-org-reveal-part3%2F&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+
+<br>
+
 話は戻って Hugo だが、めちゃくちゃ早いらしい。（他と比べたことがないからわからん）
 
 何はともあれ構築していく。
@@ -373,3 +378,9 @@ canonifyurls = true  ######################## 追加(相対URLを絶対URLに変
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://knowledge.sakura.ad.jp/22908/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fknowledge.sakura.ad.jp%2F22908%2F&amp;key=f35ef3e07c3f9ce01b389a206da306f5"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
 
 <iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fanyblog.hatenablog.jp%2Fentry%2F2020%2F06%2F21%2F153128" title="さよならQiita、こんにちはhugo × github pages - motty&#39;s blog" class="embed-card embed-blogcard" scrolling="no" frameborder="0" style="display: block; width: 100%; height: 190px; max-width: 500px; margin: 10px 0px;"></iframe>
+
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://ferret-plus.com//2161" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fferret-plus.com%2F2161&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://qiita.com/bake0937/items/e0914efbd9434be474a4" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fqiita.com%2Fbake0937%2Fitems%2Fe0914efbd9434be474a4&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://qiita.com/bake0937/items/e0914efbd9434be474a4" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fqiita.com%2Fbake0937%2Fitems%2Fe0914efbd9434be474a4&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
