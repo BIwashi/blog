@@ -1,6 +1,6 @@
 ---
 title: "Hugoで自作ブログサイトを作ってみる"
-description : "This is meta description"
+description: "This is meta description"
 date: 2020-12-06T22:54:14+09:00
 # draft: true # 反映させる時はfalseに変えるかコメントアウト
 comments: true
@@ -10,7 +10,7 @@ archives: ["2020", "2020-12"]
 # Twitter card gen用設定"]
 author: ["いわし"]
 categories: ["Tech"]
-tags: ["Go","Hugo"] # tag
+tags: ["Go", "Hugo"] # tag
 ogimage: "images/og/make-blog-by-hugo.png" # tcardgenで生成した画像をOGP画像に設定する
 url: "/blog/make-blog-by-hugo/" # tcardgenでの自動生成スクリプト用のパスを設定 ルーティング固定の意味もある
 
@@ -27,7 +27,6 @@ image: "images/og/make-blog-by-hugo.png" # ブログバナーの画像
 # submitDate: November 20, 2017
 # category: ["mockup","design"] # tag
 # location: 1201 park street, Avenue, Dhaka
-
 ---
 
 # はじめに
@@ -59,6 +58,7 @@ Hugo は Golang 製の静的サイトジェネレーター。HTML とか CSS み
 <iframe src="https://biwashi.github.io/Portfolio/" width="100%" height="600" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe>
 
 ちなみにスライドの貼り付け方はこちらの記事を参考にさせてもらいました。
+
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://taipapamotohus.com/post/how-to-create-presentation-slides-by-reveal-dot-js-and-org-mode-org-reveal-part3/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Ftaipapamotohus.com%2Fpost%2Fhow-to-create-presentation-slides-by-reveal-dot-js-and-org-mode-org-reveal-part3%2F&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
 
 <br>
@@ -125,7 +125,7 @@ $ hugo new site blog && cd blog
 $ git init && git submodule add https://github.com/themefisher/timer-hugo.git themes/timer-hugo
 ```
 
-この`themas`には複数テンプレを入れてもいいが、そうなてくるとどれを適用するのかわからなくなるので、`config.toml`で明示的に宣言しておく。
+この`themas`には複数テンプレを入れてもいいが、そうなってくるとどれを適用するのかわからなくなるので、`config.toml`で明示的に宣言しておく。
 
 ```toml
 baseURL = "http://example.org/"
@@ -240,9 +240,9 @@ url = "#"
 
 加えて、`themes/timer-hugo`の
 
-- ・archetypes
-- ・layouts
-- ・static
+- archetypes
+- layouts
+- static
 
 もコピーする。（自分はやらなかったが、assetes もコピーした方がいいかも）
 
@@ -384,3 +384,7 @@ canonifyurls = true  ######################## 追加(相対URLを絶対URLに変
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://qiita.com/bake0937/items/e0914efbd9434be474a4" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fqiita.com%2Fbake0937%2Fitems%2Fe0914efbd9434be474a4&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
 
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://qiita.com/bake0937/items/e0914efbd9434be474a4" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fqiita.com%2Fbake0937%2Fitems%2Fe0914efbd9434be474a4&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://sanposhiho.com/posts/make-blog-by-hugo/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fsanposhiho.com%2Fposts%2Fmake-blog-by-hugo%2F&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://komi.dev/post/2020-09-05-make-blog/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fkomi.dev%2Fpost%2F2020-09-05-make-blog%2F&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
