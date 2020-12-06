@@ -388,3 +388,4 @@ canonifyurls = true  ######################## 追加(相対URLを絶対URLに変
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://sanposhiho.com/posts/make-blog-by-hugo/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fsanposhiho.com%2Fposts%2Fmake-blog-by-hugo%2F&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
 
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://komi.dev/post/2020-09-05-make-blog/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fkomi.dev%2Fpost%2F2020-09-05-make-blog%2F&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+
