@@ -82,6 +82,12 @@ serviceItem:
       ｵﾍﾞﾝｷｮｳﾁｭｳ
 
   - icon:
+    iconsrc: /images/customIcons/typescript.svg
+    title: TypeScript
+    description: >
+      ｵﾍﾞﾝｷｮｳﾁｭｳ
+
+  - icon:
     iconsrc: /images/customIcons/unity.svg
     title: Unity
     description: >
