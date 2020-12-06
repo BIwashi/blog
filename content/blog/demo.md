@@ -5,9 +5,9 @@ date: 2020-12-02T03:32:30+09:00
 
 # Twitter card gen用設定
 author: ["いわし"]
-categories: ["Test"]
+categories: ["tech"]
 
-# draft: true # 反映させる時はfalseに変えるかコメントアウト
+draft: true # 反映させる時はfalseに変えるかコメントアウト
 
 # Blog用
 type: post

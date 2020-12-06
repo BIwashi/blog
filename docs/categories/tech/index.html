@@ -12,7 +12,7 @@
 
   <!-- Mobile Specific Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>go</title>
+  <title>Tech</title>
   <link rel="icon" href="https://biwashi.github.io/blog/images/favicon.ico">
 
   <!-- Twitter Bootstrs CSS -->
@@ -119,7 +119,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h2>go</h2>
+          <h2>Tech</h2>
           <ol class="breadcrumb list-inline text-center">
             <li class="list-inline-item">
               <a href="https://biwashi.github.io/blog/">
@@ -127,7 +127,7 @@
                 Home &nbsp; &nbsp;/
               </a>
             </li>
-            <li class="active list-inline-item">go</li>
+            <li class="active list-inline-item">Tech</li>
           </ol>
         </div>
       </div>
@@ -144,13 +144,13 @@
 				<article class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">
 
 					<div class="blog-post-image">
-						<a href="https://biwashi.github.io/blog/blog/tcardgen%E3%81%A7Hugo%E3%81%A7%E4%BD%9C%E3%81%A3%E3%81%9F%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AEOGP%E3%82%92%E8%87%AA%E5%8B%95%E7%94%9F%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/">
-							<img class="img-fluid" src="https://biwashi.github.io/blog/images/og/tcardgen%E3%81%A7Hugo%E3%81%A7%E4%BD%9C%E3%81%A3%E3%81%9F%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AEOGP%E3%82%92%E8%87%AA%E5%8B%95%E7%94%9F%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F.png" alt="post-image" />
+						<a href="https://biwashi.github.io/blog/blog/Hugo%E3%81%A7%E8%87%AA%E4%BD%9C%E3%83%96%E3%83%AD%E3%82%B0%E3%82%B5%E3%82%A4%E3%83%88%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/">
+							<img class="img-fluid" src="https://biwashi.github.io/blog/images/og/Hugo%E3%81%A7%E8%87%AA%E4%BD%9C%E3%83%96%E3%83%AD%E3%82%B0%E3%82%B5%E3%82%A4%E3%83%88%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B.png" alt="post-image" />
 						</a>
 					</div>
 					<div class="blog-content">
 						<h2 class="blogpost-title">
-							<a href="https://biwashi.github.io/blog/blog/tcardgen%E3%81%A7Hugo%E3%81%A7%E4%BD%9C%E3%81%A3%E3%81%9F%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AEOGP%E3%82%92%E8%87%AA%E5%8B%95%E7%94%9F%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/">tcardgenでHugoで作ったブログのOGPを自動生成してみた</a>
+							<a href="https://biwashi.github.io/blog/blog/Hugo%E3%81%A7%E8%87%AA%E4%BD%9C%E3%83%96%E3%83%AD%E3%82%B0%E3%82%B5%E3%82%A4%E3%83%88%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/">Hugoで自作ブログサイトを作ってみる</a>
 						</h2>
 						<div class="blog-meta">
 							<span>Sunday, Dec 6, 2020</span>
@@ -160,15 +160,26 @@
 							
 							
 							<span>
-								motivation, inspiration
+								Go, Hugo
 							</span>
 							
 						</div>
 						<p>
-							 tcardgen で自動生成されるかどうかの test です script
-if [ $# != 1 ] || [ $1 = &#34;&#34; ]; then echo &#34;One parameters are required&#34; echo &#34;&#34; echo &#34;string: path to markdown file of target post&#34; echo &#34;&#34; echo &#34;example command&#34; echo &#34;\t$sh ./scripts/gen_ogp.sh ./content/post/test/test.md&#34; exit fi TARGET_POST_PATH=$1 tcardgen \  --fontDir ./static/fonts/Kinto_Sans \  --output static/images/og \  --template static/ogp/template.png \  --config tcardgen.yaml \  $TARGET_POST_PATH 
+							はじめに 最近、Twitter の有名なすごい人たちがみんな Hugo を使って自作ブログを作っていて、ほげーーやってみたいーー、ってなたので試してみた。 また、Go 製のツールということで、勉強したかった Go を使えるかも！という思いもあった。（結果、Go は 1 ミリも使わずに終わった）
+さんぽしさん
+ コミさん
+ Hugo とは？ Hugo は Golang 製の静的サイトジェネレーター。HTML とか CSS みたいな動的にかわらないうやつらを自動生成してくれるやつ。
+ そういえば昔、reveal.js っていう HTML/CSS で Web スライドが書けるやつを拡張した reveal-ck っていう Ruby 製のツールを使ったことがあった。 これもMarkdownでスライドを作れるっていうお手軽でいい感じだった。（途中からデザインを凝り始めて朝日が昇ってしまったが…）
+↓ こんな感じ 今まではこれを自己紹介的な感じで Twitter とかに貼っていた。
+ 話は戻って Hugo だが、めちゃくちゃ早いらしい。（他と比べたことがないからわからん）
+何はともあれ構築していく。
+雛形作成まで Hugo にはたくさんの Thema があって、自由に選び放題。（ライセンスとかの確認は注意） ここから好きに選べる。ブログサイト以外でも使えそうなものがたくさんだから、ちょっとしたハッカソンでのテンプレ作りに良さそう。（Hugo じゃなくてもいいけど）
+ テンプレ作成 というわけで、まずは Hugo をインストールしていく。
+$ brew install hugo 他の OS は本家を参照してください。
+ 入ったら、次のコマンドで雛形が生成される
+$ hugo new site blog &amp;&amp; cd blog $ hugo new site {好きな名前}で作られる
 						</p>
-						<a href="https://biwashi.github.io/blog/blog/tcardgen%E3%81%A7Hugo%E3%81%A7%E4%BD%9C%E3%81%A3%E3%81%9F%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AEOGP%E3%82%92%E8%87%AA%E5%8B%95%E7%94%9F%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/" class="btn btn-dafault btn-details hvr-bounce-to-right">Continue
+						<a href="https://biwashi.github.io/blog/blog/Hugo%E3%81%A7%E8%87%AA%E4%BD%9C%E3%83%96%E3%83%AD%E3%82%B0%E3%82%B5%E3%82%A4%E3%83%88%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/" class="btn btn-dafault btn-details hvr-bounce-to-right">Continue
 							Reading</a>
 					</div>
 				</article>

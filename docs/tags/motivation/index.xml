@@ -13,25 +13,8 @@
       <pubDate>Sun, 06 Dec 2020 17:57:10 +0900</pubDate>
       
       <guid>https://biwashi.github.io/blog/blog/tcardgen%E3%81%A7Hugo%E3%81%A7%E4%BD%9C%E3%81%A3%E3%81%9F%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AEOGP%E3%82%92%E8%87%AA%E5%8B%95%E7%94%9F%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</guid>
-      <description>tcardgen で自動生成されるかどうかの test です script
+      <description> tcardgen で自動生成されるかどうかの test です script
 if [ $# != 1 ] || [ $1 = &amp;#34;&amp;#34; ]; then echo &amp;#34;One parameters are required&amp;#34; echo &amp;#34;&amp;#34; echo &amp;#34;string: path to markdown file of target post&amp;#34; echo &amp;#34;&amp;#34; echo &amp;#34;example command&amp;#34; echo &amp;#34;\t$sh ./scripts/gen_ogp.sh ./content/post/test/test.md&amp;#34; exit fi TARGET_POST_PATH=$1 tcardgen \  --fontDir ./static/fonts/Kinto_Sans \  --output static/images/og \  --template static/ogp/template.png \  --config tcardgen.yaml \  $TARGET_POST_PATH </description>
-    </item>
-    
-    <item>
-      <title>Hugoでブログをさくっと作ってみる※執筆途中</title>
-      <link>https://biwashi.github.io/blog/blog/hugo%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92%E3%81%95%E3%81%8F%E3%81%A3%E3%81%A8%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/</link>
-      <pubDate>Wed, 02 Dec 2020 13:32:09 +0900</pubDate>
-      
-      <guid>https://biwashi.github.io/blog/blog/hugo%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92%E3%81%95%E3%81%8F%E3%81%A3%E3%81%A8%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/</guid>
-      <description>テンプレから雛形作成 まずはテンプレディレクトリを作成
-$ hugo new site {BlogName} 以下のようなディレクティブと設定ファイルが作成される
-. ├── archetypes │ └── default.md ├── config.toml ├── content ├── data ├── layouts ├── static └── themes ここでテーマを選ぶ
-Complete List
-例として、 hugo-classicを選択する
-先ほど作成された themasに git module の形としていれる
-$ git init &amp;amp;&amp;amp; git submodule add https://github.com/goodroot/hugo-classic.git themes/hugo-classic; themasにいくらでも Thema を入れられるが、明示的にどのテーマを使うかわかるように、config.toml に宣言しておく
-baseURL = &amp;#34;http://example.org/&amp;#34; languageCode = &amp;#34;en-us&amp;#34; title = &amp;#34;My New Hugo Site&amp;#34; theme = &amp;#34;hugo-classic&amp;#34; #######################ここが追加した行 ここの config.toml の記入の仕方は、各テーマにより異なる(のかもしれない) テーマ作成者が、これを全部コピペしろ、と書いてる場合もあるので注意（途中でテーマ変えようと思ったらいろいろコンフリクト起こした）
-Hugo + GitHub Pages（独自ドメイン適応）でサイトを作成・公開する - Qiita</description>
     </item>
     
   </channel>

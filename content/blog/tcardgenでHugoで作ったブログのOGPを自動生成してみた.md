@@ -2,7 +2,7 @@
 title: "tcardgenでHugoで作ったブログのOGPを自動生成してみた"
 description : "This is meta description"
 date: 2020-12-06T17:57:10+09:00
-# draft: true # 反映させる時はfalseに変えるかコメントアウト
+draft: true # 反映させる時はfalseに変えるかコメントアウト
 comments: true
 url: "/blog/tcardgenでHugoで作ったブログのOGPを自動生成してみた/" # tcardgenでの自動生成スクリプト用のパスを設定
 adsense: false
@@ -30,6 +30,8 @@ image: "images/og/tcardgenでHugoで作ったブログのOGPを自動生成し�
 # location: 1201 park street, Avenue, Dhaka
 
 ---
+
+# 
 
 # tcardgen で自動生成されるかどうかの test です
 

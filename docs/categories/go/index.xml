@@ -13,7 +13,7 @@
       <pubDate>Sun, 06 Dec 2020 17:57:10 +0900</pubDate>
       
       <guid>https://biwashi.github.io/blog/blog/tcardgen%E3%81%A7Hugo%E3%81%A7%E4%BD%9C%E3%81%A3%E3%81%9F%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AEOGP%E3%82%92%E8%87%AA%E5%8B%95%E7%94%9F%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</guid>
-      <description>tcardgen で自動生成されるかどうかの test です script
+      <description> tcardgen で自動生成されるかどうかの test です script
 if [ $# != 1 ] || [ $1 = &amp;#34;&amp;#34; ]; then echo &amp;#34;One parameters are required&amp;#34; echo &amp;#34;&amp;#34; echo &amp;#34;string: path to markdown file of target post&amp;#34; echo &amp;#34;&amp;#34; echo &amp;#34;example command&amp;#34; echo &amp;#34;\t$sh ./scripts/gen_ogp.sh ./content/post/test/test.md&amp;#34; exit fi TARGET_POST_PATH=$1 tcardgen \  --fontDir ./static/fonts/Kinto_Sans \  --output static/images/og \  --template static/ogp/template.png \  --config tcardgen.yaml \  $TARGET_POST_PATH </description>
     </item>
     

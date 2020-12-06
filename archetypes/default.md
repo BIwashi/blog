@@ -4,7 +4,6 @@ description : "This is meta description"
 date: {{ .Date }}
 draft: true # 反映させる時はfalseに変えるかコメントアウト
 comments: true
-url: "/{{ .Type }}/{{ .Name }}/" # tcardgenでの自動生成スクリプト用のパスを設定
 adsense: false
 archives: ["{{ dateFormat "2006" .Date }}", "{{ dateFormat "2006-01" .Date }}"]
 

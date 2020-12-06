@@ -6,22 +6,26 @@
     <description>Recent content in Test on MY NEW GEAR | IWASHI BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 02 Dec 2020 13:32:09 +0900</lastBuildDate><atom:link href="https://biwashi.github.io/blog/categories/test/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Dec 2020 18:32:07 +0900</lastBuildDate><atom:link href="https://biwashi.github.io/blog/categories/test/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hugoでブログをさくっと作ってみる※執筆途中</title>
-      <link>https://biwashi.github.io/blog/blog/hugo%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92%E3%81%95%E3%81%8F%E3%81%A3%E3%81%A8%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/</link>
-      <pubDate>Wed, 02 Dec 2020 13:32:09 +0900</pubDate>
+      <title>Hugoで自作ブログサイトを作ってみる</title>
+      <link>https://biwashi.github.io/blog/blog/Hugo%E3%81%A7%E8%87%AA%E4%BD%9C%E3%83%96%E3%83%AD%E3%82%B0%E3%82%B5%E3%82%A4%E3%83%88%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/</link>
+      <pubDate>Sun, 06 Dec 2020 18:32:07 +0900</pubDate>
       
-      <guid>https://biwashi.github.io/blog/blog/hugo%E3%81%A7%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92%E3%81%95%E3%81%8F%E3%81%A3%E3%81%A8%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/</guid>
-      <description>テンプレから雛形作成 まずはテンプレディレクトリを作成
-$ hugo new site {BlogName} 以下のようなディレクティブと設定ファイルが作成される
-. ├── archetypes │ └── default.md ├── config.toml ├── content ├── data ├── layouts ├── static └── themes ここでテーマを選ぶ
-Complete List
-例として、 hugo-classicを選択する
-先ほど作成された themasに git module の形としていれる
-$ git init &amp;amp;&amp;amp; git submodule add https://github.com/goodroot/hugo-classic.git themes/hugo-classic; themasにいくらでも Thema を入れられるが、明示的にどのテーマを使うかわかるように、config.toml に宣言しておく
-baseURL = &amp;#34;http://example.org/&amp;#34; languageCode = &amp;#34;en-us&amp;#34; title = &amp;#34;My New Hugo Site&amp;#34; theme = &amp;#34;hugo-classic&amp;#34; #######################ここが追加した行 ここの config.toml の記入の仕方は、各テーマにより異なる(のかもしれない) テーマ作成者が、これを全部コピペしろ、と書いてる場合もあるので注意（途中でテーマ変えようと思ったらいろいろコンフリクト起こした）
-Hugo + GitHub Pages（独自ドメイン適応）でサイトを作成・公開する - Qiita</description>
+      <guid>https://biwashi.github.io/blog/blog/Hugo%E3%81%A7%E8%87%AA%E4%BD%9C%E3%83%96%E3%83%AD%E3%82%B0%E3%82%B5%E3%82%A4%E3%83%88%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/</guid>
+      <description>はじめに 最近、Twitter の有名なすごい人たちがみんな Hugo を使って自作ブログを作っていて、ほげーーやってみたいーー、ってなたので試してみた。 また、Go 製のツールということで、勉強したかった Go を使えるかも！という思いもあった。（結果、Go は 1 ミリも使わずに終わった）
+さんぽしさん
+ コミさん
+ Hugo とは？ Hugo は Golang 製の静的サイトジェネレーター。HTML とか CSS みたいな動的にかわらないうやつらを自動生成してくれるやつ。
+ そういえば昔、reveal.js っていう HTML/CSS で Web スライドが書けるやつを拡張した reveal-ck っていう Ruby 製のツールを使ったことがあった。 これもMarkdownでスライドを作れるっていうお手軽でいい感じだった。（途中からデザインを凝り始めて朝日が昇ってしまったが…）
+↓ こんな感じ 今まではこれを自己紹介的な感じで Twitter とかに貼っていた。
+ 話は戻って Hugo だが、めちゃくちゃ早いらしい。（他と比べたことがないからわからん）
+何はともあれ構築していく。
+雛形作成まで Hugo にはたくさんの Thema があって、自由に選び放題。（ライセンスとかの確認は注意） ここから好きに選べる。ブログサイト以外でも使えそうなものがたくさんだから、ちょっとしたハッカソンでのテンプレ作りに良さそう。（Hugo じゃなくてもいいけど）
+ テンプレ作成 というわけで、まずは Hugo をインストールしていく。
+$ brew install hugo 他の OS は本家を参照してください。
+ 入ったら、次のコマンドで雛形が生成される
+$ hugo new site blog &amp;amp;&amp;amp; cd blog $ hugo new site {好きな名前}で作られる</description>
     </item>
     
     <item>
