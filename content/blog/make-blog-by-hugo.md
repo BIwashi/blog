@@ -1,10 +1,9 @@
 ---
 title: "Hugoで自作ブログサイトを作ってみる"
 description : "This is meta description"
-date: 2020-12-06T18:32:07+09:00
+date: 2020-12-06T22:54:14+09:00
 # draft: true # 反映させる時はfalseに変えるかコメントアウト
 comments: true
-url: "/blog/Hugoで自作ブログサイトを作ってみる/" # tcardgenでの自動生成スクリプト用のパスを設定
 adsense: false
 archives: ["2020", "2020-12"]
 
@@ -12,14 +11,14 @@ archives: ["2020", "2020-12"]
 author: ["いわし"]
 categories: ["Tech"]
 tags: ["Go","Hugo"] # tag
-ogimage: "images/og/Hugoで自作ブログサイトを作ってみる.png" # tcardgenで生成した画像をOGP画像に設定する
-url: "/blog/Hugoで自作ブログサイトを作ってみる/" # tcardgenでの自動生成スクリプト用のパスを設定
+ogimage: "images/og/make-blog-by-hugo.png" # tcardgenで生成した画像をOGP画像に設定する
+url: "/blog/make-blog-by-hugo/" # tcardgenでの自動生成スクリプト用のパスを設定 ルーティング固定の意味もある
 
 # Blog用---------------------------------------------------
 type: post
-image: "images/og/Hugoで自作ブログサイトを作ってみる.png" # ブログバナーの画像
+image: "images/og/make-blog-by-hugo.png" # ブログバナーの画像
 
-# Portfolio用----------------------------------------------
+# # Portfolio用----------------------------------------------
 # caption: Product Mockup
 # image: images/portfolio/item-2.jpg
 # liveLink: link # ??

@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <meta name="description"
+    content="This is meta description">
+  
+  <meta name="author" content="IWASHI">
+  <meta name="generator" content="Hugo 0.79.0" />
+
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hugoで自作ブログサイトを作ってみる</title>
+  <link rel="icon" href="https://biwashi.github.io/blog/images/favicon.ico">
+
+  <!-- Twitter Bootstrs CSS -->
+  <link rel="stylesheet" href="https://biwashi.github.io/blog/plugins/bootstrap/bootstrap.min.css">
+  <!-- Ionicons Fonts Css -->
+  <link rel="stylesheet" href="https://biwashi.github.io/blog/plugins/ionicons/ionicons.min.css">
+
+  
+  <!-- Ionicons Fonts Css Version Up -->
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+  
+
+  <!-- animate css -->
+  <link rel="stylesheet" href="https://biwashi.github.io/blog/plugins/animate-css/animate.css">
+  <!-- Hero area slider css-->
+  <link rel="stylesheet" href="https://biwashi.github.io/blog/plugins/slider/slider.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="https://biwashi.github.io/blog/plugins/slick/slick.css">
+  <!-- Fancybox -->
+  <link rel="stylesheet" href="https://biwashi.github.io/blog/plugins/facncybox/jquery.fancybox.css">
+  <!-- hover -->
+  <link rel="stylesheet" href="https://biwashi.github.io/blog/plugins/hover/hover-min.css">
+  <!-- template main css file -->
+  
+  <link rel="stylesheet" href="https://biwashi.github.io/blog/css/style.min.css" media="screen">
+
+  <!-- Custom stylesheet - for your changes -->
+  
+  <link rel="stylesheet" href="https://biwashi.github.io/blog/css/custom.min.css" media="screen">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@B_Sardine">
+  <meta name="twitter:creator" content="@B_Sardine">
+  <meta name="twitter:title" content="MY NEW GEAR | IWASHI BLOG">
+  <meta name="twitter:description" content="Iwashi no Blog">
+  <meta name="twitter:image:src" content="https://biwashi.github.io/blog/images/iwashilong_w.jpg">
+
+  <meta property="og:image" content="https://biwashi.github.io/blog/images/iwashilong_w.jpg" />
+  
+  <meta property="og:image" content="https://biwashi.github.io/blog/images/og/make-blog-by-hugo.png"> 
+  <meta name="twitter:image:src" content="https://biwashi.github.io/blog/images/og/make-blog-by-hugo.png">
+
+  
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  
+
+  
+  <meta name="google-site-verification" content="ibduUf160caf1tigM4zT1VidE_yj4hpyyixYOdX0qp0" />
+
+  
+  <!-- codeblock -->
+  <link rel="stylesheet" href="https://biwashi.github.io/blog/css/syntax.css" />
+  
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+  
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+</head><body><section class="top-bar animated-header">
+	<meta name="google-site-verification" content="ibduUf160caf1tigM4zT1VidE_yj4hpyyixYOdX0qp0" />
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<a class="navbar-brand" href="https://biwashi.github.io/blog/">
+						<img src="https://biwashi.github.io/blog/images/iwashimiddle.png" alt="MY NEW GEAR | IWASHI BLOG">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+						aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navigation">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="https://biwashi.github.io/blog/">Home</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://biwashi.github.io/blog/about">About</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://biwashi.github.io/blog/skill">Skill</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://biwashi.github.io/blog/blog">Blog</a>
+							</li>
+							
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="global-page-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="block">
+					<h2>Hugoで自作ブログサイトを作ってみる</h2>
+					<div class="portfolio-meta">
+						<span>Sunday, Dec 6, 2020</span>|
+						<span> Tags:
+							Go, Hugo
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="single-post">
+	<div class="container">
+		
+		
+		<div class="page-toc">
+    <details>
+        <summary>Index</summary>
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#はじめに">はじめに</a></li>
+    <li><a href="#hugo-とは">Hugo とは？</a></li>
+    <li><a href="#雛形作成まで">雛形作成まで</a>
+      <ol>
+        <li><a href="#テンプレ作成">テンプレ作成</a></li>
+        <li><a href="#テンプレートテーマを適用していく">テンプレートテーマを適用していく</a></li>
+      </ol>
+    </li>
+    <li><a href="#記事を書いてみる">記事を書いてみる</a></li>
+    <li><a href="#github-pages-公開する">github pages 公開する</a>
+      <ol>
+        <li><a href="#ディレクトリ名を変更する">ディレクトリ名を変更する</a></li>
+      </ol>
+    </li>
+    <li><a href="#まとめ">まとめ</a></li>
+    <li><a href="#参考">参考</a></li>
+  </ol>
+</nav>
+    </details>
+</div>
+		
+		
+		<div class="row">
+			<div class="col-md-12">
+				
+				<div class="post-img">
+					<img class="img-fluid" alt="" src="https://biwashi.github.io/blog/images/og/make-blog-by-hugo.png">
+				</div>
+				
+				<div class="post-content">
+					<h1 id="はじめに">はじめに</h1>
+<p>最近、Twitter の有名なすごい人たちがみんな Hugo を使って自作ブログを作っていて、ほげーーやってみたいーー、ってなたので試してみた。
+また、Go 製のツールということで、勉強したかった Go を使えるかも！という思いもあった。（結果、Go は 1 ミリも使わずに終わった）</p>
+<p><code>さんぽしさん</code></p>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://sanposhiho.com/posts/make-blog-by-hugo/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fsanposhiho.com%2Fposts%2Fmake-blog-by-hugo%2F&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<p><code>コミさん</code></p>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://komi.dev/post/2020-09-05-make-blog/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fkomi.dev%2Fpost%2F2020-09-05-make-blog%2F&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<h1 id="hugo-とは">Hugo とは？</h1>
+<p>Hugo は Golang 製の静的サイトジェネレーター。HTML とか CSS みたいなものを自動生成してくれるやつ。</p>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://gohugo.io/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fgohugo.io%2F&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<br>
+<p>そういえば昔、reveal.js っていう HTML/CSS で Web スライドが書けるやつを拡張した reveal-ck っていう Ruby 製のツールを使ったことがあった。
+これも<code>Markdown</code>でスライドを作れるっていうお手軽でいい感じだった。（途中からデザインを凝り始めて朝日が昇ってしまったが…）</p>
+<p>↓ こんな感じ 今まではこれを自己紹介的な感じで Twitter とかに貼っていた。</p>
+<iframe src="https://biwashi.github.io/Portfolio/" width="100%" height="600" frameborder="0" allowfullscreen="allowfullscreen" allow="geolocation *; microphone *; camera *; midi *; encrypted-media *"></iframe>
+<p>ちなみにスライドの貼り付け方はこちらの記事を参考にさせてもらいました。</p>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://taipapamotohus.com/post/how-to-create-presentation-slides-by-reveal-dot-js-and-org-mode-org-reveal-part3/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Ftaipapamotohus.com%2Fpost%2Fhow-to-create-presentation-slides-by-reveal-dot-js-and-org-mode-org-reveal-part3%2F&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<br>
+<p>話は戻って Hugo だが、めちゃくちゃ早いらしい。（他と比べたことがないからわからん）</p>
+<p>何はともあれ構築していく。</p>
+<h1 id="雛形作成まで">雛形作成まで</h1>
+<p>Hugo にはたくさんの Thema があって、自由に選び放題。（ライセンスとかの確認は注意）
+ここから好きに選べる。ブログサイト以外でも使えそうなものがたくさんだから、ちょっとしたハッカソンでのテンプレ作りに良さそう。（Hugo じゃなくてもいいけど）</p>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://themes.gohugo.io/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fthemes.gohugo.io%2F&amp;key=f35ef3e07c3f9ce01b389a206da306f5"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<h2 id="テンプレ作成">テンプレ作成</h2>
+<p>というわけで、まずは Hugo をインストールしていく。</p>
+<div class="highlight"><pre class="chroma"><code class="language-zsh" data-lang="zsh">$ brew install hugo
+</code></pre></div><p>他の OS は本家を参照してください。</p>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://gohugo.io/getting-started/installing/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fgohugo.io%2Fgetting-started%2Finstalling&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<p>入ったら、次のコマンドで雛形が生成される</p>
+<div class="highlight"><pre class="chroma"><code class="language-zsh" data-lang="zsh">$ hugo new site blog <span class="o">&amp;&amp;</span> <span class="nb">cd</span> blog
+</code></pre></div><p><code>$ hugo new site {好きな名前}</code>で作られる</p>
+<p>そうすると次のようなものたちが生成される</p>
+<div class="highlight"><pre class="chroma"><code class="language-zsh" data-lang="zsh">.
+├── archetypes
+│   └── default.md
+├── config.toml
+├── content
+├── data
+├── layouts
+├── static
+└── themes
+</code></pre></div><p>現時点だと、全部空のディレクトリがあるだけ。</p>
+<h2 id="テンプレートテーマを適用していく">テンプレートテーマを適用していく</h2>
+<p>先ほどのサイトからテーマを選ぶ。
+今回は、<code>Timer Hugo</code>というものを選んだ。レスポンシブに対応してるし、結構いろいろカスタムできそうだったから。</p>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://themes.gohugo.io/timer-hugo/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fthemes.gohugo.io%2Ftimer-hugo%2F%23main-features&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<br>
+<p>さっき生成した themas に submodule としてテーマを入れる</p>
+<div class="highlight"><pre class="chroma"><code class="language-zsh" data-lang="zsh">$ git init <span class="o">&amp;&amp;</span> git submodule add https://github.com/themefisher/timer-hugo.git themes/timer-hugo
+</code></pre></div><p>この<code>themas</code>には複数テンプレを入れてもいいが、そうなてくるとどれを適用するのかわからなくなるので、<code>config.toml</code>で明示的に宣言しておく。</p>
+<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s2">&#34;http://example.org/&#34;</span>
+<span class="nx">languageCode</span> <span class="p">=</span> <span class="s2">&#34;en-us&#34;</span>
+<span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;My New Hugo Site&#34;</span>
+<span class="nx">theme</span> <span class="p">=</span> <span class="s2">&#34;timer-hugo&#34;</span>
+</code></pre></div><p>と、書いたが、実はこの config.toml も各テーマごとに固有の書き方がある。（カスタムされている）</p>
+<p>ゆえに<code>themes/timer-hugo/exampleSite/config.toml</code>の内容をコピーした方がいい。</p>
+<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s2">&#34;http://example.org/&#34;</span>
+<span class="nx">languageCode</span> <span class="p">=</span> <span class="s2">&#34;en-us&#34;</span>
+<span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;Timer | Responsive Multipurpose Bootstrap Hugo Template&#34;</span>
+<span class="nx">theme</span> <span class="p">=</span> <span class="s2">&#34;timer-hugo&#34;</span>
+
+<span class="c"># We Used Ionicons Icon font for Icon, for more details check this link - https://ionicons.com/</span>
+
+<span class="c"># Navbar Menus</span>
+<span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+<span class="nx">name</span>    <span class="p">=</span> <span class="s2">&#34;About&#34;</span>
+<span class="nx">url</span>     <span class="p">=</span> <span class="s2">&#34;about&#34;</span>
+<span class="nx">weight</span>  <span class="p">=</span> <span class="mi">2</span>
+<span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+<span class="nx">name</span>    <span class="p">=</span> <span class="s2">&#34;Service&#34;</span>
+<span class="nx">url</span>     <span class="p">=</span> <span class="s2">&#34;service&#34;</span>
+<span class="nx">weight</span>  <span class="p">=</span> <span class="mi">3</span>
+<span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+<span class="nx">name</span>    <span class="p">=</span> <span class="s2">&#34;Gallery&#34;</span>
+<span class="nx">url</span>     <span class="p">=</span> <span class="s2">&#34;gallery&#34;</span>
+<span class="nx">weight</span>  <span class="p">=</span> <span class="mi">4</span>
+<span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+<span class="nx">name</span>    <span class="p">=</span> <span class="s2">&#34;Blog&#34;</span>
+<span class="nx">url</span>     <span class="p">=</span> <span class="s2">&#34;blog&#34;</span>
+<span class="nx">weight</span>  <span class="p">=</span> <span class="mi">5</span>
+<span class="p">[[</span><span class="nx">menu</span><span class="p">.</span><span class="nx">main</span><span class="p">]]</span>
+<span class="nx">name</span>    <span class="p">=</span> <span class="s2">&#34;Contact&#34;</span>
+<span class="nx">url</span>     <span class="p">=</span> <span class="s2">&#34;contact&#34;</span>
+<span class="nx">weight</span>  <span class="p">=</span> <span class="mi">6</span>
+
+<span class="c"># Site Params</span>
+<span class="p">[</span><span class="nx">params</span><span class="p">]</span>
+<span class="nx">home</span> <span class="p">=</span> <span class="s2">&#34;Home&#34;</span>
+<span class="nx">logo</span> <span class="p">=</span> <span class="s2">&#34;images/logo.png&#34;</span>
+<span class="nx">dateFormat</span> <span class="p">=</span> <span class="s2">&#34;6 January 2006&#34;</span>
+<span class="c"># Meta data</span>
+<span class="nx">description</span> <span class="p">=</span> <span class="s2">&#34;Airspace Hugo theme&#34;</span>
+<span class="nx">author</span> <span class="p">=</span> <span class="s2">&#34;Themefisher&#34;</span>
+<span class="c"># Google Analitycs</span>
+<span class="nx">googleAnalitycsID</span> <span class="p">=</span> <span class="s2">&#34;Your ID&#34;</span>
+<span class="c"># contact form action</span>
+<span class="nx">contactFormAction</span> <span class="p">=</span> <span class="s2">&#34;#&#34;</span> <span class="c"># contact form works with https://formspree.io</span>
+
+<span class="c"># Banner Section</span>
+<span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">banner</span><span class="p">]</span>
+<span class="nx">enable</span>  <span class="p">=</span> <span class="kc">true</span>
+<span class="nx">bgImage</span> <span class="p">=</span> <span class="s2">&#34;images/slider.jpg&#34;</span>
+<span class="nx">heading</span> <span class="p">=</span> <span class="s2">&#34;HI, MY NAME IS JONATHON &amp; I AM A&#34;</span>
+<span class="nx">description</span> <span class="p">=</span> <span class="s2">&#34;WITH 10 YEARS EXPERIENCE, I&#39;VE OCCUPIED MANY ROLES INCLUDING DIGITAL DESIGN DIRECTOR, WEB DESIGNER AND DEVELOPER. THIS SITE SHOWCASES SOME OF MY WORK.&#34;</span>
+<span class="c"># button</span>
+<span class="nx">btn</span>     <span class="p">=</span> <span class="kc">true</span>
+<span class="nx">btnText</span> <span class="p">=</span> <span class="s2">&#34;Download More&#34;</span>
+<span class="nx">btnURL</span>  <span class="p">=</span> <span class="s2">&#34;https://themefisher.com/&#34;</span>
+
+<span class="c"># flip text</span>
+<span class="p">[[</span><span class="nx">params</span><span class="p">.</span><span class="nx">banner</span><span class="p">.</span><span class="nx">flipText</span><span class="p">]]</span>
+<span class="nx">title</span>   <span class="p">=</span> <span class="s2">&#34;DESIGNER&#34;</span>
+<span class="p">[[</span><span class="nx">params</span><span class="p">.</span><span class="nx">banner</span><span class="p">.</span><span class="nx">flipText</span><span class="p">]]</span>
+<span class="nx">title</span>   <span class="p">=</span> <span class="s2">&#34;DEVELOPER&#34;</span>
+<span class="p">[[</span><span class="nx">params</span><span class="p">.</span><span class="nx">banner</span><span class="p">.</span><span class="nx">flipText</span><span class="p">]]</span>
+<span class="nx">title</span>   <span class="p">=</span> <span class="s2">&#34;FATHER&#34;</span>
+
+<span class="c"># Homepage About Section</span>
+<span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">about</span><span class="p">]</span>
+<span class="nx">enable</span>  <span class="p">=</span> <span class="kc">true</span>
+<span class="nx">title</span>   <span class="p">=</span> <span class="s2">&#34;ABOUT ME&#34;</span>
+<span class="nx">content</span> <span class="p">=</span> <span class="s2">&#34;Hello, I’m a UI/UX Designer &amp; Front End Developer from Victoria, Australia. I hold a master degree of Web Design from the World University.And scrambled it to make a type specimen book. It has survived not only five centuries. &lt;br&gt; &lt;br&gt; Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, adipisci voluptatum repudiandae, natus impedit repellat aut officia illum at assumenda iusto reiciendis placeat. Temporibus, vero.&#34;</span>
+<span class="nx">image</span>   <span class="p">=</span> <span class="s2">&#34;images/about/about.jpg&#34;</span>
+
+<span class="c"># Call to Action</span>
+<span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">cta</span><span class="p">]</span>
+<span class="nx">enable</span>  <span class="p">=</span> <span class="kc">true</span>
+<span class="nx">title</span>   <span class="p">=</span> <span class="s2">&#34;SO WHAT YOU THINK ?&#34;</span>
+<span class="nx">content</span> <span class="p">=</span> <span class="s2">&#34;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,&lt;br&gt;possimus commodi, fugiat magnam temporibus vero magni recusandae? Dolore, maxime praesentium.&#34;</span>
+<span class="nx">btnText</span> <span class="p">=</span> <span class="s2">&#34;Contact with me&#34;</span>
+<span class="nx">btnURL</span>  <span class="p">=</span> <span class="s2">&#34;/contact&#34;</span>
+
+<span class="c"># Portfolio Section On Homepage</span>
+<span class="p">[</span><span class="nx">params</span><span class="p">.</span><span class="nx">portfolio</span><span class="p">]</span>
+<span class="nx">enable</span>  <span class="p">=</span> <span class="kc">true</span>
+<span class="nx">title</span>   <span class="p">=</span> <span class="s2">&#34;Latest Works&#34;</span>
+<span class="nx">subtitle</span><span class="p">=</span> <span class="s2">&#34;Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.&#34;</span>
+
+<span class="c"># social icon</span>
+<span class="p">[[</span><span class="nx">params</span><span class="p">.</span><span class="nx">socialIcon</span><span class="p">]]</span>
+<span class="nx">icon</span> <span class="p">=</span> <span class="s2">&#34;ion-social-facebook&#34;</span>
+<span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;#&#34;</span>
+
+<span class="p">[[</span><span class="nx">params</span><span class="p">.</span><span class="nx">socialIcon</span><span class="p">]]</span>
+<span class="nx">icon</span> <span class="p">=</span> <span class="s2">&#34;ion-social-instagram&#34;</span>
+<span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;#&#34;</span>
+
+<span class="p">[[</span><span class="nx">params</span><span class="p">.</span><span class="nx">socialIcon</span><span class="p">]]</span>
+<span class="nx">icon</span> <span class="p">=</span> <span class="s2">&#34;ion-social-linkedin&#34;</span>
+<span class="nx">url</span> <span class="p">=</span> <span class="s2">&#34;#&#34;</span>
+
+</code></pre></div><p>そのほかも、このテーマのいろいろなテンプレに従った方がいいので、<code>themes/timer-hugo/exampleSite</code>にあるものを、雛形ホームのからディレクトリに上書きコピーする。</p>
+<p>加えて、<code>themes/timer-hugo</code>の</p>
+<ul>
+<li>・archetypes</li>
+<li>・layouts</li>
+<li>・static</li>
+</ul>
+<p>もコピーする。（自分はやらなかったが、assetes もコピーした方がいいかも）</p>
+<p>これでサーバーを立ててみる。次にコマンドでできる。</p>
+<div class="highlight"><pre class="chroma"><code class="language-zsh" data-lang="zsh">$ hugo server
+</code></pre></div><p><a href="http://localhost:1313/blog">http://localhost:1313/blog</a> にアクセスする。</p>
+<p>demo と同じものが表示されているはず！万歳！
+blog のところも見ると、テンプレで用意されている記事が見れる。</p>
+<h1 id="記事を書いてみる">記事を書いてみる</h1>
+<p>次のコマンドで記事を作成する</p>
+<div class="highlight"><pre class="chroma"><code class="language-zsh" data-lang="zsh">$ hugo new blog/<span class="o">{</span>記事のタイトルとか<span class="o">}</span>.md
+</code></pre></div><p>これで<code>content/blog/{記事のタイトルとか}.md</code>に markdown が作られる。</p>
+<p>この時作られるものは、<code>archetypes/default.md</code>に設定されているものが自動生成される。ちなみに自分の<code>default.md</code>はこのように設定している。</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nn">---</span><span class="w">
+</span><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;{{ replace .Name &#34;</span>-<span class="s2">&#34; &#34;</span><span class="w"> </span><span class="s2">&#34; | title }}&#34;</span><span class="w">
+</span><span class="w"></span><span class="nt">description </span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;This is meta description&#34;</span><span class="w">
+</span><span class="w"></span><span class="nt">date</span><span class="p">:</span><span class="w"> </span>{{<span class="w"> </span><span class="l">.Date }}</span><span class="w">
+</span><span class="w"></span><span class="nt">draft</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="c"># 反映させる時はfalseに変えるかコメントアウト</span><span class="w">
+</span><span class="w"></span><span class="nt">comments</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w"></span><span class="nt">adsense</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span><span class="w"></span><span class="nt">archives</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;{{ dateFormat &#34;</span><span class="m">2006</span><span class="s2">&#34; .Date }}&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;{{ dateFormat &#34;</span><span class="m">2006-01</span><span class="s2">&#34; .Date }}&#34;</span><span class="p">]</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="c"># Twitter card gen用設定&#34;]</span><span class="w">
+</span><span class="w"></span><span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;いわし&#34;</span><span class="p">]</span><span class="w">
+</span><span class="w"></span><span class="nt">categories</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;Test&#34;</span><span class="p">]</span><span class="w">
+</span><span class="w"></span><span class="nt">tags</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;motivation&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;inspiration&#34;</span><span class="p">]</span><span class="w"> </span><span class="c"># tag</span><span class="w">
+</span><span class="w"></span><span class="nt">ogimage</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;images/og/{{ .Name }}.png&#34;</span><span class="w"> </span><span class="c"># tcardgenで生成した画像をOGP画像に設定する</span><span class="w">
+</span><span class="w"></span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;/{{ .Type }}/{{ .Name }}/&#34;</span><span class="w"> </span><span class="c"># tcardgenでの自動生成スクリプト用のパスを設定</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="c"># Blog用---------------------------------------------------</span><span class="w">
+</span><span class="w"></span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">post</span><span class="w">
+</span><span class="w"></span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;images/og/{{ .Name }}.png&#34;</span><span class="w"> </span><span class="c"># ブログバナーの画像</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="c"># Portfolio用----------------------------------------------</span><span class="w">
+</span><span class="w"></span><span class="nt">caption</span><span class="p">:</span><span class="w"> </span><span class="l">Product Mockup</span><span class="w">
+</span><span class="w"></span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">images/portfolio/item-2.jpg</span><span class="w">
+</span><span class="w"></span><span class="nt">liveLink</span><span class="p">:</span><span class="w"> </span><span class="l">link</span><span class="w"> </span><span class="c"># ??</span><span class="w">
+</span><span class="w"></span><span class="c"># 右側の情報説明</span><span class="w">
+</span><span class="w"></span><span class="nt">client</span><span class="p">:</span><span class="w"> </span><span class="l">Julia Robertson</span><span class="w">
+</span><span class="w"></span><span class="nt">submitDate</span><span class="p">:</span><span class="w"> </span><span class="l">November 20, 2017</span><span class="w">
+</span><span class="w"></span><span class="nt">category</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;mockup&#34;</span><span class="p">,</span><span class="s2">&#34;design&#34;</span><span class="p">]</span><span class="w"> </span><span class="c"># tag</span><span class="w">
+</span><span class="w"></span><span class="nt">location</span><span class="p">:</span><span class="w"> </span><span class="m">1201</span><span class="w"> </span><span class="l">park street, Avenue, Dhaka</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span><span class="nn">---</span><span class="w">
+</span></code></pre></div><p>細かい設定等は次の記事とかで書いていきたいので今回は省く。
+demo で入れられている markdown ファイルを参考にカスタマイズしていく。</p>
+<p>基本はこんな感じ</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nn">---</span><span class="w">
+</span><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;{{ replace .Name &#34;</span>-<span class="s2">&#34; &#34;</span><span class="w"> </span><span class="s2">&#34; | title }}&#34;</span><span class="w">
+</span><span class="w"></span><span class="nt">date</span><span class="p">:</span><span class="w"> </span>{{<span class="w"> </span><span class="l">.Date }}</span><span class="w">
+</span><span class="w"></span><span class="nt">draft</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span><span class="w"></span><span class="nn">---</span><span class="w">
+</span></code></pre></div><p>気にするのは<code>draft: true</code>の部分。これを<code>false</code>に変えるかコメントアウトすると記事として適用される。このままだと表示されない。</p>
+<p>変えたら次のコマンドを実行。</p>
+<div class="highlight"><pre class="chroma"><code class="language-zsh" data-lang="zsh">$ hugo
+</code></pre></div><p>これで<code>public</code>ディレクトリが作成されるはず。ヤッタネ。</p>
+<h1 id="github-pages-公開する">github pages 公開する</h1>
+<p>これで markdown で記事を書いてから静的ファイルを生成するまでの流れはできた。</p>
+<p>さて、ここからは今ローカルホストで表示しているものを github pages で公開したい。そのための準備をしていく。</p>
+<h2 id="ディレクトリ名を変更する">ディレクトリ名を変更する</h2>
+<p>github pages はその仕様として、ホームディレクトリか<code>docs</code>ディレクトリを公開ディレクトリとして設定できる。</p>
+<p>今のデフォルトだと、生成されるのは<code>public</code>なので、これを<code>docs</code>に変える。</p>
+<p>見るのは<code>config.toml</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-toml" data-lang="toml"><span class="nx">baseURL</span> <span class="p">=</span> <span class="s2">&#34;https://biwashi.github.io/blog/&#34;</span> <span class="c">####### 追加: {user_name}.github.io/{repository_name}/ を指定する</span>
+<span class="nx">languageCode</span> <span class="p">=</span> <span class="s2">&#34;ja&#34;</span>
+<span class="nx">title</span> <span class="p">=</span> <span class="s2">&#34;MY NEW GEAR | IWASHI BLOG&#34;</span> <span class="c"># Homeのタイトル</span>
+<span class="nx">theme</span> <span class="p">=</span> <span class="s2">&#34;timer-hugo&#34;</span>
+<span class="nx">publishDir</span> <span class="p">=</span> <span class="s2">&#34;docs&#34;</span>  <span class="c">######################### 追加</span>
+<span class="nx">canonifyurls</span> <span class="p">=</span> <span class="kc">true</span>  <span class="c">######################## 追加(相対URLを絶対URLに変換できるようにする)</span>
+</code></pre></div><p>またこの時、baseURL を公開する github pages のリンクに設定する。</p>
+<p><code>https://{githubのアカウント名}.github.io/{リポジトリ名}/</code></p>
+<ul>
+<li>baseURL は、よくあるクローンするときの https のリンクじゃないので注意</li>
+<li>実際に github pages で公開するときのリンク（これのせいで詰まった）</li>
+<li>よく考えたら当たり前</li>
+</ul>
+<p>また <code>canonifyurls = true</code> は相対パスに変更するために設定。</p>
+<p>これで準備は完了。あとは push して公開ディレクトリを<code>docs</code>に設定する。</p>
+<blockquote>
+<p>master branch docs/ folder</p>
+</blockquote>
+<p>しばらくすると公開される。やったね！</p>
+<h1 id="まとめ">まとめ</h1>
+<p>これでサクッと雛形が作れました。テーマもお洒落なのがたくさんあるので見てるだけで楽しい！</p>
+<p>次回はブログをカスタマイズしていくところを書きたい。（これが地獄の始まりだった…）</p>
+<h1 id="参考">参考</h1>
+<p>参考させていただいた素晴らしい記事たちです</p>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://knowledge.sakura.ad.jp/22908/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fknowledge.sakura.ad.jp%2F22908%2F&amp;key=f35ef3e07c3f9ce01b389a206da306f5"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fanyblog.hatenablog.jp%2Fentry%2F2020%2F06%2F21%2F153128" title="さよならQiita、こんにちはhugo × github pages - motty&#39;s blog" class="embed-card embed-blogcard" scrolling="no" frameborder="0" style="display: block; width: 100%; height: 190px; max-width: 500px; margin: 10px 0px;"></iframe>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://ferret-plus.com//2161" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fferret-plus.com%2F2161&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://qiita.com/bake0937/items/e0914efbd9434be474a4" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fqiita.com%2Fbake0937%2Fitems%2Fe0914efbd9434be474a4&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://qiita.com/bake0937/items/e0914efbd9434be474a4" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fqiita.com%2Fbake0937%2Fitems%2Fe0914efbd9434be474a4&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+    (function () {
+        
+        
+        if (window.location.hostname == "localhost")
+            return;
+
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = '';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+
+
+
+
+<!-- Footer Section Start -->
+<footer id="footer">
+  <div class="container">
+    <div class="row content-justify-between">
+      <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
+        <p class="copyright">Copyright:
+          <span>
+            <script>
+              document.write(new Date().getFullYear())
+            </script>
+          </span> Design and Developed by
+          <a href="http://www.Themefisher.com" target="_blank">Themefisher</a>.
+          <br> Get More Bootstrap Template From Our
+          <a href="https://themefisher.com/free-bootstrap-templates/" target="_blank">Store</a>.
+          <br>Home icon by
+          <a href="https://icons8.com/icon/U5JRqX4RSgfj/home">Icons8</a>.
+        </p>
+      </div>
+      <div class="col-md-4 col-12">
+        <!-- Social Media -->
+        <ul class="social text-center text-md-right text-lg-right">
+          
+          <li><a href="https://www.facebook.com/jazzy.yuzax/"><i class="ion-social-facebook"></i></a></li>
+          
+          <li><a href="https://github.com/BIwashi"><i class="ion-social-github"></i></a></li>
+          
+          <li><a href="https://twitter.com/B_Sardine"><i class="ion-social-twitter"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- footer section end -->
+
+<!-- jquery -->
+<script src="https://biwashi.github.io/blog/plugins/jQurey/jquery.min.js"></script>
+<!-- slick slider -->
+<script src="https://biwashi.github.io/blog/plugins/slick/slick.min.js"></script>
+<!-- bootstrap js -->
+<script src="https://biwashi.github.io/blog/plugins/bootstrap/bootstrap.min.js"></script>
+<!-- wow js -->
+<script src="https://biwashi.github.io/blog/plugins/wow-js/wow.min.js"></script>
+<!-- slider js -->
+<script src="https://biwashi.github.io/blog/plugins/slider/slider.js"></script>
+<!-- Fancybox -->
+<script src="https://biwashi.github.io/blog/plugins/facncybox/jquery.fancybox.js"></script>
+<!-- template main js -->
+
+<script src="https://biwashi.github.io/blog/js/script.min.js"></script>
+<!-- google analitycs -->
+<script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'G-PEBYWXRR3K', 'auto');
+  ga('send', 'pageview');
+</script></body>
+
+</html>

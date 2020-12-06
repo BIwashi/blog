@@ -12,7 +12,7 @@ author: ["いわし"]
 categories: ["Test"]
 tags: ["motivation", "inspiration"] # tag
 ogimage: "images/og/{{ .Name }}.png" # tcardgenで生成した画像をOGP画像に設定する
-url: "/{{ .Type }}/{{ .Name }}/" # tcardgenでの自動生成スクリプト用のパスを設定
+url: "/{{ .Type }}/{{ .Name }}/" # tcardgenでの自動生成スクリプト用のパスを設定 ルーティング固定の意味もある
 
 # Blog用---------------------------------------------------
 type: post

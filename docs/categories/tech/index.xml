@@ -6,13 +6,13 @@
     <description>Recent content in Tech on MY NEW GEAR | IWASHI BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 06 Dec 2020 18:32:07 +0900</lastBuildDate><atom:link href="https://biwashi.github.io/blog/categories/tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Dec 2020 22:54:14 +0900</lastBuildDate><atom:link href="https://biwashi.github.io/blog/categories/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugoで自作ブログサイトを作ってみる</title>
-      <link>https://biwashi.github.io/blog/blog/Hugo%E3%81%A7%E8%87%AA%E4%BD%9C%E3%83%96%E3%83%AD%E3%82%B0%E3%82%B5%E3%82%A4%E3%83%88%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/</link>
-      <pubDate>Sun, 06 Dec 2020 18:32:07 +0900</pubDate>
+      <link>https://biwashi.github.io/blog/blog/make-blog-by-hugo/</link>
+      <pubDate>Sun, 06 Dec 2020 22:54:14 +0900</pubDate>
       
-      <guid>https://biwashi.github.io/blog/blog/Hugo%E3%81%A7%E8%87%AA%E4%BD%9C%E3%83%96%E3%83%AD%E3%82%B0%E3%82%B5%E3%82%A4%E3%83%88%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B/</guid>
+      <guid>https://biwashi.github.io/blog/blog/make-blog-by-hugo/</guid>
       <description>はじめに 最近、Twitter の有名なすごい人たちがみんな Hugo を使って自作ブログを作っていて、ほげーーやってみたいーー、ってなたので試してみた。 また、Go 製のツールということで、勉強したかった Go を使えるかも！という思いもあった。（結果、Go は 1 ミリも使わずに終わった）
 さんぽしさん
  コミさん
