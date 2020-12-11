@@ -1,15 +1,16 @@
 ---
-title: "Shopping Bag Concept"
+title: "Bottle Mockup"
 type: portfolio
-date: 2018-07-12T16:58:55+06:00
+date: 2018-07-12T16:54:54+06:00
 description : "This is meta description"
-caption: Conceptual Design
-image: images/portfolio/item-5.jpg
-category: ["bag","mockup"]
-liveLink: https://www.themefisher.com
+caption: Product Mockup
+image: images/portfolio/item-2.jpg
+category: ["mockup","design"]
+liveLink: link
 client: Julia Robertson
 submitDate: November 20, 2017
 location: 1201 park street, Avenue, Dhaka
+draft: true
 ---
 ### Consectur in Bibendum
 
@@ -19,7 +20,15 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 
 > Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
 
+---
+
 Consequuntur magni dolores ratione voluptatem.sequi nesciunt neque porro quisquam est dolorem ipsum quia dolor sit amet consectetur adipisci velit.lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip commodo consequat.
 
 Reprehenderit in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus.
+
+```python
+
+print("Hello, world")
+
+```
 

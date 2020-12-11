@@ -10,6 +10,7 @@ liveLink: https://www.themefisher.com
 client: Julia Robertson
 submitDate: November 20, 2017
 location: 1201 park street, Avenue, Dhaka
+draft: true # 反映させる時はfalseに変えるかコメントアウト
 ---
 ### Consectur in Bibendum
 

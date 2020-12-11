@@ -1,15 +1,16 @@
 ---
-title: "Table Design"
+title: "Caramel Bottle"
 type: portfolio
-date: 2018-07-12T16:56:54+06:00
+date: 2018-07-12T16:59:54+06:00
 description : "This is meta description"
-caption: 3D Model Design
-image: images/portfolio/item-3.jpg
-category: ["3d-model","product"]
+caption: Product Design
+image: images/portfolio/item-6.jpg
+category: ["product","mockup","design"]
 liveLink: https://www.themefisher.com
 client: Julia Robertson
 submitDate: November 20, 2017
 location: 1201 park street, Avenue, Dhaka
+draft: true # 反映させる時はfalseに変えるかコメントアウト
 ---
 ### Consectur in Bibendum
 

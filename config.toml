@@ -19,7 +19,7 @@ weight  = 2
 name    = "Skill"
 url     = "skill"
 weight  = 3
-# [[menu.main]]
+[[menu.main]]
 # name    = "Gallery"
 # url     = "gallery"
 # weight  = 4
@@ -36,7 +36,7 @@ weight  = 5
 [params]
 home = "Home"
 logo = "images/iwashimiddle.png" # homeのLogoを設定
-dateFormat = "6 January 2006" #??
+dateFormat = "1 December 2020" #??
 # Meta data
 description = "Airspace Hugo theme"
 author = "IWASHI"
@@ -54,9 +54,9 @@ bgImage = "images/headphone.jpg" # バナーの画像
 heading = "MY NEW GEAR..."
 description = "This is My Blog"
 # button
-# btn     = true
-btnText = "何かをさせるボタン"
-btnURL  = "https://themefisher.com/"
+btn     = true
+btnText = "Profile slides"
+btnURL  = "https://biwashi.github.io/Portfolio/"
 
 # flip text
 [[params.banner.flipText]]
@@ -75,15 +75,16 @@ image   = "images/about/about-me.jpg"
 
 # Call to Action
 [params.cta]
-# enable  = true
-title   = "SO WHAT YOU THINK ?"
-content = "コンタクトしてくれ<br>ここはhtmlで上書きできる<br><h3>やほーー"
+enable  = true
+title   = "Contact"
+content = "何かご連絡がありましたらTwitterのDMでお願いします"
 btnText = "Contact with me"
-btnURL  = "/contact"
+btnURL  = "https://twitter.com/B_Sardine"
+# btnURL  = "/contact"
 
 # Portfolio Section On Homepage
 [params.portfolio]
-# enable  = true
+enable  = true
 title   = "ポートフォリオ"
 subtitle= "Portfolio"
 
