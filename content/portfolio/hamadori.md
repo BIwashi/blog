@@ -21,7 +21,7 @@ url: "/portfolio/hamadori/" # tcardgenでの自動生成スクリプト用のパ
 # Portfolio用----------------------------------------------
 caption: Drone
 image: images/portfolio/hamadori_img.jpg
-liveLink: link # ??
+liveLink: http://www.selab.jp/
 # 右側の情報説明
 # client: Julia Robertson
 submitDate: December 11, 2020
