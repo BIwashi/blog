@@ -16,7 +16,8 @@ url: "/blog/make-blog-by-hugo/" # tcardgenでの自動生成スクリプト用�
 
 # Blog用---------------------------------------------------
 type: post
-image: "images/og/make-blog-by-hugo.png" # ブログバナーの画像
+# image: "images/og/make-blog-by-hugo.png" # ブログバナーの画像
+image: images/blog/hugo.jpeg
 
 # # Portfolio用----------------------------------------------
 # caption: Product Mockup
