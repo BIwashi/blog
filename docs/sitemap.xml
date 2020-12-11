@@ -4,7 +4,37 @@
   
   <url>
     <loc>https://biwashi.github.io/blog/categories/</loc>
-    <lastmod>2020-12-06T22:54:14+09:00</lastmod>
+    <lastmod>2020-12-11T17:17:09+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://biwashi.github.io/blog/blog/setup-dotfiles/</loc>
+    <lastmod>2020-12-11T17:17:09+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://biwashi.github.io/blog/tags/github/</loc>
+    <lastmod>2020-12-11T17:17:09+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://biwashi.github.io/blog/</loc>
+    <lastmod>2020-12-11T17:17:09+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://biwashi.github.io/blog/tags/</loc>
+    <lastmod>2020-12-11T17:17:09+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://biwashi.github.io/blog/categories/tech/</loc>
+    <lastmod>2020-12-11T17:17:09+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://biwashi.github.io/blog/tags/zsh/</loc>
+    <lastmod>2020-12-11T17:17:09+09:00</lastmod>
   </url>
   
   <url>
@@ -19,21 +49,6 @@
   
   <url>
     <loc>https://biwashi.github.io/blog/blog/make-blog-by-hugo/</loc>
-    <lastmod>2020-12-06T22:54:14+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://biwashi.github.io/blog/</loc>
-    <lastmod>2020-12-06T22:54:14+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://biwashi.github.io/blog/tags/</loc>
-    <lastmod>2020-12-06T22:54:14+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://biwashi.github.io/blog/categories/tech/</loc>
     <lastmod>2020-12-06T22:54:14+09:00</lastmod>
   </url>
   

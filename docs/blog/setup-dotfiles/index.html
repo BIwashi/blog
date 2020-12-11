@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <meta name="description"
+    content="This is meta description">
+  
+  <meta name="author" content="IWASHI">
+  <meta name="generator" content="Hugo 0.79.0" />
+
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>dotfilesで設定ファイルをバージョン管理</title>
+  <link rel="icon" href="https://biwashi.github.io/blog/images/favicon.ico">
+
+  <!-- Twitter Bootstrs CSS -->
+  <link rel="stylesheet" href="https://biwashi.github.io/blog/plugins/bootstrap/bootstrap.min.css">
+  <!-- Ionicons Fonts Css -->
+  <link rel="stylesheet" href="https://biwashi.github.io/blog/plugins/ionicons/ionicons.min.css">
+
+  
+  <!-- Ionicons Fonts Css Version Up -->
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+  
+
+  <!-- animate css -->
+  <link rel="stylesheet" href="https://biwashi.github.io/blog/plugins/animate-css/animate.css">
+  <!-- Hero area slider css-->
+  <link rel="stylesheet" href="https://biwashi.github.io/blog/plugins/slider/slider.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="https://biwashi.github.io/blog/plugins/slick/slick.css">
+  <!-- Fancybox -->
+  <link rel="stylesheet" href="https://biwashi.github.io/blog/plugins/facncybox/jquery.fancybox.css">
+  <!-- hover -->
+  <link rel="stylesheet" href="https://biwashi.github.io/blog/plugins/hover/hover-min.css">
+  <!-- template main css file -->
+  
+  <link rel="stylesheet" href="https://biwashi.github.io/blog/css/style.min.css" media="screen">
+
+  <!-- Custom stylesheet - for your changes -->
+  
+  <link rel="stylesheet" href="https://biwashi.github.io/blog/css/custom.min.css" media="screen">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@B_Sardine">
+  <meta name="twitter:creator" content="@B_Sardine">
+  <meta name="twitter:title" content="MY NEW GEAR | IWASHI BLOG">
+  <meta name="twitter:description" content="Iwashi no Blog">
+  <meta name="twitter:image:src" content="https://biwashi.github.io/blog/images/iwashilong_w.jpg">
+
+  <meta property="og:image" content="https://biwashi.github.io/blog/images/iwashilong_w.jpg" />
+  
+  <meta property="og:image" content="https://biwashi.github.io/blog/images/og/setup-dotfiles.png"> 
+  <meta name="twitter:image:src" content="https://biwashi.github.io/blog/images/og/setup-dotfiles.png">
+
+  
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  
+
+  
+  <meta name="google-site-verification" content="ibduUf160caf1tigM4zT1VidE_yj4hpyyixYOdX0qp0" />
+
+  
+  <!-- codeblock -->
+  <link rel="stylesheet" href="https://biwashi.github.io/blog/css/syntax.css" />
+  
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+  
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+</head><body><section class="top-bar animated-header">
+	<meta name="google-site-verification" content="ibduUf160caf1tigM4zT1VidE_yj4hpyyixYOdX0qp0" />
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<a class="navbar-brand" href="https://biwashi.github.io/blog/">
+						<img src="https://biwashi.github.io/blog/images/iwashimiddle.png" alt="MY NEW GEAR | IWASHI BLOG">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+						aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navigation">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="https://biwashi.github.io/blog/">Home</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://biwashi.github.io/blog/about">About</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://biwashi.github.io/blog/skill">Skill</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://biwashi.github.io/blog/blog">Blog</a>
+							</li>
+							
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="global-page-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="block">
+					<h2>dotfilesで設定ファイルをバージョン管理</h2>
+					<div class="portfolio-meta">
+						<span>Friday, Dec 11, 2020</span>|
+						<span> Tags:
+							github, zsh
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="single-post">
+	<div class="container">
+		
+		
+		
+		<div class="row">
+			<div class="col-md-12">
+				
+				<div class="post-img">
+					<img class="img-fluid" alt="" src="https://biwashi.github.io/blog/images/blog/dot.png">
+				</div>
+				
+				<div class="post-content">
+					<h1 id="はじめに">はじめに</h1>
+<p>以前参加したハッカソンでEC2を使ったときに、メンバーがdotfilesを使用して環境構築を行っていたのをきっかけに、自分もやりたいなーと思っていたのをついにやりました。
+もっと早くやっとけばよかった。</p>
+<p>ネットで探せば無限にdotfiles関係の記事は出てくるけど、自分のメモとして残しておく。（特にPrezto関係）</p>
+<h1 id="dotfilesって何よ">dotfilesって何よ？</h1>
+<p>ホームディレクトリに存在する<code>.</code>で始まる設定ファイルを管理しておくリポジトリのこと。</p>
+<p>Gitでバージョン管理されていて、githubで公開されていることが多いみたい。</p>
+<p>ちなみにdotfilesという名前に意味はないけど、大体みんなこの名前にしとるって感じです。</p>
+<p>元々はdockerで立てたコンテナに入ったときのターミナルが見辛すぎて、いつものprezto使いて~から構築にいたりました。これでPCが変わったり別のサーバーがで作業する時もいつもの設定で作業できます。便利。</p>
+<h1 id="どういう仕組み">どういう仕組み？</h1>
+<p>仕組みとしては単純で、<code>dotfiles</code>といディレクトリを作成して、管理したい<code>.</code>から始まる設定ファイルを移動させる。しかしそのままだと使えなくなるのでホームディレクトリにシンボリックリンクをはる。以上。って感じです。</p>
+<ul>
+<li><code>.xxx</code>をdotfilesに移動させる</li>
+<li>ホームディレクトリにシンボリックリンクをはる</li>
+</ul>
+<h1 id="導入方法">導入方法</h1>
+<h2 id="ファイルを選ぶ">ファイルを選ぶ</h2>
+<p>まずは管理したい設定ファイルを選ぶ。ここで<code>.ssh</code>などのファイルは絶対に入れないように気をつける。</p>
+<h2 id="とりあえず今あるものbackupをとっておく">とりあえず今あるものbackupをとっておく</h2>
+<p>ちょっと怖いので、ひとまずbackupをとっておく。自分は<code>BACKUP</code>ディレクトリを作成して避難させた。</p>
+<p>例としてzshの設定ファイルを管理する場合</p>
+<div class="highlight"><pre class="chroma"><code class="language-zsh" data-lang="zsh">$ cp .z* ~/BACKUP
+</code></pre></div><h2 id="dotfilesに移動させる">dotfilesに移動させる</h2>
+<p>バックアップしたので、移動させる</p>
+<div class="highlight"><pre class="chroma"><code class="language-zsh" data-lang="zsh">$ mkdir ~/dotfiles
+$ mv .z* ~/dotfiles
+</code></pre></div><p>自分はzprezto系や○○env系のモノも入れた。</p>
+<h2 id="シンボリックリンクをはる">シンボリックリンクをはる</h2>
+<p>今のままだとホームディレクトリから設定ファイルがなくなってしまって動かなくなる。なのでdotfilesからホームディレクトリにシンボリックリンクをはる。</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">$ ln -s .zshrc ~/.zshrc
+</code></pre></div><p>ただこれを毎回やるのはめんどくさいのでスクリプトを用意しておく。</p>
+<p>僕はこちらの記事のものを使用させていただきました。</p>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://qiita.com/ganariya/items/d9adffc6535dfca6784b" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fqiita.com%2Fganariya%2Fitems%2Fd9adffc6535dfca6784b&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># #!/bin/zsh</span>
+
+<span class="c1"># DOT_FILES=(.*)</span>
+
+<span class="c1"># for file in ${DOT_FILES[@]}; do</span>
+<span class="c1">#     ln -s $HOME/dotfiles/$file $HOME/$file</span>
+<span class="c1"># done</span>
+
+<span class="c1"># 未定義な変数があったら途中で終了する</span>
+<span class="nb">set</span> -u
+
+<span class="c1"># 今のディレクトリ</span>
+<span class="c1"># dotfilesディレクトリに移動する</span>
+<span class="nv">BASEDIR</span><span class="o">=</span><span class="k">$(</span>dirname <span class="nv">$0</span><span class="k">)</span>
+<span class="nb">cd</span> <span class="nv">$BASEDIR</span>
+
+<span class="c1"># dotfilesディレクトリにある、ドットから始まり2文字以上の名前のファイルに対して</span>
+<span class="k">for</span> f in .??*<span class="p">;</span> <span class="k">do</span>
+    <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$f</span><span class="s2">&#34;</span> <span class="o">=</span> <span class="s2">&#34;.git&#34;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="k">continue</span>
+    <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$f</span><span class="s2">&#34;</span> <span class="o">=</span> <span class="s2">&#34;.gitconfig.local.template&#34;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="k">continue</span>
+    <span class="o">[</span> <span class="s2">&#34;</span><span class="nv">$f</span><span class="s2">&#34;</span> <span class="o">=</span> <span class="s2">&#34;.gitmodules&#34;</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="k">continue</span>
+
+    <span class="c1"># シンボリックリンクを貼る</span>
+    ln -snfv <span class="si">${</span><span class="nv">PWD</span><span class="si">}</span>/<span class="s2">&#34;</span><span class="nv">$f</span><span class="s2">&#34;</span> ~/
+<span class="k">done</span>
+</code></pre></div><p>これで全部貼ってくれます。ﾔｯﾀﾈ。</p>
+<p>僕はこのスクリプトに<code>setup.sh</code>という名前をつけて~/dotfiles/に保存している。
+権限も忘れずに。</p>
+<div class="highlight"><pre class="chroma"><code class="language-zsh" data-lang="zsh">$ sudo chmod +x setup.sh
+</code></pre></div><p>あとはgithubにあげるだけ！簡単だね！</p>
+<h1 id="落とし穴prezto">落とし穴（Prezto）</h1>
+<p>実はこれが本題。</p>
+<p>ここまでの手順でできたーと思っていたが、こないだdockerコンテナで構築しようとしたら全然うまくいかなかった。
+ちなみに僕のdotfilesの中身。</p>
+<div class="highlight"><pre class="chroma"><code class="language-zsh" data-lang="zsh">.
+├── .fzf.bash
+├── .fzf.zsh
+├── .git
+├── .goenv
+├── .p10k.zsh
+├── .pyenv
+├── .vscode
+├── .zcompcache
+├── .zcompdump
+├── .zlogin
+├── .zlogout
+├── .zprezto
+├── .zpreztorc
+├── .zprofile
+├── .zsh_history
+├── .zshenv
+├── .zshrc
+├── install_brew.sh
+├── install_zprezto.sh
+├── README.md
+└── setup.sh
+</code></pre></div><p>ここで「なんでvscode入れとんねん！同期使えや！」の人。その通りです。</p>
+<p>実は以前使っていたWindowsと同期していろいろ破壊されたことがあって怖くてやってないのです…</p>
+<p>それはまあ置いておいて、ちゃんと入っているがうまくいってないない。というかzsh関係の中身が何もない。おかしいな…と思っていたが、ふとPreztoを入れたときのことを思い出した。</p>
+<h2 id="preztoなんやねん">Preztoなんやねん</h2>
+<p>zshを使っている人はみんな使っている（と思っている）ターミナルの見た目をいい感じにしてくれるやつです。</p>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://github.com/sorin-ionescu/prezto" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fgithub.com%2Fsorin-ionescu%2Fprezto&amp;key=f35ef3e07c3f9ce01b389a206da306f5"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://dev.classmethod.jp/articles/zsh-prezto/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fdev.classmethod.jp%2Farticles%2Fzsh-prezto%2F&amp;key=f35ef3e07c3f9ce01b389a206da306f5"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<br>
+<p>これを入れるときに、何も考えず書かれている通りに次のコマンドを叩いていました。</p>
+<div class="highlight"><pre class="chroma"><code class="language-zsh" data-lang="zsh">// 設定ファイルを作成
+$ setopt EXTENDED_GLOB
+<span class="k">for</span> rcfile in <span class="s2">&#34;</span><span class="si">${</span><span class="nv">ZDOTDIR</span><span class="k">:-</span><span class="nv">$HOME</span><span class="si">}</span><span class="s2">&#34;</span>/.zprezto/runcoms/^README.md<span class="o">(</span>.N<span class="o">)</span><span class="p">;</span> <span class="k">do</span>
+  ln -s <span class="s2">&#34;</span><span class="nv">$rcfile</span><span class="s2">&#34;</span> <span class="s2">&#34;</span><span class="si">${</span><span class="nv">ZDOTDIR</span><span class="k">:-</span><span class="nv">$HOME</span><span class="si">}</span><span class="s2">/.</span><span class="si">${</span><span class="nv">rcfile</span><span class="p">:</span><span class="nv">t</span><span class="si">}</span><span class="s2">&#34;</span>
+<span class="k">done</span>
+</code></pre></div><p>これ、cloneしてきた<code>.zprezto/runcom/</code>にあるzsh系の設定ファイルを本体にして、ホームディレクトリにシンボリックリンクを貼ってるっぽい、</p>
+<img src="https://i.gyazo.com/e721e7bc1384fbcddebfa2df9d897f17.png" width="100%">
+<p>つまり…今まで本体だと思っていたzsh系のファイルは、全部<code>.zprezto/runcom/</code>から貼られたシンボリックリンクだった。</p>
+<p>それ故にgithubで追えてなかった。なんという…</p>
+<p>本体である<code>.zprezto/runcom/</code>にあるやつらをdotfilesに移動して名前を<code>.~</code>に変更し、逆に.zprezto/runcom/に向けてシンボリックリンクを貼る。</p>
+<p>これで無事動くようになった！</p>
+<h1 id="終わりに">終わりに</h1>
+<p>これでどこでもPreztoのターミナルを使えるようになった。（zshは必要だけど）</p>
+<p>ちなみにターミナルをカラフルにするためにexaを使ってます。</p>
+<img src="https://biwashi.github.io/blog/images/blog/prezto.png" style="width:100%; text-align:center;">
+<h2 id="僕のdotfiles">僕のdotfiles</h2>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://github.com/BIwashi/dotfiles" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fgithub.com%2FBIwashi%2Fdotfiles&amp;key=f35ef3e07c3f9ce01b389a206da306f5"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<h1 id="参考">参考</h1>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://qiita.com/b4b4r07/items/b70178e021bef12cd4a2" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fqiita.com%2Fb4b4r07%2Fitems%2Fb70178e021bef12cd4a2&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://qiita.com/ganariya/items/d9adffc6535dfca6784b" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fqiita.com%2Fganariya%2Fitems%2Fd9adffc6535dfca6784b&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+				</div>
+			</div>
+		</div>
+
+		<!-- disqus script START -->
+		<br>
+		<br>
+		<div id="disqus_thread"></div>
+		<script>
+			
+
+			
+
+			(function () { 
+				var d = document, s = d.createElement('script');
+				s.src = 'https://https-biwashi-github-io-blog.disqus.com/embed.js';
+				s.setAttribute('data-timestamp', +new Date());
+				(d.head || d.body).appendChild(s);
+			})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+				Disqus.</a></noscript>
+
+		<!-- disqus script END -->
+	</div>
+</section>
+
+
+
+
+
+
+<!-- Footer Section Start -->
+<footer id="footer">
+  <div class="container">
+    <div class="row content-justify-between">
+      <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
+        <p class="copyright">Copyright:
+          <span>
+            <script>
+              document.write(new Date().getFullYear())
+            </script>
+          </span> Design and Developed by
+          <a href="http://www.Themefisher.com" target="_blank">Themefisher</a>.
+          <br> Get More Bootstrap Template From Our
+          <a href="https://themefisher.com/free-bootstrap-templates/" target="_blank">Store</a>.
+          <br>Home icon by
+          <a href="https://icons8.com/icon/U5JRqX4RSgfj/home">Icons8</a>.
+        </p>
+      </div>
+      <div class="col-md-4 col-12">
+        <!-- Social Media -->
+        <ul class="social text-center text-md-right text-lg-right">
+          
+          <li><a href="https://www.facebook.com/jazzy.yuzax/"><i class="ion-social-facebook"></i></a></li>
+          
+          <li><a href="https://github.com/BIwashi"><i class="ion-social-github"></i></a></li>
+          
+          <li><a href="https://twitter.com/B_Sardine"><i class="ion-social-twitter"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- footer section end -->
+
+<!-- jquery -->
+<script src="https://biwashi.github.io/blog/plugins/jQurey/jquery.min.js"></script>
+<!-- slick slider -->
+<script src="https://biwashi.github.io/blog/plugins/slick/slick.min.js"></script>
+<!-- bootstrap js -->
+<script src="https://biwashi.github.io/blog/plugins/bootstrap/bootstrap.min.js"></script>
+<!-- wow js -->
+<script src="https://biwashi.github.io/blog/plugins/wow-js/wow.min.js"></script>
+<!-- slider js -->
+<script src="https://biwashi.github.io/blog/plugins/slider/slider.js"></script>
+<!-- Fancybox -->
+<script src="https://biwashi.github.io/blog/plugins/facncybox/jquery.fancybox.js"></script>
+<!-- template main js -->
+
+<script src="https://biwashi.github.io/blog/js/script.min.js"></script>
+
+<!-- disqus -->
+<script id="dsq-count-scr" src="//https-biwashi-github-io-blog.disqus.com/count.js" async></script>
+
+
+<!-- google analitycs -->
+<script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'G-PEBYWXRR3K', 'auto');
+  ga('send', 'pageview');
+</script></body>
+
+</html>

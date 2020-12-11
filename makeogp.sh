@@ -4,7 +4,7 @@ if [ $# != 1 ] || [ $1 = "" ]; then
     echo "string: path to markdown file of target post"
     echo ""
     echo "example command"
-    echo "\t$ sh ./scripts/gen_ogp.sh ./content/post/test/test.md"
+    echo "\t$ sh ./makeogp.sh ./content/post/test/test.md"
     exit
 fi
 

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on MY NEW GEAR | IWASHI BLOG</title>
-    <link>https://biwashi.github.io/blog/blog/</link>
-    <description>Recent content in Blog on MY NEW GEAR | IWASHI BLOG</description>
+    <title>zsh on MY NEW GEAR | IWASHI BLOG</title>
+    <link>https://biwashi.github.io/blog/tags/zsh/</link>
+    <description>Recent content in zsh on MY NEW GEAR | IWASHI BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 15 Jul 2018 12:32:37 +0600</lastBuildDate><atom:link href="https://biwashi.github.io/blog/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Dec 2020 17:17:09 +0900</lastBuildDate><atom:link href="https://biwashi.github.io/blog/tags/zsh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>dotfilesで設定ファイルをバージョン管理</title>
       <link>https://biwashi.github.io/blog/blog/setup-dotfiles/</link>
@@ -29,27 +29,6 @@ $ mkdir ~/dotfiles $ mv .z* ~/dotfiles 自分はzprezto系や○○env系のモ�
 $ ln -s .zshrc ~/.zshrc ただこれを毎回やるのはめんどくさいのでスクリプトを用意しておく。
 僕はこちらの記事のものを使用させていただきました。
  # #!/bin/zsh # DOT_FILES=(.*) # for file in ${DOT_FILES[@]}; do # ln -s $HOME/dotfiles/$file $HOME/$file # done # 未定義な変数があったら途中で終了する set -u # 今のディレクトリ # dotfilesディレクトリに移動する BASEDIR=$(dirname $0) cd $BASEDIR # dotfilesディレクトリにある、ドットから始まり2文字以上の名前のファイルに対して for f in .</description>
-    </item>
-    
-    <item>
-      <title>Hugoで自作ブログサイトを作ってみる</title>
-      <link>https://biwashi.github.io/blog/blog/make-blog-by-hugo/</link>
-      <pubDate>Sun, 06 Dec 2020 22:54:14 +0900</pubDate>
-      
-      <guid>https://biwashi.github.io/blog/blog/make-blog-by-hugo/</guid>
-      <description>はじめに 最近、Twitter の有名なすごい人たちがみんな Hugo を使って自作ブログを作っていて、ほげーーやってみたいーー、ってなったので試してみた。 また、Go 製のツールということで、勉強したかった Go を使えるかも！という思いもあった。（結果、Go は 1 ミリも使わずに終わった）
-さんぽしさん
- コミさん
- Hugo とは？ Hugo は Golang 製の静的サイトジェネレーター。HTML とか CSS みたいなものを自動生成してくれるやつ。
- そういえば昔、reveal.js っていう HTML/CSS で Web スライドが書けるやつを拡張した reveal-ck っていう Ruby 製のツールを使ったことがあった。 これもMarkdownでスライドを作れるっていうお手軽でいい感じだった。（途中からデザインを凝り始めて朝日が昇ってしまったが…）
-↓ こんな感じ 今まではこれを自己紹介的な感じで Twitter とかに貼っていた。
- ちなみにスライドの貼り付け方はこちらの記事を参考にさせてもらいました。
- 話は戻って Hugo だが、めちゃくちゃ早いらしい。（他と比べたことがないからわからん）
-何はともあれ構築していく。
-雛形作成まで Hugo にはたくさんの Thema があって、自由に選び放題。（ライセンスとかの確認は注意） ここから好きに選べる。ブログサイト以外でも使えそうなものがたくさんだから、ちょっとしたハッカソンでのテンプレ作りに良さそう。（Hugo じゃなくてもいいけど）
- テンプレ作成 というわけで、まずは Hugo をインストールしていく。
-$ brew install hugo 他の OS は本家を参照してください。
- 入ったら、次のコマンドで雛形が生成される</description>
     </item>
     
   </channel>

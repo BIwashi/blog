@@ -6,7 +6,31 @@
     <description>Recent content on MY NEW GEAR | IWASHI BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 06 Dec 2020 22:54:14 +0900</lastBuildDate><atom:link href="https://biwashi.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Dec 2020 17:17:09 +0900</lastBuildDate><atom:link href="https://biwashi.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>dotfilesで設定ファイルをバージョン管理</title>
+      <link>https://biwashi.github.io/blog/blog/setup-dotfiles/</link>
+      <pubDate>Fri, 11 Dec 2020 17:17:09 +0900</pubDate>
+      
+      <guid>https://biwashi.github.io/blog/blog/setup-dotfiles/</guid>
+      <description>はじめに 以前参加したハッカソンでEC2を使ったときに、メンバーがdotfilesを使用して環境構築を行っていたのをきっかけに、自分もやりたいなーと思っていたのをついにやりました。 もっと早くやっとけばよかった。
+ネットで探せば無限にdotfiles関係の記事は出てくるけど、自分のメモとして残しておく。（特にPrezto関係）
+dotfilesって何よ？ ホームディレクトリに存在する.で始まる設定ファイルを管理しておくリポジトリのこと。
+Gitでバージョン管理されていて、githubで公開されていることが多いみたい。
+ちなみにdotfilesという名前に意味はないけど、大体みんなこの名前にしとるって感じです。
+元々はdockerで立てたコンテナに入ったときのターミナルが見辛すぎて、いつものprezto使いて~から構築にいたりました。これでPCが変わったり別のサーバーがで作業する時もいつもの設定で作業できます。便利。
+どういう仕組み？ 仕組みとしては単純で、dotfilesといディレクトリを作成して、管理したい.から始まる設定ファイルを移動させる。しかしそのままだと使えなくなるのでホームディレクトリにシンボリックリンクをはる。以上。って感じです。
+ .xxxをdotfilesに移動させる ホームディレクトリにシンボリックリンクをはる  導入方法 ファイルを選ぶ まずは管理したい設定ファイルを選ぶ。ここで.sshなどのファイルは絶対に入れないように気をつける。
+とりあえず今あるものbackupをとっておく ちょっと怖いので、ひとまずbackupをとっておく。自分はBACKUPディレクトリを作成して避難させた。
+例としてzshの設定ファイルを管理する場合
+$ cp .z* ~/BACKUP dotfilesに移動させる バックアップしたので、移動させる
+$ mkdir ~/dotfiles $ mv .z* ~/dotfiles 自分はzprezto系や○○env系のモノも入れた。
+シンボリックリンクをはる 今のままだとホームディレクトリから設定ファイルがなくなってしまって動かなくなる。なのでdotfilesからホームディレクトリにシンボリックリンクをはる。
+$ ln -s .zshrc ~/.zshrc ただこれを毎回やるのはめんどくさいのでスクリプトを用意しておく。
+僕はこちらの記事のものを使用させていただきました。
+ # #!/bin/zsh # DOT_FILES=(.*) # for file in ${DOT_FILES[@]}; do # ln -s $HOME/dotfiles/$file $HOME/$file # done # 未定義な変数があったら途中で終了する set -u # 今のディレクトリ # dotfilesディレクトリに移動する BASEDIR=$(dirname $0) cd $BASEDIR # dotfilesディレクトリにある、ドットから始まり2文字以上の名前のファイルに対して for f in .</description>
+    </item>
+    
     <item>
       <title>Hugoで自作ブログサイトを作ってみる</title>
       <link>https://biwashi.github.io/blog/blog/make-blog-by-hugo/</link>
