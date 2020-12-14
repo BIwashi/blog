@@ -49,15 +49,19 @@
   <meta name="twitter:title" content="MY NEW GEAR | IWASHI BLOG">
   <meta name="twitter:description" content="Iwashi no Blog">
 <!-- --------------------------------------------------------------------------------------------------------- -->
-
-  <!-- blog用にTwitterCardを設定 -->
-  <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.ogimage }}"> 
-  <meta name="twitter:image:src" content="{{ .Site.BaseURL }}{{ .Params.ogimage }}">
-
+  {{"<!-- blog用にTwitterCardを設定 -->" |safeHTML}}
 
   <meta name="twitter:image:src" content="https://biwashi.github.io/blog/images/iwashilong_w.jpg">
 
   <meta property="og:image" content="https://biwashi.github.io/blog/images/iwashilong_w.jpg" />
+  
+  {{ if eq "https://biwashi.github.io/blog/" .Site.BaseURL }}
+  <!--  -->
+  {{ else }}
+  <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.ogimage }}"> 
+  <meta name="twitter:image:src" content="{{ .Site.BaseURL }}{{ .Params.ogimage }}">
+  {{ end }}
+
   
   <!-- --------------------------------------------------------------------------------------------------------- -->
 
