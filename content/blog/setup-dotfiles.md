@@ -13,6 +13,7 @@ categories: ["Tech"]
 tags: ["github", "zsh"] # tag
 ogimage: "images/og/setup-dotfiles.png" # tcardgenで生成した画像をOGP画像に設定する
 url: "/blog/setup-dotfiles/" # tcardgenでの自動生成スクリプト用のパスを設定 ルーティング固定の意味もある
+carduse: true
 
 # Blog用---------------------------------------------------
 type: post
