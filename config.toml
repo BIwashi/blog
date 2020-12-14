@@ -46,6 +46,9 @@ googleAnalitycsID = "G-PEBYWXRR3K" # Google Anlaycs用のIDを設定できる
 contactFormAction = "#" # contact form works with https://formspree.io formを設定する用
 # Disqusによるコメント機能実装用
 disqusShortname = "https-biwashi-github-io-blog"
+# TwitterCard設定
+BaseURL = "https://biwashi.github.io/blog/"
+ogimage = "images/iwashilong_w.jpg"
 
 # Banner Section
 [params.banner]
@@ -57,6 +60,7 @@ description = "This is My Blog"
 btn     = true
 btnText = "Profile slides"
 btnURL  = "https://biwashi.github.io/Portfolio/"
+
 
 # flip text
 [[params.banner.flipText]]
