@@ -74,7 +74,7 @@ title   = "イワミ ショウタ"
 [params.about]
 enable  = true
 title   = "ABOUT ME"
-content = "<h3>Iwami Shota 岩見彰太</h3><br>Hello, My name is Shota Iwami.<br> I'm 23 years old, a graduate studentat Tokyo Metropolitan University and living in Yokohama.<br><br>大学でドローンの航空交通管理（UTM）の研究をしながら、長期インターンでドローン開発をしたり、ハッカソンに出たり、WEB開発をほげほげやったりしてます。<br>WEB開発のいろんな記録としてのあれこれや書いたり、カメラやジンバル、ドローンやオーディオ機器などの好きなガジェットのレビューなどつらつらと投稿していくつもりです。"
+content = "<h3>Iwami Shota 岩見彰太</h3><br>Hello, My name is Shota Iwami.<br> I'm 23 years old, a graduate student Tokyo Metropolitan University and living in Yokohama.<br><br>大学でドローンの航空交通管理（UTM）の研究をしながら、長期インターンでドローン開発をしたり、ハッカソンに出たり、WEB開発をほげほげやったりしてます。<br>WEB開発のいろんな記録としてのあれこれや書いたり、カメラやジンバル、ドローンやオーディオ機器などの好きなガジェットのレビューなどつらつらと投稿していくつもりです。"
 image   = "images/about/about-me.jpg"
 
 # Call to Action
