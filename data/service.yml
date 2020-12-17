@@ -19,7 +19,7 @@ serviceItem:
       また、研究においてdronekit-pythonというドローンをコントロールできるフレームワークをRaspberry pi上で動かし、シリアルコンソールで機体に指令を送るなどして使用しています。
 
   - icon: logo-javascript
-    title: Javascript
+    title: JavaScript
     description: >
       Vue.jsを一通り触れます。
       <br>
