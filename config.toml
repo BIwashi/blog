@@ -105,6 +105,12 @@ url = "https://github.com/BIwashi"
 icon = "ion-social-twitter"
 url = "https://twitter.com/B_Sardine"
 
+[[params.socialIcon]]
+icon = "ion-social-linkedin"
+url = "https://www.linkedin.com/in/shota-iwami-biwashi/"
+
+
+
 # # Indexの表示設定
 [markup]
     [markup.tableOfContents]
