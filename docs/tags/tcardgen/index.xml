@@ -20,7 +20,7 @@
 $ go get github.com/Ladicle/tcardgen README.mdがkintoとうフォントを使うように言っているのでダウンロードする
  今回はこの画像作成に使用できればいいので、static/fonts/Kinto_Sansといった感じのディレクトリに保存しておく
 テンプレート 元となる背景画像的なテンプレートを作成します。 tcardgenリポジトリのexampleにいろいろサンプル画像が入ってます。 サイズは 1200 x 628 (px) で作成します。
-その後、自分はiPadのAffinity Designerで、サンプル画像を投下させながら、いい感じのデザインを作成しました。
+その後、自分はiPadのAffinity Designerで、サンプル画像を透過させながら、いい感じのデザインを作成しました。
 下準備 markdown設定 tcardgenは、その使用上categoryとtagsの項目をなにかしら設定する必要があります。 よって、作成したい記事にはこれらの項目を追加します。 また、作成したimagesのパスを描けるようにしておきます。（詳細は後述します。）
 # Twitter card gen用設定author:[&amp;#34;いわし&amp;#34;]categories:[&amp;#34;Tech&amp;#34;]tags:[&amp;#34;tcardgen&amp;#34;,&amp;#34;Hugo&amp;#34;,&amp;#34;OGP&amp;#34;]# tagogimage:&amp;#34;images/og/tcardgen-hugo.png&amp;#34;# tcardgenで生成した画像をOGP画像に設定するurl:&amp;#34;/blog/tcardgen-hugo/&amp;#34;# tcardgenでの自動生成スクリプト用のパスを設定 ルーティング固定の意味もあるcarduse:true# TwitterCardを使用するかどうか falseの場合はデフォルトの画像が適用される最初、記事作成時に
 $ hugo new ./content/blog/{日本語}.md にしていたのですが、このままだとパスが日本語になってしまい、URLが汚くなるので、作成時は適当にアルファベットで.mdを作成し、後からタイトルをに日本語に変える作業をすることにしました。

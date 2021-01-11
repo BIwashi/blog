@@ -63,7 +63,7 @@ $ go get github.com/Ladicle/tcardgen
 **1200 x 628 (px)**
 で作成します。
 
-その後、自分はiPadの`Affinity Designer`で、サンプル画像を投下させながら、いい感じのデザインを作成しました。
+その後、自分はiPadの`Affinity Designer`で、サンプル画像を透過させながら、いい感じのデザインを作成しました。
 
 <img src="/images/blog/template.png" style="width:100%; text-align:center;">
 
