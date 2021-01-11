@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <meta name="description"
+    content="This is meta description">
+  
+  <meta name="author" content="IWASHI">
+  <meta name="generator" content="Hugo 0.80.0" />
+
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>tcardgenでHugoで作ったブログのOGPを自動生成してみた</title>
+  <link rel="icon" href="https://biwashi.github.io/blog/images/favicon.ico">
+
+  <!-- Twitter Bootstrs CSS -->
+  <link rel="stylesheet" href="https://biwashi.github.io/blog/plugins/bootstrap/bootstrap.min.css">
+  <!-- Ionicons Fonts Css -->
+  <link rel="stylesheet" href="https://biwashi.github.io/blog/plugins/ionicons/ionicons.min.css">
+
+  
+  <!-- Ionicons Fonts Css Version Up -->
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+  
+
+  <!-- animate css -->
+  <link rel="stylesheet" href="https://biwashi.github.io/blog/plugins/animate-css/animate.css">
+  <!-- Hero area slider css-->
+  <link rel="stylesheet" href="https://biwashi.github.io/blog/plugins/slider/slider.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="https://biwashi.github.io/blog/plugins/slick/slick.css">
+  <!-- Fancybox -->
+  <link rel="stylesheet" href="https://biwashi.github.io/blog/plugins/facncybox/jquery.fancybox.css">
+  <!-- hover -->
+  <link rel="stylesheet" href="https://biwashi.github.io/blog/plugins/hover/hover-min.css">
+  <!-- template main css file -->
+  
+  <link rel="stylesheet" href="https://biwashi.github.io/blog/css/style.min.css" media="screen">
+
+  <!-- Custom stylesheet - for your changes -->
+  
+  <link rel="stylesheet" href="https://biwashi.github.io/blog/css/custom.min.css" media="screen">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@B_Sardine">
+  <meta name="twitter:creator" content="@B_Sardine">
+  <meta name="twitter:title" content="MY NEW GEAR | IWASHI BLOG">
+  <meta name="twitter:description" content="Iwashi no Blog">
+
+  <!-- blog用にTwitterCardを設定 -->
+
+  <meta name="twitter:image:src" content="https://biwashi.github.io/blog/images/iwashilong_w.jpg">
+
+  <meta property="og:image" content="https://biwashi.github.io/blog/images/iwashilong_w.jpg" />
+  
+  
+  <!-- Blogなのでカスタムされたものを表示 -->
+  <meta property="og:image" content="https://biwashi.github.io/blog/images/og/tcardgen-hugo.png"> 
+  <meta name="twitter:image:src" content="https://biwashi.github.io/blog/images/og/tcardgen-hugo.png">
+  
+
+  
+  
+
+  
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  
+
+  
+  <meta name="google-site-verification" content="ibduUf160caf1tigM4zT1VidE_yj4hpyyixYOdX0qp0" />
+
+  
+  <!-- codeblock -->
+  <link rel="stylesheet" href="https://biwashi.github.io/blog/css/syntax.css" />
+  
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+  
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+</head><body><section class="top-bar animated-header">
+	<meta name="google-site-verification" content="ibduUf160caf1tigM4zT1VidE_yj4hpyyixYOdX0qp0" />
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<a class="navbar-brand" href="https://biwashi.github.io/blog/">
+						<img src="https://biwashi.github.io/blog/images/iwashimiddle.png" alt="MY NEW GEAR | IWASHI BLOG">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+						aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navigation">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="https://biwashi.github.io/blog/">Home</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://biwashi.github.io/blog/about">About</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://biwashi.github.io/blog/skill">Skill</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://biwashi.github.io/blog/gallery">Gallery</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="https://biwashi.github.io/blog/blog">Blog</a>
+							</li>
+							
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="global-page-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="block">
+					<h2>tcardgenでHugoで作ったブログのOGPを自動生成してみた</h2>
+					<div class="portfolio-meta">
+						<span>Monday, Jan 11, 2021</span>|
+						<span> Tags:
+							tcardgen, Hugo, OGP
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="single-post">
+	<div class="container">
+		
+		
+		
+		<div class="row">
+			<div class="col-md-12">
+				
+				<div class="post-img">
+					<img class="img-fluid" alt="" src="https://biwashi.github.io/blog/images/og/tcardgen-hugo.png">
+				</div>
+				
+				<div class="post-content">
+					<h1 id="はじめに">はじめに</h1>
+<p>ブログを作成しても読んでもらわないとあまり意味がないわけで、そういう意味でもTwitter CardなどのSNS共有時の目を引く画像は重要なわけです。</p>
+<p>と、いうわけで、今回はGo製の<code>tcardgen</code>というライブラリを使用して、OGP作成を行ってみました。</p>
+<div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 52.3333%; padding-top: 120px;"><a href="https://github.com/Ladicle/tcardgen" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fgithub.com%2FLadicle%2Ftcardgen&amp;key=f35ef3e07c3f9ce01b389a206da306f5"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<p>↑こんな感じのTwittterCardを作ってくれるやつですね。</p>
+<h1 id="準備">準備</h1>
+<h2 id="install">install</h2>
+<p><code>go get</code>でインストールする</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="err">$</span> <span class="k">go</span> <span class="nx">get</span> <span class="nx">github</span><span class="p">.</span><span class="nx">com</span><span class="o">/</span><span class="nx">Ladicle</span><span class="o">/</span><span class="nx">tcardgen</span>
+</code></pre></div><p><code>README.md</code>が<code>kinto</code>とうフォントを使うように言っているのでダウンロードする</p>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://github.com/ookamiinc/kinto" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fgithub.com%2Fookamiinc%2Fkinto&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<p>今回はこの画像作成に使用できればいいので、<code>static/fonts/Kinto_Sans</code>といった感じのディレクトリに保存しておく</p>
+<h2 id="テンプレート">テンプレート</h2>
+<p>元となる背景画像的なテンプレートを作成します。
+<code>tcardgen</code>リポジトリの<code>example</code>にいろいろサンプル画像が入ってます。
+サイズは
+<strong>1200 x 628 (px)</strong>
+で作成します。</p>
+<p>その後、自分はiPadの<code>Affinity Designer</code>で、サンプル画像を投下させながら、いい感じのデザインを作成しました。</p>
+<img src="https://biwashi.github.io/blog/images/blog/template.png" style="width:100%; text-align:center;">
+<h2 id="下準備">下準備</h2>
+<h3 id="markdown設定">markdown設定</h3>
+<p>tcardgenは、その使用上<code>category</code>と<code>tags</code>の項目をなにかしら設定する必要があります。
+よって、作成したい記事にはこれらの項目を追加します。
+また、作成したimagesのパスを描けるようにしておきます。（詳細は後述します。）</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="c"># Twitter card gen用設定</span><span class="w">
+</span><span class="w"></span><span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;いわし&#34;</span><span class="p">]</span><span class="w">
+</span><span class="w"></span><span class="nt">categories</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;Tech&#34;</span><span class="p">]</span><span class="w">
+</span><span class="w"></span><span class="nt">tags</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;tcardgen&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;Hugo&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;OGP&#34;</span><span class="p">]</span><span class="w"> </span><span class="c"># tag</span><span class="w">
+</span><span class="w"></span><span class="nt">ogimage</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;images/og/tcardgen-hugo.png&#34;</span><span class="w"> </span><span class="c"># tcardgenで生成した画像をOGP画像に設定する</span><span class="w">
+</span><span class="w"></span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;/blog/tcardgen-hugo/&#34;</span><span class="w"> </span><span class="c"># tcardgenでの自動生成スクリプト用のパスを設定 ルーティング固定の意味もある</span><span class="w">
+</span><span class="w"></span><span class="nt">carduse</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="c"># TwitterCardを使用するかどうか falseの場合はデフォルトの画像が適用される</span><span class="w">
+</span></code></pre></div><p>最初、記事作成時に</p>
+<pre><code>$ hugo new ./content/blog/{日本語}.md
+</code></pre><p>にしていたのですが、このままだとパスが日本語になってしまい、URLが汚くなるので、作成時は適当にアルファベットで<code>.md</code>を作成し、後からタイトルをに日本語に変える作業をすることにしました。</p>
+<p>この際、パスは（本来）この設定し直したタイトルを元に決定されるので、日本語に変えるとパスも日本語になってしまうのですが、以下のように指定するとこちらを優先してくれます。
+また、このurlは記事作成時の<code>{}.md</code>から自動生成しています。</p>
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">url:</span> <span class="s2">&#34;/blog/tcardgen-hugo/&#34;</span>
+</code></pre></div><h3 id="yaml設定">yaml設定</h3>
+<p>作成する画像のスタイルは、<code>tcardge.yaml</code>で設定できます。これは<code>tcardgen</code>にサンプルがあるので使用できます。</p>
+<p>僕の場合は、サンプル画像を元に配置を決めたのでそのまま使用しました。</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="nt">template</span><span class="p">:</span><span class="w"> </span><span class="l">static/ogp/template.png</span><span class="w">
+</span><span class="w"></span><span class="nt">title</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">start</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">px</span><span class="p">:</span><span class="w"> </span><span class="m">113</span><span class="w">
+</span><span class="w">    </span><span class="nt">pY</span><span class="p">:</span><span class="w"> </span><span class="m">252</span><span class="w">
+</span><span class="w">  </span><span class="nt">fgHexColor</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;#FFFFFF&#34;</span><span class="w">
+</span><span class="w">  </span><span class="nt">fontSize</span><span class="p">:</span><span class="w"> </span><span class="m">68</span><span class="w">
+</span><span class="w">  </span><span class="nt">fontStyle</span><span class="p">:</span><span class="w"> </span><span class="l">Bold</span><span class="w">
+</span><span class="w">  </span><span class="nt">maxWidth</span><span class="p">:</span><span class="w"> </span><span class="m">1000</span><span class="w">
+</span><span class="w">  </span><span class="nt">lineSpacing</span><span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
+</span><span class="w"></span><span class="nt">category</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">start</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">px</span><span class="p">:</span><span class="w"> </span><span class="m">113</span><span class="w">
+</span><span class="w">    </span><span class="nt">py</span><span class="p">:</span><span class="w"> </span><span class="m">211</span><span class="w">
+</span><span class="w">  </span><span class="nt">fgHexColor</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;#E5B52A&#34;</span><span class="w">
+</span><span class="w">  </span><span class="nt">fontSize</span><span class="p">:</span><span class="w"> </span><span class="m">42</span><span class="w">
+</span><span class="w">  </span><span class="nt">fontStyle</span><span class="p">:</span><span class="w"> </span><span class="l">Regular</span><span class="w">
+</span><span class="w"></span><span class="nt">info</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">start</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">px</span><span class="p">:</span><span class="w"> </span><span class="m">223</span><span class="w">
+</span><span class="w">    </span><span class="nt">py</span><span class="p">:</span><span class="w"> </span><span class="m">120</span><span class="w">
+</span><span class="w">  </span><span class="nt">fgHexColor</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;#A0A0A0&#34;</span><span class="w">
+</span><span class="w">  </span><span class="nt">fontSize</span><span class="p">:</span><span class="w"> </span><span class="m">38</span><span class="w">
+</span><span class="w">  </span><span class="nt">fontStyle</span><span class="p">:</span><span class="w"> </span><span class="l">Regular</span><span class="w">
+</span><span class="w"></span><span class="nt">tags</span><span class="p">:</span><span class="w">
+</span><span class="w">  </span><span class="nt">start</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">px</span><span class="p">:</span><span class="w"> </span><span class="m">120</span><span class="w">
+</span><span class="w">    </span><span class="nt">py</span><span class="p">:</span><span class="w"> </span><span class="m">500</span><span class="w">
+</span><span class="w">  </span><span class="nt">fgHexColor</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;#FFFFFF&#34;</span><span class="w">
+</span><span class="w">  </span><span class="nt">bgHexColor</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;#7F7776&#34;</span><span class="w">
+</span><span class="w">  </span><span class="nt">fontSize</span><span class="p">:</span><span class="w"> </span><span class="m">22</span><span class="w">
+</span><span class="w">  </span><span class="nt">fontStyle</span><span class="p">:</span><span class="w"> </span><span class="l">Medium</span><span class="w">
+</span><span class="w">  </span><span class="nt">boxAlign</span><span class="p">:</span><span class="w"> </span><span class="l">Left</span><span class="w">
+</span><span class="w">  </span><span class="nt">boxSpacing</span><span class="p">:</span><span class="w"> </span><span class="m">6</span><span class="w">
+</span><span class="w">  </span><span class="nt">boxPadding</span><span class="p">:</span><span class="w">
+</span><span class="w">    </span><span class="nt">top</span><span class="p">:</span><span class="w"> </span><span class="m">6</span><span class="w">
+</span><span class="w">    </span><span class="nt">right</span><span class="p">:</span><span class="w"> </span><span class="m">10</span><span class="w">
+</span><span class="w">    </span><span class="nt">bottom</span><span class="p">:</span><span class="w"> </span><span class="m">6</span><span class="w">
+</span><span class="w">    </span><span class="nt">left</span><span class="p">:</span><span class="w"> </span><span class="m">8</span><span class="w">
+</span></code></pre></div><h1 id="作成">作成</h1>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://michimani.net/post/development-generate-ogp-image-by-tcardgen-in-hugo/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fmichimani.net%2Fpost%2Fdevelopment-generate-ogp-image-by-tcardgen-in-hugo%2F&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<p>この記事をを参考にスクリプトを作成して実行します。</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="k">if</span> <span class="o">[</span> <span class="nv">$#</span> !<span class="o">=</span> <span class="m">1</span> <span class="o">]</span> <span class="o">||</span> <span class="o">[</span> <span class="nv">$1</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+    <span class="nb">echo</span> <span class="s2">&#34;One parameters are required&#34;</span>
+    <span class="nb">echo</span> <span class="s2">&#34;&#34;</span>
+    <span class="nb">echo</span> <span class="s2">&#34;string: path to markdown file of target post&#34;</span>
+    <span class="nb">echo</span> <span class="s2">&#34;&#34;</span>
+    <span class="nb">echo</span> <span class="s2">&#34;example command&#34;</span>
+    <span class="nb">echo</span> <span class="s2">&#34;\t</span>$<span class="s2"> sh ./makeogp.sh ./content/post/test/test.md&#34;</span>
+    <span class="nb">exit</span>
+<span class="k">fi</span>
+
+<span class="nv">TARGET_POST_PATH</span><span class="o">=</span><span class="nv">$1</span>
+
+tcardgen <span class="se">\
+</span><span class="se"></span>    --fontDir ./static/fonts/Kinto_Sans <span class="se">\
+</span><span class="se"></span>    --output static/images/og <span class="se">\
+</span><span class="se"></span>    --template static/ogp/template.png <span class="se">\
+</span><span class="se"></span>    --config tcardgen.yaml <span class="se">\
+</span><span class="se"></span>    <span class="nv">$TARGET_POST_PATH</span>
+</code></pre></div><p>使用例コマンドは、</p>
+<div class="highlight"><pre class="chroma"><code class="language-s" data-lang="s"><span class="o">$</span> <span class="n">./makeogp.sh</span> <span class="n">./content</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span><span class="n">tcardgen</span><span class="o">-</span><span class="n">hugo.md</span>    
+</code></pre></div><p>引数で作成したい記事を指定します。</p>
+<p>作成されたものは、shellで指定されている<code>--output static/images/og</code>に出力されます。</p>
+<p>作成できました！</p>
+<h1 id="まだ終わりではない">まだ終わりではない</h1>
+<h2 id="ogpとして登録する">ogpとして登録する</h2>
+<p>さて、画像はできましたがこれだけで終わりではありません。そうです。headタグで指定しなければなりません。</p>
+<p>というわけで、<code>layouts/partials/head.html</code>に次の記述を加えます。</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">  {{&#34;<span class="c">&lt;!-- blog用にTwitterCardを設定 --&gt;</span>&#34; |safeHTML}}
+
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;twitter:image:src&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;https://biwashi.github.io/blog/images/iwashilong_w.jpg&#34;</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">&#34;og:image&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;https://biwashi.github.io/blog/images/iwashilong_w.jpg&#34;</span> <span class="p">/&gt;</span>
+  
+  {{ if eq true .Params.carduse }}
+  {{&#34;<span class="c">&lt;!-- Blogなのでカスタムされたものを表示 --&gt;</span>&#34; |safeHTML}}
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">&#34;og:image&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;{{ .Site.BaseURL }}{{ .Params.ogimage }}&#34;</span><span class="p">&gt;</span> 
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;twitter:image:src&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;{{ .Site.BaseURL }}{{ .Params.ogimage }}&#34;</span><span class="p">&gt;</span>
+  {{ else }}
+  {{&#34;<span class="c">&lt;!-- Homeなのでデフォのやつを表示 --&gt;</span>&#34; |safeHTML}}
+  {{ end }}
+</code></pre></div><p>ここで、さっきmarkdownに設置したいろいろなパラメータを使用します。</p>
+<p>順に説明します。</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;twitter:image:src&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;https://biwashi.github.io/blog/images/iwashilong_w.jpg&#34;</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">&#34;og:image&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;https://biwashi.github.io/blog/images/iwashilong_w.jpg&#34;</span> <span class="p">/&gt;</span>
+</code></pre></div><p>まずこれはデフォルトのogp画像です。ブログ以外のサイト用を普通に指定します。</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">  {{ if eq true .Params.carduse }}
+  {{&#34;<span class="c">&lt;!-- Blogなのでカスタムされたものを表示 --&gt;</span>&#34; |safeHTML}}
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">property</span><span class="o">=</span><span class="s">&#34;og:image&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;{{ .Site.BaseURL }}{{ .Params.ogimage }}&#34;</span><span class="p">&gt;</span> 
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;twitter:image:src&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;{{ .Site.BaseURL }}{{ .Params.ogimage }}&#34;</span><span class="p">&gt;</span>
+  {{ else }}
+  {{&#34;<span class="c">&lt;!-- Homeなのでデフォのやつを表示 --&gt;</span>&#34; |safeHTML}}
+  {{ end }}
+</code></pre></div><p>さて、ここでifです。</p>
+<p>先ほどの<code>markdon</code>で<code>carduse: xxx</code>というのを指定しました。あれはここで条件分岐するためです。</p>
+<p><code>carduse</code>が<code>true</code>の場合はブログだと判断して、先ほど作成したogpを指定してます。この際のパスも、先ほど指定した<code>ogimage</code>です。再度先ほどmarkdownを見ておきます。</p>
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml"><span class="c"># Twitter card gen用設定&#34;]</span><span class="w">
+</span><span class="w"></span><span class="nt">author</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;いわし&#34;</span><span class="p">]</span><span class="w">
+</span><span class="w"></span><span class="nt">categories</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;Tech&#34;</span><span class="p">]</span><span class="w">
+</span><span class="w"></span><span class="nt">tags</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;tcardgen&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;Hugo&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;OGP&#34;</span><span class="p">]</span><span class="w"> </span><span class="c"># tag</span><span class="w">
+</span><span class="w"></span><span class="nt">ogimage</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;images/og/tcardgen-hugo.png&#34;</span><span class="w"> </span><span class="c"># tcardgenで生成した画像をOGP画像に設定する</span><span class="w">
+</span><span class="w"></span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;/blog/tcardgen-hugo/&#34;</span><span class="w"> </span><span class="c"># tcardgenでの自動生成スクリプト用のパスを設定 ルーティング固定の意味もある</span><span class="w">
+</span><span class="w"></span><span class="nt">carduse</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="c"># TwitterCardを使用するかどうか falseの場合はデフォルトの画像が適用される</span><span class="w">
+</span></code></pre></div><p>というわけで、<code>carduse: false</code>の場合は、ブログ以外として再度指定しません。</p>
+<p>これで、ブログにogpを設定し、かつブログ以外と分けることができました。</p>
+<h1 id="終わりに">終わりに</h1>
+<p>ブログ作成と同時にこの作業はしていましたが、なかなか記事を書かずにいました。</p>
+<p>少しでも参考になれば幸いです。</p>
+<h1 id="参考">参考</h1>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://michimani.net/post/development-generate-ogp-image-by-tcardgen-in-hugo/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fmichimani.net%2Fpost%2Fdevelopment-generate-ogp-image-by-tcardgen-in-hugo%2F&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+<iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fkakakakakku.hatenablog.com%2Fentry%2F2020%2F07%2F03%2F095053" style="border: 0; width: 100%; height: 190px;" allowfullscreen scrolling="no"></iframe>
+<p>今回も、はじまりはさんぽしさんでした。</p>
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://sanposhiho.com/posts/make-blog-by-hugo/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fsanposhiho.com%2Fposts%2Fmake-blog-by-hugo%2F&amp;key=f35ef3e07c3f9ce01b389a206da306f5&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- disqus script START -->
+		<br>
+		<br>
+		<div id="disqus_thread"></div>
+		<script>
+			
+
+			
+
+			(function () { 
+				var d = document, s = d.createElement('script');
+				s.src = 'https://https-biwashi-github-io-blog.disqus.com/embed.js';
+				s.setAttribute('data-timestamp', +new Date());
+				(d.head || d.body).appendChild(s);
+			})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+				Disqus.</a></noscript>
+
+		<!-- disqus script END -->
+	</div>
+</section>
+
+
+
+
+
+<!-- Call To Action Section Start -->
+<section id="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2 class="title wow fadeInDown" data-wow-delay=".3s"
+            data-wow-duration="500ms">Contact</h1>
+            <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">
+              何かご連絡がありましたらTwitterのDMでお願いします</p>
+            <a href="https://twitter.com/B_Sardine" class="btn btn-default btn-contact wow fadeInDown"
+              data-wow-delay=".7s" data-wow-duration="500ms">Contact with me</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Call To Action Section End -->
+
+
+<!-- Footer Section Start -->
+<footer id="footer">
+  <div class="container">
+    <div class="row content-justify-between">
+      <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
+        <p class="copyright">Copyright:
+          <span>
+            <script>
+              document.write(new Date().getFullYear())
+            </script>
+          </span> Design and Developed by
+          <a href="http://www.Themefisher.com" target="_blank">Themefisher</a>.
+          <br> Get More Bootstrap Template From Our
+          <a href="https://themefisher.com/free-bootstrap-templates/" target="_blank">Store</a>.
+          <br>Home icon by
+          <a href="https://icons8.com/icon/U5JRqX4RSgfj/home">Icons8</a>.
+        </p>
+      </div>
+      <div class="col-md-4 col-12">
+        <!-- Social Media -->
+        <ul class="social text-center text-md-right text-lg-right">
+          
+          <li><a href="https://www.facebook.com/jazzy.yuzax/"><i class="ion-social-facebook"></i></a></li>
+          
+          <li><a href="https://github.com/BIwashi"><i class="ion-social-github"></i></a></li>
+          
+          <li><a href="https://twitter.com/B_Sardine"><i class="ion-social-twitter"></i></a></li>
+          
+          <li><a href="https://www.linkedin.com/in/shota-iwami-biwashi/"><i class="ion-social-linkedin"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- footer section end -->
+
+<!-- jquery -->
+<script src="https://biwashi.github.io/blog/plugins/jQurey/jquery.min.js"></script>
+<!-- slick slider -->
+<script src="https://biwashi.github.io/blog/plugins/slick/slick.min.js"></script>
+<!-- bootstrap js -->
+<script src="https://biwashi.github.io/blog/plugins/bootstrap/bootstrap.min.js"></script>
+<!-- wow js -->
+<script src="https://biwashi.github.io/blog/plugins/wow-js/wow.min.js"></script>
+<!-- slider js -->
+<script src="https://biwashi.github.io/blog/plugins/slider/slider.js"></script>
+<!-- Fancybox -->
+<script src="https://biwashi.github.io/blog/plugins/facncybox/jquery.fancybox.js"></script>
+<!-- template main js -->
+
+<script src="https://biwashi.github.io/blog/js/script.min.js"></script>
+
+<!-- disqus -->
+<script id="dsq-count-scr" src="//https-biwashi-github-io-blog.disqus.com/count.js" async></script>
+
+
+<!-- google analitycs -->
+<script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'G-PEBYWXRR3K', 'auto');
+  ga('send', 'pageview');
+</script></body>
+
+</html>

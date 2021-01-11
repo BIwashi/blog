@@ -13,7 +13,7 @@ categories: ["Test"]
 tags: ["motivation", "inspiration"] # tag
 ogimage: "images/og/{{ .Name }}.png" # tcardgenで生成した画像をOGP画像に設定する
 url: "/{{ .Type }}/{{ .Name }}/" # tcardgenでの自動生成スクリプト用のパスを設定 ルーティング固定の意味もある
-carduse: true # TwitterCardを使用するかどうか falseの場合あデフォルトの画像が適用される
+carduse: true # TwitterCardを使用するかどうか falseの場合はデフォルトの画像が適用される
 
 # Blog用---------------------------------------------------
 type: post

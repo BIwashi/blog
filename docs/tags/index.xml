@@ -6,7 +6,34 @@
     <description>Recent content in Tags on MY NEW GEAR | IWASHI BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 11 Dec 2020 19:39:17 +0900</lastBuildDate><atom:link href="https://biwashi.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Jan 2021 14:27:39 +0900</lastBuildDate><atom:link href="https://biwashi.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo</title>
+      <link>https://biwashi.github.io/blog/tags/hugo/</link>
+      <pubDate>Mon, 11 Jan 2021 14:27:39 +0900</pubDate>
+      
+      <guid>https://biwashi.github.io/blog/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OGP</title>
+      <link>https://biwashi.github.io/blog/tags/ogp/</link>
+      <pubDate>Mon, 11 Jan 2021 14:27:39 +0900</pubDate>
+      
+      <guid>https://biwashi.github.io/blog/tags/ogp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tcardgen</title>
+      <link>https://biwashi.github.io/blog/tags/tcardgen/</link>
+      <pubDate>Mon, 11 Jan 2021 14:27:39 +0900</pubDate>
+      
+      <guid>https://biwashi.github.io/blog/tags/tcardgen/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>inspiration</title>
       <link>https://biwashi.github.io/blog/tags/inspiration/</link>
@@ -49,15 +76,6 @@
       <pubDate>Sun, 06 Dec 2020 22:54:14 +0900</pubDate>
       
       <guid>https://biwashi.github.io/blog/tags/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>https://biwashi.github.io/blog/tags/hugo/</link>
-      <pubDate>Sun, 06 Dec 2020 22:54:14 +0900</pubDate>
-      
-      <guid>https://biwashi.github.io/blog/tags/hugo/</guid>
       <description></description>
     </item>
     
