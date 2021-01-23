@@ -1,34 +1,75 @@
-# enable  : true
-title   : Offer From Me
+enable  : true
+title   : Internship
 subtitle: >
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, <br> quasi dolores numquam dolor vero ex, tempora commodi repellendus quod laborum.
+  参加してきたインターン企業一覧
 item    :
-  - icon  : ion-ios-flask-outline
-    title : Media heading
+  - icon    : 
+    img     : /images/company-logo/softbank.png     
+    title   : Softbank
     description : >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.
+      1 week Internship
+      <br>
+      ハッカソン型のインターンに参加
 
-  - icon  : ion-ios-lightbulb-outline
-    title : Well documented.
+  - icon    : 
+    img     : /images/company-logo/kddi.jpg
+    title   : KDDI
     description : >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.
+      3 days Hackathon
+      <br>
+      ハッカソン「KDG HACKS」に参加
+      <br>
+      準優勝
 
-  - icon  : ion-ios-americanfootball-outline
-    title : Free updates
+  - icon    : 
+    title   : accenture
+    img     : /images/company-logo/accenture.png       
     description : >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.
+      3 days Internship
+      <br>
+      和魂偉才塾 エンジニア塾に参加
+      <br>
 
-  - icon  : ion-ios-keypad-outline
-    title : Solid Support
+  - icon    : 
+    title   : Japan Research Institute
+    img     : /images/company-logo/jri.png  
     description : >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.
+      2 days Internship
+      <br>
+      Fintech系Androidアプリの改修
 
-  - icon  : ion-ios-barcode-outline
-    title : Simple Installation
+  - icon    : 
+    title   : Nintendo
+    img     : /images/company-logo/nintendo.png    
     description : >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.
+      3 days Internship
+      <br>
+      ゲーム開発・通信・システム開発コースに参加
+
+            
   
-  - icon  : ion-ios-lightbulb-outline
-    title : Well documented.
+  - icon    : 
+    img     : /images/company-logo/ca.png
+    title   : CyberAgent
     description : >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, sint.
+      3 days Internship
+      <br>
+      事業戦略インターンシップ
+      <br>
+      「エンタメボックス」参加
+
+  - icon    : 
+    img     : /images/company-logo/ca.png
+    title   : CyberAgent
+    description : >
+      2 days Hackathon
+      <br>
+      「Web Speed Hackathon」に参加
+
+  - icon    : 
+    img     : /images/company-logo/gree.jpg   
+    title   : GREE
+    description : >
+      2 months Internship
+      <br>
+      メディア事業「aumo」にて就業型インターンに参加中

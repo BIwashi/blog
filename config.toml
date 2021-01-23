@@ -53,7 +53,7 @@ ogimage = "images/iwashilong_w.jpg"
 # Banner Section
 [params.banner]
 enable  = true
-bgImage = "images/headphone.jpg" # バナーの画像
+bgImage = "images/chiba.png" # バナーの画像
 heading = "MY NEW GEAR..."
 description = "This is My Blog"
 # button

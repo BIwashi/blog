@@ -18,6 +18,12 @@ serviceItem:
       <br>
       また、研究においてdronekit-pythonというドローンをコントロールできるフレームワークをRaspberry pi上で動かし、シリアルコンソールで機体に指令を送るなどして使用しています。
 
+  - icon:
+    iconsrc: /images/customIcons/ruby.svg # カスタムIconを設定する. PathかURLを書く(svg)
+    title: Ruby
+    description: >
+      Ruby on Railsをアプリ開発に使用しています。(GREE 就業型インターン)
+
   - icon: logo-javascript
     title: JavaScript
     description: >
@@ -71,7 +77,7 @@ serviceItem:
     iconsrc: /images/customIcons/aws.svg # カスタムIconを設定する. PathかURLを書く(svg)
     title: AWS
     description: >
-      インターンやハッカソンでEC2, S3, DynamoDB, ALB, API Gatewayなどの使用経験があります。VPCの作成からインスタンスの起動、DBの構築やhttps化などしました。
+      インターンやハッカソンでEC2, ECS, S3, DynamoDB, ALB, API Gatewayなどの使用経験があります。VPCの作成からインスタンスの起動、DBの構築やhttps化などしました。
       <br>
       興味はありますがなかなか機会と時間がなく、Lamdaは試せていません。
 
