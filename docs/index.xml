@@ -6,7 +6,17 @@
     <description>Recent content on MY NEW GEAR | IWASHI BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 11 Jan 2021 14:27:39 +0900</lastBuildDate><atom:link href="https://biwashi.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Jan 2021 18:51:48 +0900</lastBuildDate><atom:link href="https://biwashi.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>aumo</title>
+      <link>https://biwashi.github.io/blog/portfolio/aumo/</link>
+      <pubDate>Sat, 23 Jan 2021 18:51:48 +0900</pubDate>
+      
+      <guid>https://biwashi.github.io/blog/portfolio/aumo/</guid>
+      <description>株式会社スペースエンターテインメントラボラトリー GREEのメディア事業であるaumoにてお出かけメディアの開発を行っています。
+使用ツール  Ruby on Rails AWS RDB NoSQL Docker    </description>
+    </item>
+    
     <item>
       <title>tcardgenでHugoで作ったブログのOGPを自動生成してみた</title>
       <link>https://biwashi.github.io/blog/blog/tcardgen-hugo/</link>
@@ -84,6 +94,16 @@ $ ln -s .zshrc ~/.zshrc ただこれを毎回やるのはめんどくさいの�
  テンプレ作成 というわけで、まずは Hugo をインストールしていく。
 $ brew install hugo 他の OS は本家を参照してください。
  入ったら、次のコマンドで雛形が生成される</description>
+    </item>
+    
+    <item>
+      <title>Slide</title>
+      <link>https://biwashi.github.io/blog/portfolio/slide/</link>
+      <pubDate>Thu, 23 Jul 2020 19:15:08 +0900</pubDate>
+      
+      <guid>https://biwashi.github.io/blog/portfolio/slide/</guid>
+      <description>Profile HTMLからwebスライドを作成できる&amp;quot;reveal.js&amp;quot;、markdownからの変換機能やサーバーを備えたRubyの&amp;quot;reveal-ck&amp;quot;を用いて、自己紹介スライドを作成しました。
+使用ツール  Ruby（reveal-ck） HTML CSS JavaScript Github pages    </description>
     </item>
     
   </channel>

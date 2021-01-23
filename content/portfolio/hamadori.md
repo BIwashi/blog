@@ -4,7 +4,7 @@ description : "This is meta description"
 date: 2020-12-11T19:39:17+09:00
 # draft: true # 反映させる時はfalseに変えるかコメントアウト
 comments: true
-adsense: false
+adsense: true
 archives: ["2020", "2020-12"]
 
 # Twitter card gen用設定"]
