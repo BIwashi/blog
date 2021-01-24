@@ -10,7 +10,7 @@ archives: ["2020", "20-07"]
 # Twitter card gen用設定"]
 author: ["いわし"]
 categories: ["Test"]
-tags: ["motivation", "inspiration"] # tag
+# tags: ["motivation", "inspiration"] # tag
 ogimage: "images/og/slide.png" # tcardgenで生成した画像をOGP画像に設定する
 url: "/portfolio/slide/" # tcardgenでの自動生成スクリプト用のパスを設定 ルーティング固定の意味もある
 carduse: true # TwitterCardを使用するかどうか falseの場合はデフォルトの画像が適用される
