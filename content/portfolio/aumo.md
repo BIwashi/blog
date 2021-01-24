@@ -26,7 +26,7 @@ liveLink: https://aumo.jp/
 # 右側の情報説明
 # client: Julia Robertson
 submitDate: January 18, 2021
-category: ["Media","長期インターン","trip"] # tag
+category: ["Media","長期インターン","GREE"] # tag
 # location: 1201 park street, Avenue, Dhaka
 
 ---

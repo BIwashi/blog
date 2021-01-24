@@ -30,6 +30,11 @@
 								{{ delimit . ", " }}
 							</span>
 							{{ end }}
+							{{ with .Params.category }}
+							<span>
+								{{ delimit . ", " }}
+							</span>
+							{{ end }}
 						</div>
 						<p>
 							<!-- {{ .Summary }} -->
