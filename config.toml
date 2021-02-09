@@ -35,7 +35,7 @@ weight  = 5
 # Site Params
 [params]
 home = "Home"
-logo = "images/iwashimiddle.png" # homeのLogoを設定
+logo = "images/main/iwashimiddle.png" # homeのLogoを設定
 dateFormat = "1 December 2020" #??
 # Meta data
 description = "Airspace Hugo theme"
@@ -48,7 +48,7 @@ contactFormAction = "#" # contact form works with https://formspree.io formを�
 disqusShortname = "https-biwashi-github-io-blog"
 # TwitterCard設定
 BaseURL = "https://biwashi.github.io/blog/"
-ogimage = "images/iwashilong_w.jpg"
+ogimage = "images/main/iwashilong_w.jpg"
 
 # Banner Section
 [params.banner]

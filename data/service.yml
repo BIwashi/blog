@@ -1,7 +1,7 @@
 enable: true
 title: SKILL
 subtitle: 今まで勉強してきた、経験してきた、開発してきたいろんなスキルたちです。
-image: images/shark.jpg
+image: images/main/shark.jpg
 serviceItem:
   - icon:
     iconsrc: /images/customIcons/cpp.svg # カスタムIconを設定する. PathかURLを書く(svg)
