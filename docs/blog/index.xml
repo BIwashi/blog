@@ -8,6 +8,34 @@
     <language>ja</language>
     <lastBuildDate>Sun, 15 Jul 2018 12:32:37 +0600</lastBuildDate><atom:link href="https://biwashi.github.io/blog/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>CyberAgent主催「Web Speed Hackathon Online Vol.2」体験記</title>
+      <link>https://biwashi.github.io/blog/blog/ca-webspeed-hackathon/</link>
+      <pubDate>Thu, 11 Feb 2021 00:20:23 +0900</pubDate>
+      
+      <guid>https://biwashi.github.io/blog/blog/ca-webspeed-hackathon/</guid>
+      <description>はじめに 2021年2月6~7日の二日間、CyberAgent主催の「Web Speed Hackathon Online Vol.2」に参加してきました。
+同週の平日には修論の公開期末発表会があったり、就業型インターンの仕事しまくったり、面接したりとめちゃんこ忙しかったんで死にそうになりながら参加したんですが、やっぱり僕は競争ごとが好きみたいで、とても楽しかったです。
+元々フロントエンド何もわからんマンで、このサイトとかみたいななんちゃってフロントエンドの経験こそあるものの、ちゃんと学んだことも実践したこともなくて不安しかなかったんですが、たくさん学びを得られたイベントでした。
+なお、本記事には技術的間違いもたくさんあると思います。本気で参考にはしないでください。ただの日記です。
+本当に参考にする場合は、もっと強そうな人無限にいたので、その人たちのを参考にしてください…
+（ちなみに始まる前、しにゃいさんのブログみてた）
+ 概要 そもそもどんなイベント？ 運営側が用意した、架空のSNSサービスのパフォーマンスをどれだけ向上させられるかというものです。ちなみに、元のサービスはゲキ重で、最初に解禁されて立ち上げた時にめっちゃ笑いました。
+これを決められたレギュレーションに違反しないようにチューニングしていきます。
+ Google Chrome 最新版において、著しい機能落ちやデザイン差異を発生させてはいけない 採点はLighthouseをベースに計算される   使われていた主な技術  React Tailwind CSS Express Webpack SQLite JSX Babel  このほかにも色々あったと思いますが、なんせフロントエンド初心者なので、完全に全体は把握しきれていない思います。
+ちなみにデプロイは Herokuで行いました。
+やったこと ここから、自分の記録と残っている commitメッセージを頼りに書いていきます。
+ まず、最初は PageSpeed Insights にぶち込んでみました。
+確かスコア0か1だったと思います。逆にめちゃすげえ…と思ってました。
+そこからは、ここ修正しろよーーってでてくるやつを潰していきました。
+画像を色々変える まず、表示サイズに対してアホみたいに巨大な画像が使われていたので、表示されうる最大値を調べて、それ用にリサイズしました。
+今回、よくwebサイトにあるような、画像をタップするとその画像を全画面表示して見れる、みたいな機能は実装されていなかったので、デフォの表示画面のみを考えれば大丈夫でした。
+その後、画像フォーマットを jpgからwebpに変換しました。今回はChrome最新版だけで動けばいので大丈夫です。（多分）
+webpというパッケージのcwebpというコマンドを使いました。brew で入れましょう！みたいな記事はありますが、Macにはデフォで入ってるっぽいです。
+ただこれ、コマンドが1ファイルごとしか変換できない（っぽい）ので、シェルスクリプトを作りました。
+for file in *.jpg; do filename=&amp;#34;${file%.*}&amp;#34; cwebp -q 80 -metadata icc -sharp_yuv &amp;#34;$file&amp;#34; -o &amp;#34;$filename.webp&amp;#34;; done これをjpgがたくさんあるディレクトリ上で実行しました。</description>
+    </item>
+    
+    <item>
       <title>tcardgenでHugoで作ったブログのOGPを自動生成してみた</title>
       <link>https://biwashi.github.io/blog/blog/tcardgen-hugo/</link>
       <pubDate>Mon, 11 Jan 2021 14:27:39 +0900</pubDate>
