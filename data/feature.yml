@@ -4,7 +4,7 @@ subtitle: >
   参加してきたインターン企業一覧
 item    :
   - icon    : 
-    img     : /images/company-logo/softbank.png     
+    img     : /images/company-logo/softbank.webp
     title   : Softbank
     description : >
       1 week Internship
@@ -12,7 +12,7 @@ item    :
       ハッカソン型のインターンに参加
 
   - icon    : 
-    img     : /images/company-logo/kddi.jpg
+    img     : /images/company-logo/kddi.webp
     title   : KDDI
     description : >
       3 days Hackathon
@@ -23,7 +23,7 @@ item    :
 
   - icon    : 
     title   : accenture
-    img     : /images/company-logo/accenture.png       
+    img     : /images/company-logo/accenture.webp
     description : >
       3 days Internship
       <br>
@@ -32,7 +32,7 @@ item    :
 
   - icon    : 
     title   : Japan Research Institute
-    img     : /images/company-logo/jri.png  
+    img     : /images/company-logo/jri.webp
     description : >
       2 days Internship
       <br>
@@ -40,7 +40,7 @@ item    :
 
   - icon    : 
     title   : Nintendo
-    img     : /images/company-logo/nintendo.png    
+    img     : /images/company-logo/nintendo.webp  
     description : >
       3 days Internship
       <br>
@@ -49,7 +49,7 @@ item    :
             
   
   - icon    : 
-    img     : /images/company-logo/ca.png
+    img     : /images/company-logo/ca.webp
     title   : CyberAgent
     description : >
       3 days Internship
@@ -59,7 +59,7 @@ item    :
       「エンタメボックス」参加
 
   - icon    : 
-    img     : /images/company-logo/ca.png
+    img     : /images/company-logo/ca.webp
     title   : CyberAgent
     description : >
       2 days Hackathon
@@ -67,7 +67,7 @@ item    :
       「Web Speed Hackathon」に参加
 
   - icon    : 
-    img     : /images/company-logo/gree.jpg   
+    img     : /images/company-logo/gree.webp
     title   : GREE
     description : >
       2 months Internship
