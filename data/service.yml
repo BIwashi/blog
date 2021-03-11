@@ -27,9 +27,11 @@ serviceItem:
   - icon: logo-javascript
     title: JavaScript
     description: >
-      Vue.jsを一通り触れます。
+      GREEでの業務に使用しています。(jQuery, Nuxt.js, Mustache.js)
       <br>
-      最低限のコーディングは可能です。長期インターン先でvue-chartjsを用いた社内向けツールを作成した経験があります。
+      趣味ではVue.jsを一通り触れます。
+      <br>
+      長期インターン先でvue-chartjsを用いた社内向けツールを作成した経験があります。
 
   - icon:
     iconsrc: /images/customIcons/java.svg # カスタムIconを設定する. PathかURLを書く(svg)
@@ -61,7 +63,7 @@ serviceItem:
   - icon: logo-docker
     title: Docker
     description: >
-      好きで結構使っています。基本docker-composeで環境構築をすることが多いです。ハッカソンなどで使用し、クラウドにデプロイした経験もあります。
+      好きで結構使っています。基本docker-composeで環境構築をすることが多いです。ハッカソンなどで使用し、AWSにデプロイした経験もあります。
       <br>
       DockerでUbuntuのGUI環境を構築したことがあります。
 
@@ -77,24 +79,26 @@ serviceItem:
     iconsrc: /images/customIcons/aws.svg # カスタムIconを設定する. PathかURLを書く(svg)
     title: AWS
     description: >
-      インターンやハッカソンでEC2, ECS, S3, DynamoDB, ALB, API Gatewayなどの使用経験があります。VPCの作成からインスタンスの起動、DBの構築やhttps化などしました。
+      インターンやハッカソンでEC2, ECS, S3, DynamoDB, ALB, API Gateway, Route53, CloudFormationなどの使用経験があります。VPCの作成からインスタンスの起動、DBの構築やhttps化などしました。
       <br>
-      興味はありますがなかなか機会と時間がなく、Lamdaは試せていません。
-
-  - icon:
-    iconsrc: /images/customIcons/kubernetes.svg # カスタムIconを設定する. PathかURLを書く(svg)
-    title: Kubernetes
-    description: >
-      ｵﾍﾞﾝｷｮｳﾁｭｳ
+      現在GREEでは、IaCの業務も行なっています。
 
   - icon:
     iconsrc: /images/customIcons/typescript.svg
     title: TypeScript
     description: >
-      ｵﾍﾞﾝｷｮｳﾁｭｳ
+      インターンでのフロントエンド開発に利用しています。
+      <br>
+      jQueryやNuxt.jsなどで使用しています。
 
   - icon:
     iconsrc: /images/customIcons/unity.svg
     title: Unity
+    description: >
+      ｵﾍﾞﾝｷｮｳﾁｭｳ
+
+  - icon:
+    iconsrc: /images/customIcons/kubernetes.svg # カスタムIconを設定する. PathかURLを書く(svg)
+    title: Kubernetes
     description: >
       ｵﾍﾞﾝｷｮｳﾁｭｳ
