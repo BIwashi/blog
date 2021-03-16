@@ -46,8 +46,6 @@ item    :
       <br>
       ゲーム開発・通信・システム開発コースに参加
 
-            
-  
   - icon    : 
     img     : /images/company-logo/ca.webp
     title   : CyberAgent
@@ -64,12 +62,32 @@ item    :
     description : >
       2 days Hackathon
       <br>
+      Frontend
+      <br>      
       「Web Speed Hackathon」に参加
+
+  - icon    : 
+    img     : /images/company-logo/ca.webp
+    title   : CyberAgent
+    description : >
+      2 days Internship
+      <br>
+      Backend
+      <br>
+      「ABEMA Growth Tech ONLINE」に参加
 
   - icon    : 
     img     : /images/company-logo/gree.webp
     title   : GREE
     description : >
-      2 months Internship
+      3 months Internship
       <br>
-      メディア事業「aumo」にて就業型インターンに参加中
+      メディア事業「aumo」にて就業型インターンに参加
+
+  - icon    : 
+    img     : /images/company-logo/aktsuki.webp
+    title   : Akatsuki
+    description : >
+      2 weeks Internship
+      <br>
+      ゲーム開発のサーバーサイドエンジニアの就業型インターンに参加

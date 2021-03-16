@@ -1,135 +1,83 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://biwashi.github.io/blog/categories/</loc>
     <lastmod>2021-02-11T00:20:23+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://biwashi.github.io/blog/blog/ca-webspeed-hackathon/</loc>
     <lastmod>2021-02-11T00:20:23+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://biwashi.github.io/blog/tags/inspiration/</loc>
     <lastmod>2021-02-11T00:20:23+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://biwashi.github.io/blog/tags/motivation/</loc>
     <lastmod>2021-02-11T00:20:23+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://biwashi.github.io/blog/</loc>
     <lastmod>2021-02-11T00:20:23+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://biwashi.github.io/blog/tags/</loc>
     <lastmod>2021-02-11T00:20:23+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://biwashi.github.io/blog/categories/tech/</loc>
     <lastmod>2021-02-11T00:20:23+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://biwashi.github.io/blog/portfolio/aumo/</loc>
     <lastmod>2021-01-23T18:51:48+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://biwashi.github.io/blog/portfolio/</loc>
     <lastmod>2021-01-23T18:51:48+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://biwashi.github.io/blog/categories/test/</loc>
     <lastmod>2021-01-23T18:51:48+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://biwashi.github.io/blog/tags/hugo/</loc>
     <lastmod>2021-01-11T14:27:39+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://biwashi.github.io/blog/tags/ogp/</loc>
     <lastmod>2021-01-11T14:27:39+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://biwashi.github.io/blog/tags/tcardgen/</loc>
     <lastmod>2021-01-11T14:27:39+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://biwashi.github.io/blog/blog/tcardgen-hugo/</loc>
     <lastmod>2021-01-11T14:27:39+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://biwashi.github.io/blog/portfolio/hamadori/</loc>
     <lastmod>2020-12-11T19:39:17+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://biwashi.github.io/blog/blog/setup-dotfiles/</loc>
     <lastmod>2020-12-11T17:17:09+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://biwashi.github.io/blog/tags/github/</loc>
     <lastmod>2020-12-11T17:17:09+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://biwashi.github.io/blog/tags/zsh/</loc>
     <lastmod>2020-12-11T17:17:09+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://biwashi.github.io/blog/tags/go/</loc>
     <lastmod>2020-12-06T22:54:14+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://biwashi.github.io/blog/blog/make-blog-by-hugo/</loc>
     <lastmod>2020-12-06T22:54:14+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://biwashi.github.io/blog/portfolio/slide/</loc>
     <lastmod>2020-07-23T19:15:08+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://biwashi.github.io/blog/blog/</loc>
     <lastmod>2018-07-15T12:32:37+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://biwashi.github.io/blog/contact/</loc>
     <lastmod>2018-07-14T17:09:20+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://biwashi.github.io/blog/gallery/</loc>
     <lastmod>2018-07-14T16:19:08+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://biwashi.github.io/blog/skill/</loc>
     <lastmod>2018-07-14T12:58:14+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://biwashi.github.io/blog/about/</loc>
     <lastmod>2018-07-12T18:19:33+06:00</lastmod>
   </url>
-  
 </urlset>
