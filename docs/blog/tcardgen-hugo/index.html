@@ -8,7 +8,7 @@
     content="This is meta description">
   
   <meta name="author" content="IWASHI">
-  <meta name="generator" content="Hugo 0.81.0" />
+  <meta name="generator" content="Hugo 0.82.0" />
 
   <!-- Mobile Specific Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -190,8 +190,8 @@
 </span><span class="w"></span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;/blog/tcardgen-hugo/&#34;</span><span class="w"> </span><span class="c"># tcardgenでの自動生成スクリプト用のパスを設定 ルーティング固定の意味もある</span><span class="w">
 </span><span class="w"></span><span class="nt">carduse</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="c"># TwitterCardを使用するかどうか falseの場合はデフォルトの画像が適用される</span><span class="w">
 </span></code></pre></div><p>最初、記事作成時に</p>
-<pre><code>$ hugo new ./content/blog/{日本語}.md
-</code></pre><p>にしていたのですが、このままだとパスが日本語になってしまい、URLが汚くなるので、作成時は適当にアルファベットで<code>.md</code>を作成し、後からタイトルをに日本語に変える作業をすることにしました。</p>
+<div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="err">$</span> <span class="nx">hugo</span> <span class="nx">new</span> <span class="p">.</span><span class="o">/</span><span class="nx">content</span><span class="o">/</span><span class="nx">blog</span><span class="o">/</span><span class="p">{</span><span class="nx">日本語</span><span class="p">}.</span><span class="nx">md</span>
+</code></pre></div><p>にしていたのですが、このままだとパスが日本語になってしまい、URLが汚くなるので、作成時は適当にアルファベットで<code>.md</code>を作成し、後からタイトルをに日本語に変える作業をすることにしました。</p>
 <p>この際、パスは（本来）この設定し直したタイトルを元に決定されるので、日本語に変えるとパスも日本語になってしまうのですが、以下のように指定するとこちらを優先してくれます。
 また、このurlは記事作成時の<code>{}.md</code>から自動生成しています。</p>
 <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">url:</span> <span class="s2">&#34;/blog/tcardgen-hugo/&#34;</span>

@@ -188,7 +188,7 @@ webpack-bundle-analyzerには`bluebird.js`なるものも存在して、かな�
 とはいえ、参考順位はまさかの2位という、フロント初心者的には嬉しい感じだったんですが、ぶっちゃけ違反すればいくらでもスコア上げられるんでほんとに**参考**って感じですかね…。
 
 
-![参考順位](/images/blog/iwashi-253.png)
+<img src="/images/blog/iwashi-253.png" style="width:100%; text-align:center;">
 
 そして、「あーーこれは違反してるなーー」と思いながら終わったんですが、FBKでの違反ポイントが自分が想像してたところと違ったんで、恐怖でした。
 
