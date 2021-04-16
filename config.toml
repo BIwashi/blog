@@ -53,7 +53,7 @@ ogimage = "images/main/iwashilong_w.jpg"
 # Banner Section
 [params.banner]
 enable  = true
-bgImage = "https://media.giphy.com/media/3oz8xur099boo4N9aU/giphy.gif" # バナーの画像
+bgImage = "images/main/background-milkyway.webp" # バナーの画像
 heading = "MY NEW GEAR..."
 description = "This is My Blog"
 # button
