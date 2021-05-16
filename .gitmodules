@@ -1,6 +1,4 @@
-[submodule "themes/timer-hugo"]
-	path = themes/timer-hugo
-	url = https://github.com/themefisher/timer-hugo.git
+
 [submodule "themes/time-hugo-clone"]
 	path = themes/time-hugo-clone
 	url = https://github.com/BIwashi/timer-hugo.git
