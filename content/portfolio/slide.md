@@ -21,7 +21,7 @@ carduse: true # TwitterCardを使用するかどうか falseの場合はデフ�
 
 # Portfolio用----------------------------------------------
 caption: Product Mockup
-image: images/portfolio/slide.png
+image: images/portfolio/slide.webp
 liveLink: https://biwashi.github.io/Portfolio/
 # 右側の情報説明
 # client: Julia Robertson

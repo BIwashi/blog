@@ -21,7 +21,7 @@ url: "/portfolio/aumo/" # tcardgenでの自動生成スクリプト用のパス�
 
 # Portfolio用----------------------------------------------
 caption: 「あなたの毎日がきっと楽しくなる」がテーマのおでかけメディア
-image: images/portfolio/aumo.png
+image: images/portfolio/aumo.webp
 liveLink: https://aumo.jp/ 
 # 右側の情報説明
 # client: Julia Robertson

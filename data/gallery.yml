@@ -1,7 +1,7 @@
 enable: true
 galleryImages:
-    - image: images/portfolio/hamadori_img.jpg
-    - image: images/portfolio/HAMADORI.jpg
+    - image: images/portfolio/hamadori_img.webp
+    - image: images/portfolio/HAMADORI.webp
   # - image: images/portfolio/item-1.jpg
   # - image: images/portfolio/item-2.jpg
   # - image: images/portfolio/item-3.jpg
