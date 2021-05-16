@@ -41,7 +41,7 @@ dateFormat = "1 December 2020" #??
 description = "Airspace Hugo theme"
 author = "IWASHI"
 # Google Analitycs
-googleAnalitycsID = "G-PEBYWXRR3K" # Google Anlaycs用のIDを設定できる
+googleAnalitycs = "G-PEBYWXRR3K" # Google Anlaycs用のIDを設定できる
 # contact form action
 contactFormAction = "#" # contact form works with https://formspree.io formを設定する用
 # Disqusによるコメント機能実装用
