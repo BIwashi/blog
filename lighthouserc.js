@@ -1,8 +1,7 @@
 module.exports = {
   ci: {
     collect: {
-        startServerCommand: "npx http-server ./ --port 8080",
-        url: ["http://localhost:8080/"]
+      staticDistDir: "./docs",
     },
     upload: {
       target: "temporary-public-storage",
