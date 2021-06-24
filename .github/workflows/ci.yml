@@ -5,10 +5,6 @@ jobs:
     name: Lighthouse
     runs-on: ubuntu-latest
     steps:
-      - name: Setup hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: "0.64.0"
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
