@@ -321,6 +321,14 @@
 <!-- disqus -->
 <script id="dsq-count-scr" src="//https-biwashi-github-io-blog.disqus.com/count.js" async></script>
 
+<!-- Layout Instability API -->
+<script>
+  new PerformanceObserver((list) => {
+    for (const entry of list.getEntries()) {
+      console.log(entry);
+    }}).observe({type: 'layout-shift', buffered: true});
+</script>
+
 
 <!-- google analitycs -->
 <script>
